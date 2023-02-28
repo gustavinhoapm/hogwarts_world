@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icone.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Hogwarts World</title>
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegação com Casas, Personagens e Criaturas-->
+        <nav class="navbar">
+            <a href="#"><span class="logo_page">HW</span></a>
+
+            <a href="#houses">Casas</a>
+            <a href="#caracters">Personagens</a>
+            <a href="#creatures">Criaturas</a>
+
+            <a href="#" class="loginBtn">Log In</a>
+
+            <div class="theme">
+                <input type="checkbox" name="change-theme" id="change-theme">
+                <label for="change-theme">
+                    <span class="theme__dark material-symbols-outlined">skull</span>
+                    <span class="theme__light material-symbols-outlined">light_mode</span>  
+                </label>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>HOGWARTS WORLD</h1>
+            <p>Conheça o mundo bruxo!</p>
+            <p>Escolha uma das opções no menu acima para começar a navegar.</p>
+            <a href="#">Crie seu personagem!</a>
+        </section>
+        <section class="houses" id="houses">
+            <h2>CASAS</h2>
+            <p>As casas de Hogwars são: Grifinória, Sonserina, Corvinal e Lufa-Lufa.</p>
+            <p>Escolha uma das casas para saber mais sobre ela.</p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/e1132fc96dfc0e2f0373fee35a45e193.png" alt="Grifinoria">
+                    </div>
+                    <div class="card-details">
+                        <h3>Grifinória</h3>
+                        <p>Fundada por Godrico Gryffindor. Seus membros
+                            são
+                            conhecidos por sua coragem, lealdade e determinação. Seu animal é o leão e sua cor é o
+                            dourado.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/sonserina.jpeg" alt="Sonserina">
+                    </div>
+                    <div class="card-details">
+                        <h3>Sonserina</h3>
+                        <p>Fundada por Salazar Slytherin. Seus membros são
+                            conhecidos por sua astúcia, ambição e inteligência. Seu animal é a serpente e sua cor é o
+                            verde.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/lufa-lufa.png" alt="Lufa-Lufa">
+                    </div>
+                    <div class="card-details">
+                        <h3>Lufa-Lufa</h3>
+                        <p>Fundada por Helga Hufflepuff. Seus membros são
+                            conhecidos por sua lealdade, honestidade e amizade. Seu animal é o lobo e sua cor é o
+                            marrom.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/corvinal.jpeg" alt="Corvinal">
+                    </div>
+                    <div class="card-details">
+                        <h3>Corvinal</h3>
+                        <p>Fundada por Rowena Ravenclaw. Seus membros são
+                            conhecidos por sua inteligência, criatividade e sabedoria. Seu animal é uma águia e sua cor é o azul.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
