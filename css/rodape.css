@@ -1,0 +1,17 @@
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--fundo-cinza);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--preto);
+}
+
+
+
+
