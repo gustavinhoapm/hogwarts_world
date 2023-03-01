@@ -48,10 +48,7 @@ sr.reveal('.caracters',{
     duration:1800
 });
 
-sr.reveal('.titulo_caracters',{
 
-    duration:1800
-});
 
 sr.reveal('.grifinoria_persona_section',{
     rotate: {x: 2, y: 80, z:2},
@@ -86,15 +83,25 @@ sr.reveal('.creatures',{
     duration:1800
 });
 
-sr.reveal('.titulo_creatures',{
+sr.reveal('.section_rodape',{
     rotate: {x: 3, y: 80, z:3},
     duration:1800
 });
 
-sr.reveal('.lista_criaturas',{
-    rotate: {x: 3, y: 80, z:3},
-    duration:1800
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

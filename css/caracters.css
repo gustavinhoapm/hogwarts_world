@@ -28,6 +28,19 @@
 
 /* Persona GRIFINORIA */
 
+
+.info_grifinoria{
+    background-image: url("../images/grifinoria_fundo_persona.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info_grifinoria p{
+    color:#ffffff;  
+}
+
 .grifinoria_persona_section{
     display: flex;
     flex-direction: column;
@@ -62,7 +75,7 @@
 
 .info_grifinoria h3{
 
-    color: var(--primary-color-grifinoria);
+    color:#ffffff; 
     font-family: 'Harry Potter', sans-serif;
     display: flex;
     font-weight: 400;
@@ -76,6 +89,7 @@
 .info_grifinoria h3:hover{
     transform: scale(1.1); 
     transition: 0.3s;
+    cursor:default;
 }
 
 
@@ -109,6 +123,19 @@
 }
 
 /* Persona SONSERINA */
+
+
+.info_sonserina{
+    background-image: url("../images/sonserina_fundo_persona.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info_sonserina p{
+    color:#ffffff;  
+}
 
 .sonserina_persona_section{
     display: flex;
@@ -146,7 +173,7 @@
 
 .info_sonserina h3{
 
-    color: #084103;
+    color:#ffffff; 
     font-family: 'Harry Potter', sans-serif;
     display: flex;
     font-weight: 400;
@@ -159,9 +186,10 @@
   
 }
 
-.info_Sonserina h3:hover{
+.info_sonserina h3:hover{
     transform: scale(1.1); 
     transition: 0.3s;
+    cursor:default;
 }
 
 
@@ -195,6 +223,20 @@
 }
 
 /* Persona LUFA LUFA */
+
+.info_lufa_lufa{
+    background-image: url("../images/lufa_lufa_fundo_persona.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info_lufa_lufa p{
+    color:#ffffff;  
+}
+
+
 
 .lufa_lufa_persona_section{
     display: flex;
@@ -232,7 +274,7 @@
 
 .info_lufa_lufa h3{
 
-    color: #b9cf0e;
+    color: #ffffff;
     font-family: 'Harry Potter', sans-serif;
     display: flex;
     font-weight: 400;
@@ -248,6 +290,7 @@
 .info_lufa_lufa h3:hover{
     transform: scale(1.1); 
     transition: 0.3s;
+    cursor:default;
 }
 
 
@@ -282,6 +325,19 @@
 
 
 /* Persona CORVINAL*/
+
+.info_corvinal{
+    background-image: url("../images/corvinal_fundo_persona.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info_corvinal p{
+    color:#ffffff;  
+}
+
 
 .corvinal_persona_section{
     display: flex;
@@ -319,7 +375,7 @@
 
 .info_corvinal h3{
 
-    color: #041d97;
+    color: #fff;
     font-family: 'Harry Potter', sans-serif;
     display: flex;
     font-weight: 400;
@@ -335,6 +391,7 @@
 .info_corvinal h3:hover{
     transform: scale(1.1); 
     transition: 0.3s;
+    cursor:default;
 }
 
 
@@ -367,33 +424,7 @@
 
 }
 
-.titulo_creatures {
-    font-family: 'Harry Potter', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: var(--branco-transparente);
-    border-radius: 10px;
-}
 
-.creatures {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: var(--fundo-cinza);
-    border-radius: 10px;
-    box-shadow: 0 0 5px var(--preto);
-}
 
 /* DARK THEME */
 

@@ -12,6 +12,15 @@
     box-shadow: 0 0 10px var(--preto);
 }
 
+footer{
+    text-align: center;
+}
+
+
+.dark .rodape{
+    background-color: #00000055;
+}
+
 
 
 
