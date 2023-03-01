@@ -36,7 +36,7 @@
 html, body {
     font-family: poppins, sans-serif;
     font-weight: 400;
-    height: 190vw;
+    height: 165vw;
     background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/wp10521170-hogwarts-4k-wallpapers.jpg");
     background-size: cover;
     background-attachment: fixed;
