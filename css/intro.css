@@ -25,6 +25,20 @@
     background-color: var(--branco);
 }
 
-.personagem{
-    color: var(--branco)
+.dark-side {
+    display: none;
+}
+
+/* DARK THEME */
+
+.dark .light-side {
+    display: none;
+}
+
+.dark .dark-side {
+    display: block;
+}
+
+.personagem {
+    color: var(--branco);
 }

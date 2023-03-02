@@ -225,7 +225,7 @@
             <a href="#caracters">Personagens</a>
             <a href="#creatures">Criaturas</a>
 
-            <a href="#" class="loginBtn">Log In</a>
+            <a href="#" class="loginBtn">Log in</a>
 
             <div class="theme">
                 <input type="checkbox" name="change-theme" id="change-theme">
@@ -238,66 +238,86 @@
         </nav>
     </header>
     <main>
- 
-    
-     
         
         <section class="intro">
             <h1>HOGWARTS WORLD</h1>
-            <b><p>Conheça o mundo bruxo!</p>
-            <p>Escolha uma das opções no menu acima para começar a navegar.</p></b>
+            <div class="light-side">
+                <b><p>Conheça o mundo bruxo!</p>
+                <p>Clique no botão abaixo para personalizar seu personagem.</p></b>
+            </div>
+            <div class="dark-side">
+                <b><p>Conheça o mundo dos comensais da morte!</p>
+                <p>Clique no botão abaixo para personalizar seu personagem.</p></b>
+            </div>
             <a href="#">Crie seu personagem!</a>
         </section>
+
         <section class="houses" id="houses">
             <h2>CASAS</h2>
-            <p>As casas de Hogwars são: Grifinória, Sonserina, Corvinal e Lufa-Lufa.</p>
-            <p>Escolha uma das casas para saber mais sobre ela.</p>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/grifinoria.jpg" alt="Grifinoria">
+            <div class="light-side">
+                <p class="houses__text">As casas de Hogwars são: Grifinória, Sonserina, Corvinal e Lufa-Lufa.</p>
+                <p class="houses__text">Escolha uma das casas para saber mais sobre ela.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/grifinoria.jpg" alt="Grifinoria">
+                        </div>
+                        <div class="card-details">
+                            <h3>Grifinória</h3>
+                            <p>Fundada por Godrico Gryffindor. Seus membros
+                                são
+                                conhecidos por sua coragem, lealdade e determinação. Seu animal é o leão e sua cor é o
+                                dourado.</p>
+                        </div>
                     </div>
-                    <div class="card-details">
-                        <h3>Grifinória</h3>
-                        <p>Fundada por Godrico Gryffindor. Seus membros
-                            são
-                            conhecidos por sua coragem, lealdade e determinação. Seu animal é o leão e sua cor é o
-                            dourado.</p>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/sonserina.jpg" alt="Sonserina">
+                        </div>
+                        <div class="card-details">
+                            <h3>Sonserina</h3>
+                            <p>Fundada por Salazar Slytherin. Seus membros são
+                                conhecidos por sua astúcia, ambição e inteligência. Seu animal é a serpente e sua cor é o
+                                verde.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/lufa_lufa.jpg" alt="Corvinal">
+                        </div>
+                        <div class="card-details">
+                            <h3>Lufa Lufa</h3>
+                            <p>Fundada por Helga Hufflepuff. Seus membros
+                                são
+                                conhecidos por sua lealdade, honestidade e amizade. Seu animal é o lobo e sua cor é o
+                                marrom.</p>                          
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/corvinal.jpg" alt="Corvinal">
+                        </div>
+                        <div class="card-details">
+                            <h3>Corvinal</h3>
+                            <p>Fundada por Rowena Ravenclaw. Seus membros são
+                                conhecidos por sua inteligência, criatividade e sabedoria. Seu animal é uma águia e sua cor é o azul.
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="dark-side">
+                <p class="houses__text">Existe apenas um grupo do mal: Os Comensais da Morte</p>
+                <p class="houses__text">Selecione o cartão para saber mais sobre.</p>
+
                 <div class="card">
                     <div class="card-img">
-                        <img src="./images/sonserina.jpg" alt="Sonserina">
+                        <img src="./images/comensais_morte.jpeg" alt="Comensais da Morte">
                     </div>
                     <div class="card-details">
-                        <h3>Sonserina</h3>
-                        <p>Fundada por Salazar Slytherin. Seus membros são
-                            conhecidos por sua astúcia, ambição e inteligência. Seu animal é a serpente e sua cor é o
-                            verde.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/lufa_lufa.jpg" alt="Corvinal">
-                    </div>
-                    <div class="card-details">
-                        <h3>Lufa Lufa</h3>
-                        <p>Fundada por Helga Hufflepuff. Seus membros
-                            são
-                            conhecidos por sua lealdade, honestidade e amizade. Seu animal é o lobo e sua cor é o
-                            marrom.</p>                          
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/corvinal.jpg" alt="Corvinal">
-                    </div>
-                    <div class="card-details">
-                        <h3>Corvinal</h3>
-                        <p>Fundada por Rowena Ravenclaw. Seus membros são
-                            conhecidos por sua inteligência, criatividade e sabedoria. Seu animal é uma águia e sua cor é o azul.
-                        </p>
+                        <h3>Comensais da Morte</h3>
+                        <p>Fundada por Tom Riddle (Você-sabe-quem). Liderados pelo bruxo das trevas Lord Voldemort, que buscam purificar a comunidade bruxa eliminando bruxos e bruxas nascidos de pais não-mágicos.</p>
                     </div>
                 </div>
             </div>
