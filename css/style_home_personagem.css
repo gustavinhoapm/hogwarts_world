@@ -34,10 +34,14 @@
     box-sizing: border-box;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
 html, body {
     font-family: poppins, sans-serif;
     font-weight: 400;
-    height: 165vw;
+    height:auto;
     background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/background_cria_persona.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -47,12 +51,35 @@ html, body {
     
 }
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+   
+    color: var(--branco);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+    padding: 0 20px;
+    position: relative;
+    background-image: linear-gradient(to right, #CC9544, #603601);
+}
+
 a {
     text-decoration: none;
     color: var(--branco);
 }
 a:hover {
-    color: var(--branco);
+    color: var(--preto);
     transition: 0.3s;
 }
 
@@ -60,9 +87,11 @@ a:hover {
 .intro {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
     margin: 10vh 20vh auto;
     padding: 10px 20px;
+    text-align: center;
+
 }
 .intro h1 {
     font-family: 'Harry Potter', sans-serif;
@@ -84,32 +113,102 @@ a:hover {
     background-color: var(--branco);
 }
 
-
-/* Dark Theme */
-
-.dark {
-
-    background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/wallpaper_dark.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    transition: 0.3s;
-    color: #fff;
-}  
-
-.dark a {
-    color: #fff;
+.form-wrapper{
+    width: 300px;
+    height: 300px;
+    font-family: poppins, sans-serif;
+    padding: 40px 20px;
+    border-radius: 5px;
+    
+    
 }
 
-.dark a:hover {
+
+.form-wrapper > .field {
+width: 100%;
+position: relative;
+margin-bottom: 32px;
+}
+
+
+.form-wrapper > .field > .input{
+    width: 100%;
+    font-family: poppins, sans-serif;
+    padding: 15px;
     color: #000000;
-    transition: 0.3s;
+    background-color: #f8f8f8;
+    border: 3px solid #525252;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+   
+}
+
+.form-wrapper > .field > .label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    font-size: 16px;
+    pointer-events: none;
+    color: var(--preto);
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+
+}
+
+.form-wrapper > .field > .input::placeholder{
+    opacity: 0;
+    color: #603601(0, 0, 0, 0.578);
+    transition: all .2s ease-in-out;
+}
+
+.form-wrapper > .field > .input:hover,
+.form-wrapper > .field > .input:focus,
+.form-wrapper > .field > .input:not(:placeholder-shown){
+    border: 3px solid #603601;
+    transition: all .2s ease-in-out;
+}
+
+.form-wrapper > .field > .input:focus::placeholder{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+
+}
+.form-wrapper > .field > .input:focus + .label,
+.form-wrapper > .field > .input:not(:placeholder-shown) + .label{
+    top: -40%;
+    transform: translateY(50%);
+    left: 8px;
+    font-size: 12px;
+    padding: 0 8px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+
 }
 
 
+.form-wrapper > .send-message{
+    width: 150px;
+    font-family: 'Harry Potter', sans-serif;
+    color: var(--branco);
+    background-image: linear-gradient(to left, #d5d5d5aa, #636161);
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 
-.intro, .houses, .cards, .caracters, .grifinoria_persona_section, .sonserina_persona_section, .lufa_lufa_persona_section, .corvinal_persona_section, .creatures,.section_rodape{
-    visibility: hidden;
 }
+
+.form-wrapper > .send-message:hover{
+    color: var(--preto);
+    transition: all .3s ease-in-out;
+    background-image: linear-gradient(to right, #d5d5d5aa, #585757);
+    transform: scale(1.1);
+    
+    
+
+}
+
+
 
