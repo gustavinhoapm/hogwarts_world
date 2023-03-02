@@ -24,3 +24,7 @@
     color: var(--preto);
     background-color: var(--branco);
 }
+
+.personagem{
+    color: var(--branco)
+}

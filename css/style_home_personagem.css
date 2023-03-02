@@ -38,7 +38,7 @@ html, body {
     font-family: poppins, sans-serif;
     font-weight: 400;
     height: 165vw;
-    background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/wp10521170-hogwarts-4k-wallpapers.jpg");
+    background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/background_cria_persona.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -49,11 +49,39 @@ html, body {
 
 a {
     text-decoration: none;
-    color: var(--preto);
+    color: var(--branco);
 }
 a:hover {
     color: var(--branco);
     transition: 0.3s;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10vh 20vh auto;
+    padding: 10px 20px;
+}
+.intro h1 {
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.intro a {
+    color: var(--branco);
+    background-color: var(--cinza);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.intro a:hover {
+    color: var(--preto);
+    background-color: var(--branco);
 }
 
 
