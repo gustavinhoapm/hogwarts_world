@@ -38,3 +38,7 @@
 .dark .dark-side {
     display: block;
 }
+
+.personagem {
+    color: var(--branco);
+}
