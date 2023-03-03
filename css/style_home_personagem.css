@@ -26,6 +26,8 @@
     --secundary-color-lufalufa: #b9cf0e;
     --primary-color-corvinal: #0420aaaa;
     --secundary-color-corvinal: #030962;
+    --primary-color-comensais: #000000ab;
+    --secundary-color-comensais: #202020ab;
 }
 
 * {
@@ -114,7 +116,7 @@ a:hover {
 }
 
 .perguntas{
-    margin-bottom: 1800px;
+    margin-bottom: 20px;
 }
 
 
@@ -245,7 +247,7 @@ margin-bottom: 10px;
 
 
 .wrapper{
-    height: 200vh; 
+    height: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,6 +381,27 @@ margin-bottom: 10px;
 .custom-radio input:checked + .radio-btn{
     border: 4px solid #000;
 }
+
+.custom-radio input:checked + .radio__grifinoria {
+    background-color: var(--secundary-color-grifinoria);
+}
+
+.custom-radio input:checked + .radio__sonserina {
+    background-color: var(--primary-color-sonserina);
+}
+
+.custom-radio input:checked + .radio__lufa-lufa {
+    background-color: var(--primary-color-lufalufa);
+}
+
+.custom-radio input:checked + .radio__corvinal {
+    background-color: var(--primary-color-corvinal);
+}
+
+.custom-radio input:checked + .radio__comensais {
+    background-color: var(--primary-color-comensais);
+}
+
 .custom-radio input:checked + .radio-btn .check-icon{
     background-color: #000;
 }

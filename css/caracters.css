@@ -26,41 +26,9 @@
     border-radius: 10px;
 }
 
-/* Persona GRIFINORIA */
+/* PERSONA GERAIS */
 
-
-.info_grifinoria{
-    background-image: url("../images/grifinoria_fundo_persona.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.info_grifinoria p{
-    color:#ffffff;  
-}
-
-.grifinoria_persona_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: var(--fundo-cinza);
-    border-radius: 10px;
-    box-shadow: 0 0 5px var(--primary-color-grifinoria);
-}
-
-.linha-grifinoria{
-    border-color: var(--secundary-color-grifinoria);
-}
-
-
-.info_grifinoria{
+.info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,11 +39,14 @@
     padding: 10px;
     background-color: var(--branco-transparente);
     border-radius: 10px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.info_grifinoria h3{
-
-    color:#ffffff; 
+.info__titulo {
+    color:var(--branco); 
     font-family: 'Harry Potter', sans-serif;
     display: flex;
     font-weight: 400;
@@ -83,73 +54,61 @@
     align-items: center;
     font-weight:bold; 
     font-size: 2.5rem;
-    font-weight: 400;  
+    font-weight: 400; 
 }
 
-.info_grifinoria h3:hover{
+.info__titulo:hover {
     transform: scale(1.1); 
     transition: 0.3s;
     cursor:default;
 }
 
+.info p {
+    color:var(--branco);
+}
 
-@keyframes btn-pisca_grifinoria {
+.btn-pisca {
+    color: var(--branco);
+    padding: 0.6em 0.8em;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px; 
+    -webkit-animation: btn-pisca .9s linear infinite;
+    -moz-animation: btn-pisca .9s linear infinite;
+    -ms-animation: btn-pisca .9s linear infinite;
+    -o-animation: btn-pisca .9s linear infinite;
+    animation: btn-pisca .9s linear infinite;
+}
+
+.btn-pisca:hover {
+    transform: scale(1.1); 
+    transition: 0.3s;
+    background-image:linear-gradient(to right, #ffffffaa, #686968);
+    animation: none;
+}
+
+@keyframes btn-pisca {
     0% { opacity: 0; }
     50% { opacity: 0.6; }
     100% { opacity: 1.2; }
 }
 
-.btn-pisca_grifinoria{
-    background-image:linear-gradient(to right, #910000aa, #5b0000);
-    color:#fff;
-    padding: 0.6em 0.8em;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 15px; 
-    -webkit-animation: btn-pisca_grifinoria .9s linear infinite;
-    -moz-animation: btn-pisca_grifinoria .9s linear infinite;
-    -ms-animation: btn-pisca_grifinoria .9s linear infinite;
-    -o-animation: btn-pisca_grifinoria .9s linear infinite;
-    animation: btn-pisca_grifinoria .9s linear infinite;
+/* Persona GRIFINORIA */
+
+
+.grifinoria{
+    background-image: url("../images/grifinoria_fundo_persona.jpg");
 }
 
-.btn-pisca_grifinoria:hover{
-    transform: scale(1.1); 
-    transition: 0.3s;
-    color: #5b0000;
-    background-image:linear-gradient(to right, #ffffffaa, #686968);
-    animation: none;
-
+.linha-grifinoria{
+    border-color: var(--secundary-color-grifinoria);
 }
 
 /* Persona SONSERINA */
 
 
-.info_sonserina{
+.sonserina{
     background-image: url("../images/sonserina_fundo_persona.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.info_sonserina p{
-    color:#ffffff;  
-}
-
-.sonserina_persona_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #ffffff55;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #00572aaa;
-
 }
 
 .linha-sonserina{
@@ -157,101 +116,12 @@
     border-color: #00572aaa;
 }
 
-
-.info_sonserina{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #ffffffaa;
-    border-radius: 10px;
-}
-
-.info_sonserina h3{
-
-    color:#ffffff; 
-    font-family: 'Harry Potter', sans-serif;
-    display: flex;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    font-weight:bold; 
-    font-size: 2.5rem;
-    font-weight: 400;
-
-  
-}
-
-.info_sonserina h3:hover{
-    transform: scale(1.1); 
-    transition: 0.3s;
-    cursor:default;
-}
-
-
-@keyframes btn-pisca_sonserina {
-    0% { opacity: 0; }
-    50% { opacity: 0.6; }
-    100% { opacity: 1.2; }
-}
-
-.btn-pisca_sonserina{
-    background-image:linear-gradient(to right, #00572aaa, #084103);
-    color:#fff;
-    padding: 0.6em 0.8em;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 15px; 
-    -webkit-animation: btn-pisca_sonserina .9s linear infinite;
-    -moz-animation: btn-pisca_sonserina .9s linear infinite;
-    -ms-animation: btn-pisca_sonserina .9s linear infinite;
-    -o-animation: btn-pisca_sonserina .9s linear infinite;
-    animation: btn-pisca_sonserina .9s linear infinite;
-}
-
-.btn-pisca_sonserina:hover{
-    transform: scale(1.1); 
-    transition: 0.3s;
-    color: #00572a;
-    background-image:linear-gradient(to right, #ffffffaa, #686968);
-    animation: none;
-
-}
-
 /* Persona LUFA LUFA */
 
-.info_lufa_lufa{
+.lufa_lufa{
     background-image: url("../images/lufa_lufa_fundo_persona.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.info_lufa_lufa p{
-    color:#ffffff;  
-}
-
-
-
-.lufa_lufa_persona_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #ffffff55;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #c2dc00aa;
-
-}
 
 .linha-lufa_lufa{
 
@@ -259,172 +129,15 @@
 }
 
 
-.info_lufa_lufa{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #ffffffaa;
-    border-radius: 10px;
-}
-
-.info_lufa_lufa h3{
-
-    color: #ffffff;
-    font-family: 'Harry Potter', sans-serif;
-    display: flex;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    font-weight:bold; 
-    font-size: 2.5rem;
-    font-weight: 400;
-
-  
-}
-
-.info_lufa_lufa h3:hover{
-    transform: scale(1.1); 
-    transition: 0.3s;
-    cursor:default;
-}
-
-
-@keyframes btn-pisca_lufa_lufa {
-    0% { opacity: 0; }
-    50% { opacity: 0.6; }
-    100% { opacity: 1.2; }
-}
-
-.btn-pisca_lufa_lufa{
-    background-image:linear-gradient(to right, #c2dc00aa, #546203);
-    color:#fff;
-    padding: 0.6em 0.8em;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 15px; 
-    -webkit-animation: btn-pisca_lufa_lufa .9s linear infinite;
-    -moz-animation: btn-pisca_lufa_lufa .9s linear infinite;
-    -ms-animation: btn-pisca_lufa_lufa .9s linear infinite;
-    -o-animation: btn-pisca_lufa_lufa .9s linear infinite;
-    animation: btn-pisca_lufa_lufa .9s linear infinite;
-}
-
-.btn-pisca_lufa_lufa:hover{
-    transform: scale(1.1); 
-    transition: 0.3s;
-    color: #c2dc00;
-    background-image:linear-gradient(to right, #ffffffaa, #686968);
-    animation: none;
-
-}
-
-
 /* Persona CORVINAL*/
 
-.info_corvinal{
+.corvinal{
     background-image: url("../images/corvinal_fundo_persona.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.info_corvinal p{
-    color:#ffffff;  
-}
-
-
-.corvinal_persona_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #ffffff55;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #0420aaaa;
-
 }
 
 .linha-corvinal{
-
     border-color: #0420aaaa;
 }
-
-
-.info_corvinal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #ffffffaa;
-    border-radius: 10px;
-}
-
-.info_corvinal h3{
-
-    color: #fff;
-    font-family: 'Harry Potter', sans-serif;
-    display: flex;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    font-weight:bold; 
-    font-size: 2.5rem;
-    font-weight: 400;
-
-  
-}
-
-.info_corvinal h3:hover{
-    transform: scale(1.1); 
-    transition: 0.3s;
-    cursor:default;
-}
-
-
-@keyframes btn-pisca_corvinal {
-    0% { opacity: 0; }
-    50% { opacity: 0.6; }
-    100% { opacity: 1.2; }
-}
-
-.btn-pisca_corvinal{
-    background-image:linear-gradient(to right, #0420aaaa, #030962);
-    color:#fff;
-    padding: 0.6em 0.8em;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 15px; 
-    -webkit-animation: btn-pisca_corvinal .9s linear infinite;
-    -moz-animation: btn-pisca_corvinal .9s linear infinite;
-    -ms-animation: btn-pisca_corvinal .9s linear infinite;
-    -o-animation: btn-pisca_corvinal .9s linear infinite;
-    animation: btn-pisca_corvinal .9s linear infinite;
-}
-
-.btn-pisca_corvinal:hover{
-    transform: scale(1.1); 
-    transition: 0.3s;
-    color: #0420aaaa;
-    background-image:linear-gradient(to right, #ffffffaa, #686968);
-    animation: none;
-
-}
-
-
 
 /* DARK THEME */
 
@@ -436,34 +149,6 @@
     background-color: #000000aa;
 }
 
-.dark .grifinoria_persona_section{
-    background-color: #00000055;
-}
-
-.dark .info_grifinoria{
-    background-color: #000000aa;
-}
-
-.dark .sonserina_persona_section{
-    background-color: #00000055;
-}
-
-.dark .info_sonserina{
-    background-color: #000000aa;
-}
-
-.dark .lufa_lufa_persona_section{
-    background-color: #00000055;
-}
-
-.dark .info_lufa_lufa{
-    background-color: #000000aa;
-}
-
-.dark .corvinal_persona_section{
-    background-color: #00000055;
-}
-
-.dark .info_corvinal{
+.dark .info{
     background-color: #000000aa;
 }
