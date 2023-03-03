@@ -3,9 +3,9 @@
 @import url('../css/houses.css');
 @import url('../css/cards.css');
 @import url('../css/intro.css');
-@import url('../css/creatures.css');
+
 @import url('../css/rodape.css');
-@import url('../css/canvas.css');
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
@@ -79,6 +79,7 @@ header {
 html, body {
     font-family: poppins, sans-serif;
     font-weight: 400;
+    width: auto;
     height:auto;
     background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/background_cria_persona.jpg");
     background-size: cover;
@@ -86,6 +87,7 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     transition: .3s;
+    padding: 0 auto;
     
 }
 
@@ -105,11 +107,15 @@ a:hover {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
-    border-radius: 10px; 
+    padding: 10px;  
+    border-radius: 10px;
     color: var(--branco);
+  
 }
 
+.perguntas{
+    margin-bottom: 1800px;
+}
 
 
 a {
@@ -153,7 +159,8 @@ a:hover {
 .form-wrapper > .field {
 width: 100%;
 position: relative;
-margin-bottom: 32px;
+padding: 0 auto;
+margin-bottom: 10px;
 }
 
 
@@ -232,9 +239,157 @@ margin-bottom: 32px;
     background-image: linear-gradient(to left, #d5d5d5aa, #585757);
     transform: scale(1.1);
     
-    
+
 
 }
+
+
+.wrapper{
+    height: 200vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper > h2{
+    font-family: 'Harry Potter', sans-serif;
+    margin-bottom: 1px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.radio-buttons{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.custom-radio input{
+    display: none;
+
+}
+
+
+.radio-btn{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #22252233;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.radio-btn .content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn .profile-img{
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.radio-btn .profile-img img{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.radio-btn h2{
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.radio-btn .skills{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #c3c2c7;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.radio-btn .check-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #1b1d28;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.radio-btn .check-icon .icon{
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 8px;
+    margin-top: -2px;
+    transform: rotate(-40deg);
+}
+
+.radio-btn .check-icon .icon::before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.231);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
+}
+ 
+.radio-btn .check-icon .icon::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.231);
+    transform: scalex(0);
+    transform-origin: left;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.custom-radio input:checked + .radio-btn{
+    border: 4px solid #000;
+}
+.custom-radio input:checked + .radio-btn .check-icon{
+    background-color: #000;
+}
+
+.custom-radio input:checked + .radio-btn .check-icon .icon::before,
+.custom-radio input:checked + .radio-btn .check-icon .icon::after{
+    transform: scale(1);
+
+}
+
+
 
 
 

@@ -1,7 +1,7 @@
 .rodape{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: justify;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -20,6 +20,8 @@ footer{
 .dark .rodape{
     background-color: #00000055;
 }
+
+
 
 
 
