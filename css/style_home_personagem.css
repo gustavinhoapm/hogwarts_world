@@ -22,12 +22,17 @@
     --secundary-color-grifinoria: #660505aa;
     --primary-color-sonserina: #00572aaa;
     --secundary-color-sonserina: #084103;
-    --primary-color-lufalufa: #c2dc00aa;
-    --secundary-color-lufalufa: #b9cf0e;
+    --primary-color-lufalufa: #e1ec05aa;
+    --secundary-color-lufalufa: #6e7b08;
     --primary-color-corvinal: #0420aaaa;
     --secundary-color-corvinal: #030962;
-    --primary-color-comensais: #000000ab;
-    --secundary-color-comensais: #202020ab;
+    --primary-color-comensais: #000000;
+    --secundary-color-comensais: #031701;
+    --degrade-color-grifinoria: linear-gradient(to left, var(--primary-color-grifinoria), var(--secundary-color-grifinoria) );
+    --degrade-color-sonserina: linear-gradient(to right, var(--primary-color-sonserina),  var(--secundary-color-sonserina));
+    --degrade-color-lufalufa: linear-gradient(to right, var(--primary-color-lufalufa), var(--secundary-color-lufalufa));
+    --dregrade-color-corvinal: linear-gradient(to right, var(--primary-color-corvinal), var(--secundary-color-corvinal)); 
+    --degrade-color-comensais: linear-gradient(to left,var(--primary-color-comensais), var(--secundary-color-comensais));
 }
 
 * {
@@ -383,27 +388,58 @@ margin-bottom: 10px;
 }
 
 .custom-radio input:checked + .radio__grifinoria {
-    background-color: var(--secundary-color-grifinoria);
+   background-image: var(--degrade-color-grifinoria);
 }
 
 .custom-radio input:checked + .radio__sonserina {
-    background-color: var(--primary-color-sonserina);
+    background-image: var(--degrade-color-sonserina);
 }
 
 .custom-radio input:checked + .radio__lufa-lufa {
-    background-color: var(--primary-color-lufalufa);
+    background-image: var(--degrade-color-lufalufa);
 }
 
 .custom-radio input:checked + .radio__corvinal {
-    background-color: var(--primary-color-corvinal);
+    background-image: var(--dregrade-color-corvinal);
 }
 
 .custom-radio input:checked + .radio__comensais {
-    background-color: var(--primary-color-comensais);
+    background-image: var(--degrade-color-comensais)
 }
 
 .custom-radio input:checked + .radio-btn .check-icon{
     background-color: #000;
+}
+.custom-radio input:checked + .radio__grifinoria{
+    font-family: 'Harry Potter', sans-serif;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.custom-radio input:checked + .radio__sonserina{
+    font-family: 'Harry Potter', sans-serif;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.custom-radio input:checked + .radio__lufa-lufa{
+    font-family: 'Harry Potter', sans-serif;
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+}
+
+.custom-radio input:checked + .radio__corvinal{
+    font-family: 'Harry Potter', sans-serif;
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+}
+
+.custom-radio input:checked + .radio__comensais{
+    font-family: 'Harry Potter', sans-serif;
+    transform: scale(1.1);
+    transition: 0.3s;
+    
 }
 
 .custom-radio input:checked + .radio-btn .check-icon .icon::before,
