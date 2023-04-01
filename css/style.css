@@ -52,6 +52,7 @@ a {
     color: var(--preto);
 }
 a:hover {
+    transform: scale(1.1);
     color: var(--branco);
     transition: 0.3s;
 }

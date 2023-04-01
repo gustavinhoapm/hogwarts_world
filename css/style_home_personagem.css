@@ -120,9 +120,7 @@ a:hover {
   
 }
 
-.perguntas{
-    margin-bottom: 20px;
-}
+
 
 
 a {
@@ -154,7 +152,7 @@ a:hover {
 
 .form-wrapper{
     width: 300px;
-    height: 300px;
+    height: 250px;
     font-family: poppins, sans-serif;
     padding: 40px 20px;
     border-radius: 5px;
@@ -407,39 +405,12 @@ margin-bottom: 10px;
     background-image: var(--degrade-color-comensais)
 }
 
-.custom-radio input:checked + .radio-btn .check-icon{
+.custom-radio input:checked + .radio-btn .check-icon {
     background-color: #000;
 }
-.custom-radio input:checked + .radio__grifinoria{
-    font-family: 'Harry Potter', sans-serif;
+.custom-radio input:checked + .radio-btn{ 
     transform: scale(1.1);
     transition: 0.3s;
-}
-
-.custom-radio input:checked + .radio__sonserina{
-    font-family: 'Harry Potter', sans-serif;
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-.custom-radio input:checked + .radio__lufa-lufa{
-    font-family: 'Harry Potter', sans-serif;
-    transform: scale(1.1);
-    transition: 0.3s;
-    
-}
-
-.custom-radio input:checked + .radio__corvinal{
-    font-family: 'Harry Potter', sans-serif;
-    transform: scale(1.1);
-    transition: 0.3s;
-    
-}
-
-.custom-radio input:checked + .radio__comensais{
-    font-family: 'Harry Potter', sans-serif;
-    transform: scale(1.1);
-    transition: 0.3s;
-    
 }
 
 .custom-radio input:checked + .radio-btn .check-icon .icon::before,
@@ -448,6 +419,156 @@ margin-bottom: 10px;
 
 }
 
+
+.wrapper_varinha{
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper_varinha > h2{
+    font-family: 'Harry Potter', sans-serif;
+    margin-bottom: 1px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.radio-buttons_varinha{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.custom-radio_varinha input{
+    display: none;
+
+}
+
+
+.radio-btn{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #22252233;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.radio-btn .content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn .profile-img_varinha{
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.radio-btn .profile-img_varinha img{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.radio-btn h2{
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.radio-btn .skills_varinha{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #c3c2c7;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.radio-btn .check-icon_varinha{
+    width: 30px;
+    height: 30px;
+    background-color: #1b1d28;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.radio-btn .check-icon_varinha .icon_varinha{
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 8px;
+    margin-top: -2px;
+    transform: rotate(-40deg);
+}
+
+.radio-btn .check-icon_varinha .icon_varinha::before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.231);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
+}
+ 
+.radio-btn .check-icon_varinha .icon_varinha::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.231);
+    transform: scalex(0);
+    transform-origin: left;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.custom-radio_varinha input:checked + .radio-btn{
+    border: 4px solid #000;
+}
+
+.custom-radio_varinha input:checked + .radio-btn .check-icon_varinha {
+    background-color: #000;
+}
+.custom-radio_varinha input:checked + .radio-btn{ 
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.custom-radio_varinha input:checked + .radio-btn .check-icon_varinha .icon_varinha::before,
+.custom-radio_varinha input:checked + .radio-btn .check-icon_varinha .icon_varinha::after{
+    transform: scale(1);
+
+}
 
 
 
