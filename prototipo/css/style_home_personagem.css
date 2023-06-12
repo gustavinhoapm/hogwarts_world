@@ -1,0 +1,467 @@
+
+@import url('../css/caracters.css');
+@import url('../css/houses.css');
+@import url('../css/cards.css');
+@import url('../css/intro.css');
+
+@import url('../css/rodape.css');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Oswald&family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+:root {
+    --fundo-cinza: #ffffff55;
+    --branco-transparente: #ffffffaa;
+    --branco: #fff;
+    --preto: #000;
+    --cinza: #444444;
+    --primary-color-grifinoria: #5b0000;
+    --secundary-color-grifinoria: #660505aa;
+    --primary-color-sonserina: #00572aaa;
+    --secundary-color-sonserina: #084103;
+    --primary-color-lufalufa: #e1ec05aa;
+    --secundary-color-lufalufa: #6e7b08;
+    --primary-color-corvinal: #0420aaaa;
+    --secundary-color-corvinal: #030962;
+    --primary-color-comensais: #000000;
+    --secundary-color-comensais: #031701;
+    --degrade-color-grifinoria: linear-gradient(to left, var(--primary-color-grifinoria), var(--secundary-color-grifinoria) );
+    --degrade-color-sonserina: linear-gradient(to right, var(--primary-color-sonserina),  var(--secundary-color-sonserina));
+    --degrade-color-lufalufa: linear-gradient(to right, var(--primary-color-lufalufa), var(--secundary-color-lufalufa));
+    --dregrade-color-corvinal: linear-gradient(to right, var(--primary-color-corvinal), var(--secundary-color-corvinal)); 
+    --degrade-color-comensais: linear-gradient(to left,var(--primary-color-comensais), var(--secundary-color-comensais));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+    padding: 0 20px;
+    position: relative;
+    background-image: linear-gradient(to right, #CC9544, #603601);
+}
+
+.logo_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;    
+}
+
+.navbar {
+    font-family: poppins, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+
+  
+    
+}
+
+.logo_page:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+html, body {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    width: auto;
+    height:auto;
+    background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/background_cria_persona.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s;
+    padding: 0 auto;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+a:hover {
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;  
+    border-radius: 10px;
+    color: var(--branco);
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+a:hover {
+    color: var(--preto);
+    transition: 0.3s;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 20vh auto;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+.intro h1 {
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.form-wrapper{
+    font-family: poppins, sans-serif;
+    padding: 40px 20px;
+    border-radius: 5px;
+}
+
+
+.form-wrapper > .field {
+    width: 300px;
+    position: relative;
+    padding: 0 auto;
+    margin: 0px auto 10px auto;
+}
+
+
+.form-wrapper > .field > .input{
+    width: 300px;
+    width: 100%;
+    font-family: poppins, sans-serif;
+    padding: 15px;
+    color: #000000;
+    background-color: #f8f8f8;
+    border: 3px solid #525252;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+   
+}
+
+.form-wrapper > .field > .label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    font-size: 16px;
+    pointer-events: none;
+    color: var(--preto);
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+
+}
+
+.form-wrapper > .field > .input::placeholder{
+    opacity: 0;
+    color: #603601(0, 0, 0, 0.578);
+    transition: all .2s ease-in-out;
+}
+
+.form-wrapper > .field > .input:hover,
+.form-wrapper > .field > .input:focus,
+.form-wrapper > .field > .input:not(:placeholder-shown){
+    border: 3px solid #603601;
+    transition: all .2s ease-in-out;
+}
+
+.form-wrapper > .field > .input:focus::placeholder{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+
+}
+.form-wrapper > .field > .input:focus + .label,
+.form-wrapper > .field > .input:not(:placeholder-shown) + .label{
+    top: -40%;
+    transform: translateY(50%);
+    left: 8px;
+    font-size: 12px;
+    padding: 0 8px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+
+}
+
+
+.form-wrapper > .send-message{
+    width: 150px;
+    font-family: 'Harry Potter', sans-serif;
+    color: var(--branco);
+    background-image: linear-gradient(to right, #d5d5d5aa, #636161);
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+}
+
+.form-wrapper > .send-message:hover{
+    color: var(--preto);
+    transition: all .3s ease-in-out;
+    background-image: linear-gradient(to left, #d5d5d5aa, #585757);
+    transform: scale(1.1);
+    
+
+
+}
+
+
+.wrapper{
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper > h2{
+    font-family: 'Harry Potter', sans-serif;
+    padding-top: 50px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.radio-buttons{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.custom-radio input{
+    display: none;
+
+}
+
+
+.radio-btn{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #22252233;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.radio-btn .content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn .profile-img{
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.radio-btn .profile-img img{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.radio-btn h2{
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.radio-btn .skills{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #c3c2c7;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.radio-btn .check-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #1b1d28;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.radio-btn .check-icon .icon{
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 8px;
+    margin-top: -2px;
+    transform: rotate(-40deg);
+}
+
+.radio-btn .check-icon .icon::before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.231);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
+}
+ 
+.radio-btn .check-icon .icon::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.231);
+    transform: scalex(0);
+    transform-origin: left;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.custom-radio input:checked + .radio-btn{
+    border: 4px solid #000;
+}
+
+.custom-radio input:checked + .radio__grifinoria {
+   background-image: var(--degrade-color-grifinoria);
+}
+
+.custom-radio input:checked + .radio__sonserina {
+    background-image: var(--degrade-color-sonserina);
+}
+
+.custom-radio input:checked + .radio__lufa-lufa {
+    background-image: var(--degrade-color-lufalufa);
+}
+
+.custom-radio input:checked + .radio__corvinal {
+    background-image: var(--dregrade-color-corvinal);
+}
+
+.custom-radio input:checked + .radio__comensais {
+    background-image: var(--degrade-color-comensais)
+}
+
+.custom-radio input:checked + .radio-btn .check-icon {
+    background-color: #000;
+}
+.custom-radio input:checked + .radio-btn{ 
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.custom-radio input:checked + .radio-btn .check-icon .icon::before,
+.custom-radio input:checked + .radio-btn .check-icon .icon::after{
+    transform: scale(1);
+
+}
+
+.radio-btn{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #22252233;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.radio-btn .content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn h2{
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.botao-cadastrar {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.botao-cadastrar:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+    transition: 0.3s;
+}

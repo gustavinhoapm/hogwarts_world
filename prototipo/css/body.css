@@ -1,0 +1,19 @@
+@import url('../css/style.css');
+
+html, body {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    height: auto;
+    transition: .3s;
+}
+
+/* Dark Theme */
+
+.dark {
+    transition: 0.3s;
+    color: #fff;
+}  
+
+.intro, .houses, .cards, .caracters, .grifinoria_persona_section, .sonserina_persona_section, .lufa_lufa_persona_section, .corvinal_persona_section, .creatures,.section_rodape{
+    visibility: hidden;
+}
