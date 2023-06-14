@@ -1,0 +1,57 @@
+<header>
+    <nav class="navbar">
+        {% if user.is_authenticated %}
+            <a href="{% url 'area_logada' %}"><span class="logo_page text-decoration-none text-white">HW</span></a>
+            <a href="{% url 'casa_detail' user.aluno.casa.id %}" class="text-decoration-none text-white">Informação da Casa</a>
+            <a href="#informacao" class="text-decoration-none text-white">Personagens</a>
+            <a href="#wands" class="text-decoration-none text-white">Varinhas</a>
+            <p class="text-decoration-none text-white">Bem-vindo, {{ user.username }}!</p>
+            <a href="{% url 'logout' %}" class="loginBtn text-decoration-none text-white">Log out</a>
+        {% else %}
+            <a href="{% url 'index' %}"><span class="logo_page text-decoration-none text-white">HW</span></a>
+            <a href="#" class="text-decoration-none text-white">Casas</a>
+            <a href="#" class="text-decoration-none text-white">Personagens</a>
+            <a href="#" class="text-decoration-none text-white">Criaturas</a>
+            <a href="{% url 'login' %}" class="loginBtn text-decoration-none text-white">Log in</a>
+            
+        {% endif %}
+
+        <div class="botao-musica">
+            <audio id="minhaMusica" loop>
+                <source src="../../static/sounds/harry potter song.mp3" type="audio/mpeg">
+            </audio>
+            <input type="checkbox" name="resume-pause" id="resume-pause" onclick="togglePlay()">
+            <label for="resume-pause" class="botao-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="play icon icon-tabler icon-tabler-player-play-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="currentColor" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="stop icon icon-tabler icon-tabler-player-pause-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 4h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+                    <path d="M17 4h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+                </svg>     
+            </label>
+        </div>
+        {% if not user.is_authenticated %}
+            <div class="theme">
+                <input type="checkbox" name="change-theme" id="change-theme">
+                <label for="change-theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="theme__light icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="theme__dark icon icon-tabler icon-tabler-skull" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 4c4.418 0 8 3.358 8 7.5c0 1.901 -.755 3.637 -2 4.96l0 2.54a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1v-2.54c-1.245 -1.322 -2 -3.058 -2 -4.96c0 -4.142 3.582 -7.5 8 -7.5z" />
+                        <path d="M10 17v3" />
+                        <path d="M14 17v3" />
+                        <path d="M9 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                        <path d="M15 11m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    </svg>
+                </label>
+            </div>
+        {% endif %}
+    </nav>
+</header>

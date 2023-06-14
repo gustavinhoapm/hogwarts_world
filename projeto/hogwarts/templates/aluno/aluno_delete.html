@@ -1,0 +1,15 @@
+{% extends 'base_form.html' %}
+{% load crispy_forms_tags %}
+
+{% block conteudo %}
+<section style="max-width: 50%">
+    <h1>Excluir Personagem</h1>
+    <p>Tem certeza que deseja excluir seu personagem?</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form |crispy }}
+        <button type="submit" class="btn btn-danger">Sim</button>
+        <a class="btn btn-primary" href="{% url 'area_logada' %}">Não. Quero continuar.</a>
+    </form>
+    </section>
+{% endblock  %}

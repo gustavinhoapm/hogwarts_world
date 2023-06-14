@@ -1,0 +1,2014 @@
+{% extends 'base_casa.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block conteudo %}
+    <section class="intro">
+        <h1>HOGWARTS WORLD</h1>
+            <p>Saiba mais sobre sua casa!</p></b>
+        </div>       
+    </section>
+    {% if casa.id == 1 %}
+        <style>
+            body {
+                background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../../static/images/grifinoria.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            header {
+                background-image: linear-gradient(to left, rgb(56, 7, 7), rgb(138, 19, 19));
+            }
+            .titulo_wands {
+                background-color: #5b0000aa;
+            }
+            .titulo_wood {
+                background-color: #5b0000aa;
+            }
+            .bruxo {
+                background-color: #5b0000aa;
+            }
+            .card {
+                background-color: #5b0000aa;
+            }
+        </style>
+        <section class="houses" id="houses">
+            <h2>{{casa.nome}}</h2>
+            <div class="light-side">
+                <p class="houses__text">Você é da {{casa.nome}}</p>
+                <p class="houses__text">saiba mais sobre ela.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static 'images/grifinoria.jpg' %}" alt="Grifinoria">
+                        </div>
+                        <div class="card-details">
+                            <h3>{{casa.nome}}</h3>
+                            <p>{{casa.descricao}}</p>
+                            <p>A Grifinória é uma das quatro casas da escola de magia e bruxaria de Hogwarts, no mundo de Harry Potter. Ela foi fundada por Godric Gryffindor e é conhecida por valorizar a coragem, a bravura, a determinação e a nobreza de espírito.
+    
+                                Os membros da Grifinória são conhecidos por seu espírito aventureiro e sua disposição para enfrentar desafios. Eles são frequentemente escolhidos por sua coragem e ousadia, e tendem a tomar ações corajosas em prol dos outros. A casa também valoriza a lealdade, a amizade e a justiça.
+                                
+                                O animal símbolo da Grifinória é o leão, representando a força e a coragem. Suas cores são o vermelho e o dourado, refletindo paixão e bravura. A sala comunal da Grifinória está localizada em uma das torres de Hogwarts, acessível através de uma escadaria escondida próxima à estátua da Mulher Gorda.
+                                
+                                Alguns dos personagens mais conhecidos da série Harry Potter pertencem à Grifinória, incluindo o protagonista Harry Potter, sua amiga Hermione Granger e seu melhor amigo Rony Weasley. A casa é liderada pela professora Minerva McGonagall, uma bruxa corajosa e habilidosa.
+                                
+                                Os alunos da Grifinória participam ativamente do quadribol, um esporte popular no mundo bruxo, e demonstram um grande senso de união e trabalho em equipe. A casa também possui um histórico notável na luta contra as forças das trevas.
+                                
+                                Em resumo, a Grifinória é uma casa de Hogwarts que valoriza a coragem, a bravura e a nobreza de espírito. Seus membros são conhecidos por sua audácia e disposição para proteger e ajudar os outros.</p>
+                        </div>
+                    </div>
+        </section>
+    
+        <section class="informacao" id="informacao">
+            <h2>Personagens Principais da {{casa.nome}}</h2>
+            
+            <div class="info">
+                
+                <div class="info-img">
+                    <img src="{% static 'images/hermione.jpg' %}" alt="Grifinoria">
+                </div>
+                <div class="info-details">
+                    <h3>Hermione Granger</h3>
+                    
+                    <p>Hermione Granger é um dos personagens principais da série de livros e filmes "Harry Potter", escrita por J.K. Rowling. Ela é interpretada pela atriz Emma Watson nos filmes.
+        
+                        Hermione é uma jovem bruxa nascida trouxa, o que significa que seus pais não possuem habilidades mágicas. No entanto, quando ela recebe sua carta de admissão para a Escola de Magia e Bruxaria de Hogwarts, descobre seu extraordinário talento para a magia. Ela se torna uma das melhores alunas de sua geração e é conhecida por sua inteligência excepcional, dedicação aos estudos e seu senso de justiça.
+                        
+                        Uma das características marcantes de Hermione é sua personalidade forte e determinada. Ela é uma líder natural e sempre está disposta a lutar pelo que acredita ser certo, mesmo que isso signifique desafiar as regras estabelecidas. Sua coragem e lealdade são inabaláveis, e ela se torna uma peça fundamental na luta contra o vilão principal, Lord Voldemort.
+                        
+                        Além de sua habilidade mágica, Hermione também é conhecida por seu amor pelos livros e pelo conhecimento. Ela é frequentemente vista com um livro na mão e é uma estudante excepcionalmente dedicada. Sua sede de conhecimento e vontade de aprender muitas vezes a colocam em vantagem nas situações perigosas que enfrenta ao longo da série.
+                        
+                        Hermione é uma personagem admirada e amada por sua inteligência, determinação e compaixão. Ela valoriza a amizade e está sempre disposta a ajudar seus amigos, especialmente Harry Potter e Ron Weasley, com quem forma uma amizade inseparável. Juntos, eles enfrentam desafios, resolvem enigmas e superam obstáculos ao longo de sua jornada em Hogwarts.
+                        
+                        No decorrer da série, Hermione se torna uma defensora dos direitos dos elfos domésticos e luta contra a discriminação e a opressão. Ela funda a organização "Sociedade de Defesa dos Direitos dos Elfos Domésticos" e trabalha incansavelmente para melhorar as condições de vida dessas criaturas.
+                        
+                        A interpretação de Emma Watson como Hermione Granger nos filmes ajudou a tornar o personagem ainda mais icônico. Sua performance capturou perfeitamente a inteligência, a força e a vulnerabilidade de Hermione, conquistando o coração dos fãs ao redor do mundo.
+                        
+                        No geral, Hermione Granger é uma personagem complexa e inspiradora, que cativa os espectadores com sua coragem, inteligência e compromisso com a justiça. Ela continua sendo um dos personagens mais amados e memoráveis da série "Harry Potter".
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="wands" id="wands">  
+               
+            <b><h2 class="titulo_wands"><strong>Núcleos De Varinhas:</strong></h2></b>
+                <ul class="lista_varinhas">
+                    <li class="varinhas">
+                        <div class="wands_img">
+                        <img src="{% static './images/pena_De_fenix.jpg' %}" alt="pena_De_fenix">
+                    </div>
+                        <h3>Pena de Fenix</h3>
+                        <p>A pena de fênix é um núcleo de varinha bastante especial e poderoso. As penas de fênix são conhecidas por serem extremamente leais aos seus donos e por produzirem varinhas com habilidades excepcionais. A varinha com núcleo de pena de fênix é notável por sua conexão com o mundo das fênix. Essas varinhas têm uma tendência a "escolher" seus donos, respondendo a bruxos e bruxas com características especiais, como coragem, nobreza de espírito e determinação. Essas varinhas são conhecidas por se unirem fortemente aos seus donos, reconhecendo-os como parceiros de confiança.</p>
+                    </li>
+                    <li class="varinhas">
+                        <div class="wands_img">
+                        <img src="{% static '/images/pelo_unicornio.jpg' %}." alt="Unicórnio">
+                    </div>
+                        <h3>Pelo de Unicórnio</h3>
+                        <p>A pena de unicórnio é um dos núcleos utilizados na confecção de varinhas mágicas. As penas de unicórnio são altamente valorizadas por sua pureza e por produzirem varinhas com habilidades especiais. As varinhas com núcleo de pena de unicórnio são conhecidas por serem bastante leais aos seus donos. Elas são frequentemente associadas a bruxos e bruxas que possuem características como compaixão, pureza de coração e uma forte conexão com a natureza.</p>
+                    </li>
+                
+                    <li class="varinhas">
+                        <div class="wands_img">
+                        <img src="{% static './images/coração_dragao.jpg' %}" alt="coracao_dragao">
+                    </div>
+                        <h3>Corda de Coração de Dragão</h3>
+                        <p>a corda de coração de dragão é um dos materiais utilizados como núcleo para a fabricação de varinhas mágicas. Ela é obtida a partir do coração de um dragão, criatura mágica poderosa e lendária. As varinhas com núcleo de corda de coração de dragão são notáveis por sua capacidade de realizar feitiços complexos e poderosos. Elas têm um caráter mais agressivo e exigem um domínio preciso e forte determinação de seu dono para serem usadas efetivamente.</p>
+                    </li>
+    
+                <p>As varinhas rígidas são conhecidas por sua falta de flexibilidade. Elas tendem a ser mais estáveis e exigem uma mão firme para controlar seu poder. Varinhas rígidas são frequentemente associadas a bruxos e bruxas que possuem uma natureza disciplinada, determinada e que preferem feitiços de precisão.</p>
+    
+                <li class="varinhas">
+                    <h3>Varinhas Flexíveis</h3>
+                    <p>As varinhas flexíveis possuem uma curva mais suave e são mais maleáveis. Elas se adaptam facilmente às habilidades e estilos de magia de seus usuários. Varinhas flexíveis são escolhidas por bruxos e bruxas que são adaptáveis, criativos e se destacam em feitiços que requerem movimentos fluidos e graciosos.</p>
+                </li>
+            
+                <li class="varinhas">
+                    <h3>Varinhas Semi-rígidas</h3>
+                    <p>As varinhas semi-rígidas são uma combinação entre as características das varinhas rígidas e flexíveis. Elas possuem uma certa resistência, mas também têm alguma flexibilidade. Essas varinhas são escolhidas por bruxos e bruxas que possuem uma personalidade equilibrada e versátil, capazes de lidar com uma variedade de estilos de magia.</p>
+                </li>
+    
+                <li class="varinhas">
+                    <div class="wands_img">
+                        <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+                    </div>
+                    <h3>Curiosidade:</h3>
+                    <p>É importante ressaltar que a flexibilidade da varinha pode influenciar o estilo e a eficácia do bruxo em diferentes tipos de feitiços. Cada bruxo tem uma relação única com sua varinha, e a flexibilidade desempenha um papel crucial nessa conexão, afetando a maneira como a magia é canalizada e executada.</p>
+                </li>
+            </ul>
+        </section><br>
+    
+        <section class="wands" id="wands">
+            <b><h2 class="titulo_wands"><strong>Tamanho Das Varinhas:</strong></h2></b>
+            <ul class="lista_varinhas">
+                <li class="varinhas">
+                    <h3>Varinhas Curtas</h3>
+                    <p>Varinhas curtas são caracterizadas por terem um tamanho menor em relação às varinhas padrão. Elas geralmente possuem cerca de 20 a 25 centímetros de comprimento. Varinhas curtas são escolhidas por bruxos e bruxas que preferem uma abordagem mais ágil e precisa em sua magia. Essas varinhas são adequadas para movimentos rápidos e feitiços de curta distância.</p>
+                </li>
+                <li class="varinhas">
+                    <h3>Varinhas Padrão</h3>
+                    <p>As varinhas padrão são as mais comuns e populares. Elas geralmente têm entre 25 a 35 centímetros de comprimento. Essas varinhas são versáteis e adequadas para uma ampla gama de estilos de magia. Bruxos e bruxas que possuem varinhas de tamanho padrão têm a vantagem de se adaptar facilmente a diferentes tipos de feitiços e situações.</p>
+                </li>
+    
+                <li class="varinhas">
+                    <h3>Varinhas Longas</h3>
+                    <p> Varinhas longas são caracterizadas por terem um comprimento maior em relação às varinhas padrão. Elas podem variar de 35 a 40 centímetros ou mais. Varinhas longas são frequentemente escolhidas por bruxos e bruxas que preferem uma abordagem mais imponente e poderosa em sua magia. Essas varinhas tendem a ser mais adequadas para feitiços que requerem gestos amplos e poderosos.</p>
+                </li>
+    
+                <li class="varinhas">
+                    <div class="wands_img">
+                        <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+                    </div>
+                    <h3>Curiosidade:</h3>
+                    <p>É importante notar que o tamanho da varinha pode afetar a maneira como ela é manejada e como a magia é canalizada. No entanto, a escolha do tamanho da varinha é uma questão de preferência pessoal e não determina a habilidade ou poder do bruxo. Cada bruxo possui uma varinha única, independentemente do tamanho, e é a conexão entre o bruxo e sua varinha que é essencial para realizar a magia com sucesso.</p>
+                </li>
+            </ul>   
+        </section><br>
+    
+        <section class="informacao" id="info_grifinoria">
+            <h2>Sala Comunal da {{casa.nome}}</h2>
+            
+            <div class="info">
+                
+                <div class="info-img">
+                    <img src="{% static './images/sala_comunal_grifinoria.jpg' %}" alt="Grifinoria">
+                </div>
+                <div class="info-details">
+                    <h3>Sala Comunal da {{casa.nome}}</h3>
+                    
+                    <p>A Sala Comunal da Grifinória é o espaço exclusivo da casa Grifinória na Escola de Magia e Bruxaria de Hogwarts, no mundo de Harry Potter. Localizada nas profundezas do Castelo de Hogwarts, a entrada para a Sala Comunal da Grifinória está escondida atrás de um retrato da Mulher Gorda, uma bruxa corpulenta vestida de rosa.
+    
+                        Para acessar a Sala Comunal da Grifinória, os estudantes da casa devem fornecer a senha correta para a Mulher Gorda. A senha muda regularmente para garantir a segurança e o sigilo da sala. Uma vez dentro, os alunos encontram um ambiente acolhedor e aconchegante, decorado em tons de vermelho e dourado, as cores distintivas da Grifinória.
+                        
+                        A sala é caracterizada por suas poltronas confortáveis, lareira aconchegante e mesas de estudo. Há uma atmosfera acolhedora e calorosa, repleta de elementos que refletem os valores da Grifinória, como coragem, lealdade e determinação. Escudos de armas da família Gryffindor adornam as paredes, e retratos de antigos membros da Grifinória decoram o ambiente, observando atentamente e interagindo ocasionalmente com os estudantes.
+                        
+                        A Sala Comunal da Grifinória é um espaço onde os membros da casa podem relaxar, socializar e estudar juntos. É um lugar onde eles se sentem conectados e apoiados por seus colegas de casa, fortalecendo os laços de amizade e camaradagem. Também serve como ponto de encontro para reuniões da Equipe de Quadribol da Grifinória, onde estratégias são discutidas e vitórias são comemoradas.
+                        
+                        Em resumo, a Sala Comunal da Grifinória é um ambiente aconchegante e encorajador, que representa o espírito e os valores da casa. É um local onde os estudantes da Grifinória se sentem em casa e encontram apoio, enquanto compartilham experiências e criam memórias duradouras durante sua jornada em Hogwarts.
+                    </p>
+                </div>
+            </div>
+        </section><br>
+    
+    
+        <section class="wizard" id="wizard">
+            <h2>Os três bruxos poderosos mais conhecidos da {{casa.nome}} são:</h2>
+                    <p class="wizard__text">
+                        Esses três bruxos poderosos da {{casa.nome}} demonstraram coragem, habilidade mágica e liderança, deixando um impacto significativo na história mágica e nos corações dos fãs de Harry Potter.</p> 
+                <div class="bruxos">
+                    <div class="bruxo">
+                        <div class="bruxo-img">
+                            <img src="{% static './images/godrig_gryffindor.jpg' %}" alt="godrig_gryffindor">
+                        </div>
+                        <div class="bruxo-details">
+                            <h3>Godric Gryffindor</h3>
+                            <p>Godric Gryffindor é o fundador da casa Grifinória e um dos quatro fundadores de Hogwarts. Ele era famoso por sua coragem, bravura e habilidades excepcionais em duelos. Gryffindor é lembrado por ter valorizado a bravura acima de tudo e por ter deixado um legado duradouro na escola de Hogwarts.</p>
+                        </div>
+                    </div>
+                    <div class="bruxo">
+                        <div class="bruxo-img">
+                            <img src="{% static './images/alvos_dumble.jpg' %}" alt="alvos_dumble">
+                        </div>
+                        <div class="bruxo-details">
+                            <h3>Alvo Dumbledore</h3>
+                            <p>Embora Alvo Dumbledore tenha sido classificado na casa Grifinória durante seus anos de estudante em Hogwarts, ele é reconhecido como um dos bruxos mais poderosos de todos os tempos. Dumbledore era um feiticeiro excepcionalmente habilidoso em várias áreas da magia, incluindo duelo, transfiguração e alquimia. Sua sabedoria, inteligência e capacidade de liderança o tornaram uma figura lendária no mundo mágico.</p>
+                        </div>
+                    </div>
+                    <div class="bruxo">
+                        <div class="bruxo-img">
+                            <img src="{% static './images/harry_potter.jpg' %}" alt="harry_potter">
+                        </div>
+                        <div class="bruxo-details">
+                            <h3>Harry Potter</h3>
+                            <p>Como protagonista da série de livros e filmes de Harry Potter, Harry é um bruxo poderoso e corajoso que foi selecionado para a Grifinória. Ele é conhecido por sua determinação, habilidades excepcionais em voo e sua habilidade de enfrentar desafios e perigos de frente. Ao longo de sua jornada em Hogwarts, Harry se tornou um duelista habilidoso e desempenhou um papel crucial na derrota de Lord Voldemort.</p>                          
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+        <br>
+        <section class="informacao" id="info_grifinoria">
+            <h2>Conquistas</h2>
+            
+            <div class="info">
+                
+                <div class="info-img">
+                    <img src="{% static './images/quadribol_grifinoria.jpg' %}" alt="Grifinoria">
+                </div>
+                <div class="info-details">
+                    <h3>Quadribol - {{casa.nome}}</h3>
+                    
+                    <p>A Casa Grifinória, à qual Hermione Granger pertence, é uma das quatro casas de Hogwarts. No universo de "Harry Potter", o Quadribol é um esporte popular jogado com vassouras voadoras. Cada casa de Hogwarts compete anualmente em um torneio de Quadribol para ganhar a Taça das Casas.
+        
+                        Ao longo da série de livros e filmes, a Casa Grifinória tem um bom desempenho no Quadribol, mas não é especificado quantas vezes eles ganharam a Taça das Casas nessa modalidade específica.
+                        
+                        No entanto, durante o terceiro ano de Harry Potter em Hogwarts, a Grifinória vence o campeonato interno de Quadribol, permitindo-lhes levar a Taça das Casas no final do ano. Isso acontece porque a capitã da equipe, Angelina Johnson, lidera um time habilidoso e determinado, com destaque para jogadores como Harry Potter, que se torna o apanhador da equipe. Essa vitória é particularmente significativa, já que a Grifinória enfrentou desafios e obstáculos ao longo do torneio.
+                        
+                        Portanto, enquanto a Casa Grifinória não tem um histórico detalhado de vitórias no Quadribol mencionado na série, eles são reconhecidos como uma casa competitiva e talentosa nesse esporte e conseguem conquistar a Taça das Casas em outros aspectos durante o ano letivo em Hogwarts.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+    {% elif casa.id == 2 %}
+        <style>
+            body {
+                background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../../static/images/sonserina_fundo_persona.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            header {
+                background-image: linear-gradient(to left, rgb(11, 42, 22), rgb(19, 67, 33));
+            }
+            .titulo_wands {
+                background-color: #005b0caa;
+            }
+            .titulo_wood {
+                background-color: #005b0caa;
+            }
+            .bruxo {
+                background-color: #005b0caa;
+            }
+            .card {
+                background-color: #005b0caa;
+            }
+        </style>
+        <section class="houses" id="houses">
+            <h2>SONSERINA</h2>
+            <div class="light-side">
+                <p class="houses__text">Você é da Sonserina</p>
+                <p class="houses__text">saiba mais sobre ela.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static './images/sonserina.jpg' %}" alt="Sonserina">
+                        </div>
+                        <div class="card-details">
+                            <h3>Sonserina</h3>
+                            <p>A história da Casa da Sonserina remonta aos primórdios da Escola de Magia e Bruxaria de Hogwarts, localizada na Escócia. A casa foi fundada por Salazar Sonserina, um dos quatro fundadores de Hogwarts, juntamente com Godric Gryffindor, Helga Hufflepuff e Rowena Ravenclaw.
+    
+                                Salazar Sonserina tinha uma visão particular sobre a seleção dos alunos de Hogwarts. Ele acreditava que apenas aqueles de linhagem pura deveriam ter a oportunidade de estudar na escola de magia. No entanto, os outros fundadores discordavam dele, acreditando na igualdade de oportunidades para todos os bruxos e bruxas, independentemente de sua origem.
+                                
+                                Como resultado, Salazar Sonserina decidiu fundar sua própria casa em Hogwarts, com critérios de seleção baseados em suas próprias crenças. Ele valorizava a astúcia, a ambição e o sangue puro como qualidades importantes em seus alunos. Assim, a Casa da Sonserina foi estabelecida como uma das quatro casas da escola.
+                                
+                                A Casa da Sonserina se tornou conhecida por sua reputação de abrigar bruxos e bruxas ambiciosos, determinados a alcançar o sucesso a qualquer custo. Ao longo dos séculos, a casa produziu muitos bruxos notáveis, incluindo Tom Riddle, mais conhecido como Lord Voldemort, um dos bruxos das trevas mais poderosos e temidos da história da magia.
+                                
+                                A casa é representada por uma cobra verde e prata em seu brasão e suas cores são verde e prata. A sala comunal da Sonserina está localizada nas masmorras de Hogwarts e é acessada por meio de uma entrada escondida por uma parede de pedra no corredor das masmorras.
+                                
+                                Embora a Casa da Sonserina tenha sido frequentemente associada à ambição e à astúcia, nem todos os seus alunos são necessariamente malignos. Muitos bruxos e bruxas da Sonserina mostraram qualidades positivas e foram capazes de usar sua determinação e sagacidade para alcançar grandes feitos. No entanto, a casa ainda carrega certa estigma e controvérsia devido às ações de seus membros mais infames ao longo da história.</p>
+                        </div>
+                    </div>
+       </section>
+    
+    
+    <br>
+    
+    <section class="informacao" id="informacao">
+        <h2>Personagens Principais da Sonserina</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Lord_voldemort.jpg' %}" alt="Lord_Voldemort">
+            </div>
+            <div class="info-details">
+                <h3>Lord Voldemort</h3>
+                
+                <p>Lord Voldemort, cujo nome verdadeiro é Tom Marvolo Riddle, é o principal antagonista na série de livros e filmes de Harry Potter, escrita por J.K. Rowling. Ele é retratado como um bruxo das trevas extremamente poderoso e cruel, cujo objetivo é governar o mundo mágico e subjugar os bruxos nascidos trouxas.
+    
+                    Voldemort é conhecido por sua aparência assustadora, com pele pálida e sem cabelos, olhos vermelhos e nariz achatado. Sua história remonta aos tempos de Hogwarts, onde ele estudou como um aluno talentoso e ambicioso. Ele se destacou em várias áreas da magia, mas sua busca por poder e imortalidade o levou a mergulhar nas artes das trevas e a cometer atos terríveis.
+                    
+                    Uma das características mais marcantes de Voldemort é sua capacidade de manipulação e persuasão. Ele é um mestre em usar as fraquezas e os medos das pessoas para recrutá-las para o seu lado e ganhar seguidores leais, conhecidos como Comensais da Morte. Seus seguidores o temem e o idolatram, e estão dispostos a realizar suas ordens mais cruéis.
+                    
+                    Uma das habilidades mais temidas de Voldemort é a magia das Horcruxes. Ele divide sua alma em várias partes e as esconde em objetos especiais, tornando-se virtualmente imortal. Para destruí-lo completamente, é necessário encontrar e destruir todas as Horcruxes.
+                    
+                    Voldemort é um adversário formidável em duelos de magia, possuindo um vasto conhecimento das artes das trevas e realizando feitiços poderosos. Ele é conhecido por sua crueldade e falta de compaixão, eliminando qualquer um que se oponha a ele sem hesitar.
+                    
+                    Além de suas habilidades mágicas, Voldemort é caracterizado por sua obsessão com a pureza do sangue. Ele acredita na superioridade dos bruxos puro-sangue e busca eliminar todos os nascidos trouxas e bruxos de sangue impuro. Essa visão preconceituosa e sua busca por poder absoluto o tornam um vilão ameaçador e odioso.
+                    
+                    Ao longo da série, Harry Potter se torna o principal oponente de Voldemort. A luta entre os dois bruxos é o ponto central da história, com Harry representando os valores opostos de amor, amizade e coragem. A batalha final entre Harry e Voldemort é um momento épico, no qual o bem triunfa sobre o mal.
+                    
+                    Voldemort é um dos vilões mais icônicos da literatura e do cinema. Sua presença sombria e sua natureza cruel e ambiciosa cativaram os fãs de Harry Potter ao redor do mundo. Ele personifica o perigo e a ameaça que precisam ser superados para preservar a paz e a harmonia no mundo mágico.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/severo_snape.jpg' %}" alt="Severo_Snape">
+            </div>
+            <div class="info-details">
+                <h3>Severus Snape</h3>
+                
+                <p>Severus Snape é um personagem icônico da série de livros e filmes de Harry Potter, criada por J.K. Rowling. Ele é um professor de Poções e mais tarde de Defesa Contra as Artes das Trevas em Hogwarts, a escola de magia e bruxaria.
+    
+                    A primeira impressão que temos de Snape é a de um professor austero e intimidador, com suas vestes negras, cabelos negros e olhos escuros e penetrantes. Ele é descrito como tendo um temperamento difícil e um jeito sarcástico de se expressar. Sua aparência e atitudes geram desconfiança e antipatia por parte dos alunos, especialmente Harry Potter e seus amigos.
+                    
+                    Ao longo da história, Snape é retratado como um personagem ambíguo, cheio de mistérios e segredos. Ele desempenha um papel complexo e crucial na trama, e sua lealdade é constantemente questionada. No início, Snape parece ser um aliado de Voldemort e um antagonista para Harry, mas revelações surpreendentes revelam sua verdadeira natureza e motivos.
+                    
+                    A verdadeira identidade de Snape como um agente duplo e espião para a Ordem da Fênix é revelada. Ele faz parte de uma longa e elaborada trama para proteger Harry Potter e ajudar a derrotar Voldemort. Snape tem um passado complicado e doloroso, que envolve sua relação com os pais de Harry, Lílian e Tiago Potter, e seu amor não correspondido por Lílian.
+                    
+                    Um dos aspectos mais marcantes de Snape é sua profunda paixão e amor por Lílian Evans, que molda suas ações e motivações ao longo da história. Sua devoção por ela é evidente mesmo anos após sua morte, e Snape está disposto a fazer qualquer coisa para proteger a memória dela e cumprir sua promessa de proteger Harry.
+                    
+                    A interpretação de Alan Rickman como Severus Snape nos filmes contribuiu para a popularidade e impacto do personagem. Sua performance traz uma mistura única de amargura, mistério e vulnerabilidade, tornando Snape um dos personagens mais fascinantes e amados da série.
+                    
+                    No final, descobrimos que Snape tem sido um herói oculto, que arriscou sua vida e suportou grandes sacrifícios por trás dos panos, tudo em nome do amor e da redenção. Sua história é uma prova poderosa de como a redenção pode surgir mesmo dos personagens mais complexos e aparentemente sombrios.
+                    
+                    Severus Snape é um personagem cativante e multifacetado, cuja trajetória nos ensina sobre a importância do amor, sacrifício e segundas chances. Sua história evoca emoções intensas e destaca a capacidade de um indivíduo de se transformar e lutar pelo bem, mesmo diante de grandes adversidades.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="info_sonserina" id="info_sonserina"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Bellatrix_lestrange.jpg' %}" alt="Bellatrix_Lestrange">
+            </div>
+            <div class="info-details">
+                <h3>Bellatrix Lestrange</h3>
+                
+                <p>Bellatrix Lestrange é um dos personagens mais notórios da série de livros e filmes de Harry Potter, criada por J.K. Rowling. Ela é uma bruxa das trevas extremamente leal a Lord Voldemort e uma das principais seguidoras do Lorde das Trevas.
+    
+                    Bellatrix é descrita como uma mulher de aparência austera e sinistra, com longos cabelos negros e olhos brilhantes e fanáticos. Ela é conhecida por seu comportamento impetuoso e violento, além de sua lealdade inabalável a Voldemort. Bellatrix está disposta a fazer qualquer coisa para servir seu mestre e participar de suas terríveis ambições.
+                    
+                    Sua habilidade mágica é excepcional e ela é uma duelista formidável. Bellatrix é adepta de magia das trevas e é habilidosa em feitiços e maldições poderosas, incluindo a Maldição Cruciatus, que causa intensa dor em suas vítimas. Ela é uma bruxa perigosa e temida por muitos.
+                    
+                    Bellatrix é também conhecida por sua personalidade fanática e obsessiva. Ela idolatra Voldemort e o vê como um líder supremo, dedicando-se completamente à sua causa e às suas crenças extremistas. Sua devoção a Voldemort é tão intensa que ela está disposta a sacrificar sua própria vida por ele.
+                    
+                    A personagem de Bellatrix Lestrange é retratada como uma figura sombria e perturbadora, trazendo um senso de perigo e crueldade para a história. Sua presença é marcante e suas ações têm um impacto significativo em vários momentos da trama, trazendo angústia e desafios para os protagonistas.
+                    
+                    A interpretação de Helena Bonham Carter como Bellatrix nos filmes é notável, capturando perfeitamente a loucura e a intensidade da personagem. Sua performance traz à vida a natureza maníaca e imprevisível de Bellatrix, tornando-a um dos personagens mais memoráveis ​​da série.
+                    
+                    Bellatrix Lestrange é uma vilã complexa e fascinante, cuja devoção cega e crueldade implacável a tornam uma antagonista formidável. Sua presença na série Harry Potter destaca a presença do mal e a luta entre o bem e o mal, bem como a devoção cega e os perigos do fanatismo.
+                    
+                    Sua relação com outros personagens, como seu envolvimento com a família Black e sua rivalidade com Nymphadora Tonks, acrescentam camadas adicionais à sua personalidade e história. Bellatrix representa o lado mais obscuro da magia e a capacidade do ser humano de se entregar
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="info_sonserina" id="info_sonserina"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Lucius_malfoy_persona.jpg' %}" alt="Lucius_Malfoy">
+            </div>
+            <div class="info-details">
+                <h3>Lucius Malfoy</h3>
+                
+                <p>Lucius Malfoy é um personagem importante na série de livros e filmes de Harry Potter, escrita por J.K. Rowling. Ele é um bruxo das trevas, um membro proeminente da família Malfoy e um seguidor leal de Lord Voldemort.
+    
+                    Lucius é conhecido por sua aparência elegante e aristocrática, sempre vestindo trajes de alta qualidade e portando uma bengala de prata com uma cabeça de cobra. Ele é descrito como tendo cabelos loiros platinados e olhos frios e cinzentos.
+                    
+                    Lucius Malfoy é caracterizado por sua crença na pureza do sangue e no elitismo bruxo. Ele é um fervoroso defensor dos ideais de sangue puro e tem desprezo pelos bruxos nascidos trouxas e pelos bruxos de sangue impuro. Ele exerce uma influência considerável na comunidade bruxa, usando sua riqueza e influência para ganhar poder e manipular os eventos de acordo com seus interesses.
+                    
+                    Como seguidor de Voldemort, Lucius desempenha um papel ativo na luta contra Harry Potter e seus aliados. Ele é um Comensal da Morte, um grupo de bruxos das trevas leais a Voldemort, e participa de várias atividades malignas, incluindo a tentativa de assassinar Dumbledore e a batalha no Departamento de Mistérios.
+                    
+                    Lucius é um duelistas habilidoso e demonstra um conhecimento profundo das artes das trevas. Ele usa sua astúcia e inteligência para manipular situações em seu benefício e para proteger sua família. Ele é um estrategista calculista e muitas vezes age com crueldade para alcançar seus objetivos.
+                    
+                    No entanto, ao longo da história, Lucius Malfoy passa por uma jornada de redenção e transformação. Ele é forçado a confrontar as consequências de suas ações e a questionar suas lealdades. Sua família é ameaçada e ele é obrigado a tomar decisões difíceis que desafiam suas convicções.
+                    
+                    No final, Lucius se afasta da causa de Voldemort e se une aos esforços de combate ao mal. Ele mostra um lado mais humano e preocupado com o bem-estar de sua família. Embora seus atos passados não possam ser esquecidos, ele busca redenção e tenta reparar o dano que causou.
+                    
+                    Lucius Malfoy é um personagem complexo, com camadas de personalidade e motivações. Sua trajetória na série de Harry Potter é marcada por sua lealdade inicial a Voldemort, sua participação nas atividades malignas e sua eventual transformação em busca de redenção. Ele representa a capacidade de mudança e de tomar uma posição contra o mal, mesmo quando isso significa desafiar suas crenças arraigadas.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    
+    <section class="info_sonserina" id="info_sonserina"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Draco_Malfoy.jpg' %}" alt="Draco_Malfoy">
+            </div>
+            <div class="info-details">
+                <h3>Draco Malfoy</h3>
+                
+                <p>Draco Malfoy é um personagem central na série de livros e filmes de Harry Potter, escrita por J.K. Rowling. Ele é um estudante da casa Sonserina em Hogwarts e filho único da família Malfoy, uma das famílias bruxas mais influentes e ricas do mundo mágico.
+    
+                    Draco é conhecido por seu comportamento arrogante, altivo e provocador. Ele é descrito como tendo cabelos loiros platinados, olhos cinzentos e um rosto pálido. Desde o início da história, ele se mostra hostil em relação a Harry Potter e seus amigos, muitas vezes fazendo comentários maldosos e tentando prejudicá-los.
+                    
+                    Draco é influenciado pelas crenças e valores de sua família, que é conhecida por sua crença na pureza do sangue e seu apoio a Voldemort e aos ideais das trevas. Ele cresceu em um ambiente onde a superioridade dos bruxos de sangue puro era enfatizada, o que moldou sua visão de mundo e seu comportamento.
+                    
+                    Ao longo da série, Draco é colocado em situações difíceis e confrontado com escolhas morais. Ele é forçado a se juntar às fileiras dos Comensais da Morte, os seguidores de Voldemort, mas também demonstra sinais de dúvida e medo em relação às consequências de suas ações.
+                    
+                    Embora Draco inicialmente pareça ser um antagonista implacável, sua personalidade é aprofundada à medida que a história avança. Ele lida com o peso das expectativas de sua família e as pressões de seu papel no mundo bruxo. Eventualmente, suas ações revelam um lado mais humano e vulnerável, mostrando que ele não é apenas um vilão unidimensional.
+                    
+                    É revelado que Draco enfrenta conflitos internos e que suas ações nem sempre são motivadas pelo ódio ou maldade. Ele é influenciado por seu desejo de agradar sua família e evitar retaliações, mas também expressa inseguranças e incertezas sobre o caminho que está seguindo.
+                    
+                    No final da história, Draco é confrontado com uma oportunidade de redenção e demonstra sinais de arrependimento e mudança. Ele toma uma decisão crucial que vai contra as expectativas de sua família, mostrando uma evolução em sua personalidade e suas convicções.
+                    
+                    Draco Malfoy é um personagem complexo que retrata os desafios de crescer em um ambiente cheio de preconceitos e pressões familiares. Sua jornada na série de Harry Potter é marcada por sua luta interna, suas tentativas de se encaixar nas expectativas de sua família e suas escolhas morais. Ele ilustra a capacidade de transformação e a importância de questionar e desafiar as crenças impostas, mesmo em circunstâncias difíceis.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="info_sonserina" id="info_sonserina"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Narcisa_Malfoy.jpg' %}" alt="Narcisa_Malfoy">
+            </div>
+            <div class="info-details">
+                <h3>Narcisa Malfoy</h3>
+                
+                <p>Narcisa Malfoy, cujo nome de solteira é Black, é um personagem da série Harry Potter criada por J.K. Rowling. Ela é a esposa de Lucius Malfoy e mãe de Draco Malfoy. Narcisa é membro da influente e prestigiosa família Black, conhecida por suas conexões com as trevas e seu orgulho sangue-puro.
+    
+                    Narcisa é retratada como uma mulher elegante, de aparência aristocrática e comportamento reservado. Ela valoriza muito sua linhagem e é ferozmente leal à causa dos bruxos sangue-puro. Narcisa é uma personagem complexa, cujas ações são impulsionadas pelo amor e proteção à sua família.
+                    
+                    Uma das características mais marcantes de Narcisa é seu amor e dedicação incondicionais ao seu filho, Draco. Ela fará de tudo para garantir sua segurança e bem-estar, mesmo que isso signifique enfrentar as consequências de suas escolhas. Narcisa é capaz de tomar decisões difíceis e corajosas quando se trata da proteção de sua família.
+                    
+                    Narcisa também é conhecida por sua manipulação sutil e astúcia. Ela é habilidosa em usar sua aparência e status social para obter vantagens e influenciar os outros. Narcisa é uma jogadora estratégica nos bastidores, capaz de tomar decisões que servem aos interesses de sua família e protegem sua posição na sociedade bruxa.
+                    
+                    Embora Narcisa seja uma personagem predominantemente associada à família Malfoy, ela também mostra alguns traços de redenção e empatia. Em um dos momentos mais marcantes da série, Narcisa quebra a confiança de Voldemort ao afirmar que Harry Potter está morto, a fim de garantir a segurança de seu filho. Essa demonstração de amor materno e coragem destaca a complexidade de sua personagem.
+                    
+                    A interpretação de Narcisa Malfoy nos filmes é realizada pela atriz Helen McCrory, que retrata com maestria a elegância e a determinação sutil da personagem. A presença de Narcisa na série contribui para a exploração de temas como lealdade familiar, sacrifício e a luta entre o certo e o errado.
+                    
+                    Narcisa Malfoy é uma personagem interessante e multifacetada, que adiciona profundidade à narrativa de Harry Potter. Sua relação com a família Malfoy e seu papel nas intrigas e eventos do mundo bruxo destacam a complexidade das motivações humanas e a importância do amor e da lealdade em um contexto de conflitos morais.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    
+    <section class="wands" id="wands">  
+               
+        <b><h2 class="titulo_wands"><strong>Núcleos De Varinhas:</strong></h2></b>
+      
+    
+        <ul class="lista_varinhas">
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/pena_De_fenix.jpg' %}" alt="pena_De_fenix">
+            </div>
+                <h3>Pena de Fenix</h3>
+                <p>A pena de fênix é um núcleo de varinha bastante especial e poderoso. As penas de fênix são conhecidas por serem extremamente leais aos seus donos e por produzirem varinhas com habilidades excepcionais. A varinha com núcleo de pena de fênix é notável por sua conexão com o mundo das fênix. Essas varinhas têm uma tendência a "escolher" seus donos, respondendo a bruxos e bruxas com características especiais, como coragem, nobreza de espírito e determinação. Essas varinhas são conhecidas por se unirem fortemente aos seus donos, reconhecendo-os como parceiros de confiança.</p>
+            </li>
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/pelo_unicornio.jpg' %}" alt="Unicórnio">
+            </div>
+                <h3>Pelo de Unicórnio</h3>
+                <p>A pena de unicórnio é um dos núcleos utilizados na confecção de varinhas mágicas. As penas de unicórnio são altamente valorizadas por sua pureza e por produzirem varinhas com habilidades especiais. As varinhas com núcleo de pena de unicórnio são conhecidas por serem bastante leais aos seus donos. Elas são frequentemente associadas a bruxos e bruxas que possuem características como compaixão, pureza de coração e uma forte conexão com a natureza.</p>
+            </li>
+        
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/coração_dragao.jpg' %}" alt="coracao_dragao">
+            </div>
+                <h3>Corda de Coração de Dragão</h3>
+                <p>a corda de coração de dragão é um dos materiais utilizados como núcleo para a fabricação de varinhas mágicas. Ela é obtida a partir do coração de um dragão, criatura mágica poderosa e lendária. As varinhas com núcleo de corda de coração de dragão são notáveis por sua capacidade de realizar feitiços complexos e poderosos. Elas têm um caráter mais agressivo e exigem um domínio preciso e forte determinação de seu dono para serem usadas efetivamente.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    
+    
+    
+    <section class="wood" id="wood">  
+               
+        <b><h2 class="titulo_wood"><strong>Tipos de madeira:</strong></h2></b>
+      
+    
+        <ul class="lista_madeiras">
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/sabugueiro.jpg' %}" alt="sabugueiro">
+            </div>
+                <h3>Madeira de Sabugueiro</h3>
+                <p>A madeira de sabugueiro é conhecida por sua associação com a magia e a proteção. Varinhas feitas dessa madeira são frequentemente escolhidas por bruxos e bruxas que possuem habilidades curativas e têm uma conexão especial com a natureza. A madeira de sabugueiro é flexível e adaptável, tornando as varinhas feitas dela versáteis e capazes de executar uma ampla gama de feitiços.</p>
+            </li>
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/visgo.jpg' %}" alt="visgo">
+            </div>
+                <h3>Madeira de Visgo</h3>
+                <p>A madeira de visgo é considerada rara e misteriosa. Ela é conhecida por ser altamente valorizada por suas propriedades defensivas. Varinhas feitas dessa madeira são frequentemente associadas a bruxos e bruxas habilidosos na arte da duelo e da proteção. A madeira de visgo produz varinhas poderosas e capazes de executar feitiços de escudo e defesa com grande eficácia.</p>
+            </li>
+        
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/nogueira.jpg' %}" alt="nogueira">
+            </div>
+                <h3>Madeira de Nogueira</h3>
+                <p>A madeira de nogueira é associada à sabedoria e à magia ancestral. Varinhas feitas dessa madeira são escolhidas por bruxos e bruxas que valorizam o conhecimento e têm um profundo respeito pela história e tradição. A madeira de nogueira é conhecida por produzir varinhas que são altamente sintonizadas com o poder das palavras e feitiços verbais, tornando-as ideais para bruxos especializados em encantamentos e feitiços linguísticos.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    
+    <section class="wands" id="wands">  
+               
+        <b><h2 class="titulo_wands"><strong>Flexibilidade Das Varinhas:</strong></h2></b>
+      
+    
+        <ul class="lista_varinhas">
+            <li class="varinhas">
+                <h3>Varinhas Rígidas</h3>
+                <p>As varinhas rígidas são conhecidas por sua falta de flexibilidade. Elas tendem a ser mais estáveis e exigem uma mão firme para controlar seu poder. Varinhas rígidas são frequentemente associadas a bruxos e bruxas que possuem uma natureza disciplinada, determinada e que preferem feitiços de precisão.</p>
+            </li>
+            <li class="varinhas">
+                <h3>Varinhas Flexíveis</h3>
+                <p>As varinhas flexíveis possuem uma curva mais suave e são mais maleáveis. Elas se adaptam facilmente às habilidades e estilos de magia de seus usuários. Varinhas flexíveis são escolhidas por bruxos e bruxas que são adaptáveis, criativos e se destacam em feitiços que requerem movimentos fluidos e graciosos.</p>
+            </li>
+        
+            <li class="varinhas">
+                <h3>Varinhas Semi-rígidas</h3>
+                <p>As varinhas semi-rígidas são uma combinação entre as características das varinhas rígidas e flexíveis. Elas possuem uma certa resistência, mas também têm alguma flexibilidade. Essas varinhas são escolhidas por bruxos e bruxas que possuem uma personalidade equilibrada e versátil, capazes de lidar com uma variedade de estilos de magia.</p>
+            </li>
+    
+            <li class="varinhas">
+                <div class="wands_img">
+                    <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+                </div>
+                <h3>Curiosidade:</h3>
+                <p>É importante ressaltar que a flexibilidade da varinha pode influenciar o estilo e a eficácia do bruxo em diferentes tipos de feitiços. Cada bruxo tem uma relação única com sua varinha, e a flexibilidade desempenha um papel crucial nessa conexão, afetando a maneira como a magia é canalizada e executada.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    <section class="wands" id="wands">
+        <b><h2 class="titulo_wands"><strong>Tamanho Das Varinhas:</strong></h2></b>
+    <ul class="lista_varinhas">
+        <li class="varinhas">
+            <h3>Varinhas Curtas</h3>
+            <p>Varinhas curtas são caracterizadas por terem um tamanho menor em relação às varinhas padrão. Elas geralmente possuem cerca de 20 a 25 centímetros de comprimento. Varinhas curtas são escolhidas por bruxos e bruxas que preferem uma abordagem mais ágil e precisa em sua magia. Essas varinhas são adequadas para movimentos rápidos e feitiços de curta distância.</p>
+        </li>
+        <li class="varinhas">
+            <h3>Varinhas Padrão</h3>
+            <p>As varinhas padrão são as mais comuns e populares. Elas geralmente têm entre 25 a 35 centímetros de comprimento. Essas varinhas são versáteis e adequadas para uma ampla gama de estilos de magia. Bruxos e bruxas que possuem varinhas de tamanho padrão têm a vantagem de se adaptar facilmente a diferentes tipos de feitiços e situações.</p>
+        </li>
+    
+        <li class="varinhas">
+            <h3>Varinhas Longas</h3>
+            <p> Varinhas longas são caracterizadas por terem um comprimento maior em relação às varinhas padrão. Elas podem variar de 35 a 40 centímetros ou mais. Varinhas longas são frequentemente escolhidas por bruxos e bruxas que preferem uma abordagem mais imponente e poderosa em sua magia. Essas varinhas tendem a ser mais adequadas para feitiços que requerem gestos amplos e poderosos.</p>
+        </li>
+    
+        <li class="varinhas">
+            <div class="wands_img">
+                <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+            </div>
+            <h3>Curiosidade:</h3>
+            <p>É importante notar que o tamanho da varinha pode afetar a maneira como ela é manejada e como a magia é canalizada. No entanto, a escolha do tamanho da varinha é uma questão de preferência pessoal e não determina a habilidade ou poder do bruxo. Cada bruxo possui uma varinha única, independentemente do tamanho, e é a conexão entre o bruxo e sua varinha que é essencial para realizar a magia com sucesso.</p>
+        </li>
+    </ul>
+    </section><br>
+    
+    <section class="informacao" id="informacao_sala">
+        <h2>Sala Comunal da Sonserina</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/sala_comunal_sonserina.jpg' %}" alt="sala_comunal_sonserina">
+            </div>
+            <div class="info-details">
+                <h3>Sala Comunal da Sonserina</h3>
+                
+                <p>A sala comunal da Sonserina é um local emblemático da série Harry Potter, criada por J.K. Rowling. É o espaço exclusivo e privado onde os alunos da casa Sonserina em Hogwarts se reúnem, relaxam e socializam.
+    
+                    Localizada nas masmorras do Castelo de Hogwarts, a sala comunal da Sonserina possui uma atmosfera distintamente sombria e misteriosa. Ela é acessada através de uma parede de pedra próxima às cozinhas do castelo. Para entrar na sala comunal, os estudantes da Sonserina devem sussurrar a senha correta para a estátua de uma serpente esculpida.
+                    
+                    Ao entrar na sala comunal, os alunos são recebidos por um ambiente ricamente decorado em tons de verde e prata, as cores da casa Sonserina. As paredes são revestidas com tapeçarias de seda verde-esmeralda e as janelas permitem a entrada de uma luz suave e misteriosa. A sala é mobiliada com poltronas confortáveis, mesas de estudo e uma grande lareira, proporcionando um ambiente acolhedor e luxuoso.
+                    
+                    A sala comunal da Sonserina reflete a personalidade e os valores da casa. É um espaço que evoca ambição, astúcia e determinação, características típicas dos membros da Sonserina. A atmosfera intimista e exclusiva da sala comunal também reforça o senso de lealdade e unidade entre os alunos da casa.
+                    
+                    Além disso, a sala comunal da Sonserina abriga o dormitório dos alunos, com camas confortáveis e espaços individuais para cada estudante. Os alunos podem decorar seus espaços de acordo com suas preferências, tornando-os verdadeiramente pessoais.
+                    
+                    É importante destacar que a sala comunal da Sonserina tem uma conexão direta com as câmaras secretas, como a Câmara Secreta de Salazar Slytherin, que desempenha um papel significativo na trama da série. Essa conexão adiciona um elemento de mistério e perigo à sala comunal, ressaltando a história rica e intrigante da casa Sonserina.
+                    
+                    Em resumo, a sala comunal da Sonserina é um ambiente distinto e exclusivo dentro de Hogwarts. Ela personifica os valores da casa, proporcionando aos alunos da Sonserina um espaço onde podem se reunir, estudar e compartilhar sua ambição e astúcia. A atmosfera misteriosa e luxuosa da sala comunal contribui para a experiência única de pertencer à casa Sonserina.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="wizard" id="wizard">
+        <h2>Os três bruxos poderosos mais conhecidos da Sonserina são:</h2>
+                <p class="wizard__text">
+                    Esses três exemplos ilustram bruxos da Sonserina que demonstraram habilidades mágicas notáveis. No entanto, é importante destacar que a força mágica de um bruxo não se limita apenas às habilidades em combate, mas também envolve inteligência, astúcia e manipulação das artes mágicas de maneiras únicas.</p> 
+            <div class="bruxos">
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/salazar_slyherin.jpg' %}" alt="Salazar_Slytherin">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Salazar Slytherin</h3>
+                        <p> Salazar Slytherin foi um dos fundadores de Hogwarts e um bruxo extremamente poderoso. Ele era conhecido por seu domínio das Artes das Trevas e sua habilidade em Legilimência, a arte de ler mentes. Slytherin acreditava firmemente na pureza do sangue e valorizava as características das serpentes, como astúcia e ambição. Sua influência na casa Sonserina e seu legado na história de Hogwarts são inegáveis.</p>
+                    </div>
+                </div>
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/Lord_voldemort.jpg' %}" alt="Lord_Voldemort">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Lord Voldemort</h3>
+                        <p> Tom Riddle, mais conhecido como Lord Voldemort, é um dos bruxos mais temidos e poderosos de todos os tempos. Ele foi aluno da Sonserina em Hogwarts e demonstrou habilidades excepcionais desde cedo. Voldemort dominou uma variedade de magias obscuras e buscou a imortalidade através de Horcruxes. Sua sede de poder e crueldade o tornaram uma figura temida e sua influência sobre a Sonserina foi marcante.</p>                          
+                    </div>
+                </div>
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/severo_snape.jpg' %}" alt="Severo_Snape">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Severus Snape</h3>
+                        <p>Embora Snape tenha sido mais conhecido por sua associação com a casa Sonserina como chefe da casa, sua força mágica não pode ser subestimada. Snape era um bruxo habilidoso e um mestre em poções, com um conhecimento profundo de magia das poções. Além disso, ele era um mestre em occlumência e legilimência, capaz de proteger sua mente e ler as mentes dos outros. Sua habilidade em disfarçar sua lealdade e realizar tarefas perigosas em segredo demonstrou sua força e astúcia.</p>
+                    </div>
+                </div>
+            </div>
+    </section><br>
+    
+    <section class="informacao" id="informacao">
+        <h2>Conquistas</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/quadribol_sonserina.jpg' %}" alt="sonserina">
+            </div>
+            <div class="info-details">
+                <h3>Quadribol - Sonserina</h3>
+                
+                <p>O Quadribol é um esporte popular no mundo mágico e é amplamente jogado em Hogwarts. A casa Sonserina tem uma longa história no Quadribol e conquistou vários campeonatos e troféus ao longo dos anos.
+    
+                    A Casa Sonserina é conhecida por seu estilo de jogo agressivo e estratégico no Quadribol. Os jogadores da Sonserina são habilidosos, astutos e determinados, buscando a vitória a todo custo. Eles são conhecidos por sua capacidade de antecipar os movimentos dos adversários e encontrar maneiras de superá-los.
+                    
+                    Ao longo dos anos, a Sonserina produziu muitos jogadores talentosos de Quadribol que deixaram sua marca no esporte. Entre eles, destaca-se Marcus Flint, que foi capitão da equipe de Quadribol da Sonserina durante o período em que Harry Potter estudava em Hogwarts. Flint era conhecido por sua força física e agressividade no jogo.
+                    
+                    No entanto, a Casa Sonserina também teve seu fair share de controvérsias e comportamento antiético no Quadribol. Em certos casos, jogadores da Sonserina foram acusados de usar táticas ilegais e trapacear para obter vantagem durante os jogos. Isso contribuiu para a reputação negativa da casa no que diz respeito ao Quadribol.
+                    
+                    Apesar das polêmicas, a Casa Sonserina tem uma história rica e notável no mundo do Quadribol. Seus jogadores habilidosos, combinados com sua determinação e astúcia, fizeram da Sonserina uma das casas mais formidáveis no esporte. Sua presença nos campos de Quadribol sempre despertou rivalidade e emoção nos jogos contra as outras casas de Hogwarts.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    {% elif casa.id == 3 %}
+        <style>
+            body {
+                background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../../static/images/lufa_lufa_fundo_persona.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            header {
+                background-image: linear-gradient(to left, rgb(48, 50, 1), rgb(104, 107, 1));
+            }
+            .titulo_wands {
+                background-color: #5f6203aa;
+            }
+            .titulo_wood {
+                background-color: #5f6203aa;
+            }
+            .bruxo {
+                background-color: #5f6203aa;
+            }
+            .card {
+                background-color: #5f6203aa;
+            }
+        </style>
+            
+        <section class="houses" id="houses">
+            <h2>LUFA-LUFA</h2>
+            <div class="light-side">
+                <p class="houses__text">Você é da lufa-lufa</p>
+                <p class="houses__text">saiba mais sobre ela.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static './images/lufa_lufa.jpg' %}" alt="Lufa-Lufa">
+                        </div>
+                        <div class="card-details">
+                            <h3>Lufa-Lufa</h3>
+                            <p>A Casa Lufa-Lufa é uma das quatro casas da Escola de Magia e Bruxaria de Hogwarts. Fundada por Helga Hufflepuff, é conhecida por valorizar o trabalho árduo, a lealdade, a paciência e a justiça. Helga acreditava que todos os bruxos e bruxas, independentemente de sua origem ou habilidades, mereciam uma chance justa de receber uma educação mágica.
+    
+                                A Casa Lufa-Lufa acolhe alunos com uma variedade de habilidades e interesses. Eles são conhecidos por sua generosidade e pela capacidade de criar um ambiente acolhedor e inclusivo. Os membros da Lufa-Lufa são frequentemente descritos como calorosos, amigáveis e dispostos a ajudar os outros.
+                                
+                                As cores da Casa Lufa-Lufa são amarelo e preto, e seu símbolo é um texugo. A sala comunal da Lufa-Lufa está localizada nas cozinhas de Hogwarts, próximo à despensa, e é acessada por meio de um barril em que os alunos devem tocar uma sequência específica de repiques para entrar.
+                                
+                                Ao longo da história, a Casa Lufa-Lufa produziu muitos bruxos e bruxas notáveis. Cedrico Diggory foi um</p>
+                        </div>
+                    </div>
+       </section>
+    
+    
+    <br>
+    
+    <section class="informacao" id="informacao">
+        <h2>Personagens Principais da Lufa-Lufa</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Ninfadora_Tonks.jpg' %}" alt="Ninfadora_Tonks">
+            </div>
+            <div class="info-details">
+                <h3>Ninfadora Tonks</h3>
+                
+                <p>Ninfadora Tonks, conhecida como Tonks, é um personagem da série de livros "Harry Potter" escrita por J.K. Rowling. Ela é apresentada no quarto livro, "Harry Potter e o Cálice de Fogo", e desempenha um papel significativo na trama. Aqui estão algumas informações sobre Ninfadora Tonks:
+    
+                    Ninfadora Tonks é uma bruxa metamorfomaga, o que significa que ela tem a habilidade de mudar sua aparência física à vontade. Ela é descrita como uma mulher jovem e animada, com cabelos rosa vibrantes que mudam de cor de acordo com seu humor.
+                    
+                    Tonks pertence à família Black, uma família de sangue puro com laços com a Casa de Sonserina, mas ela não compartilha das crenças tradicionais da família e se alia ao lado da Ordem da Fênix, um grupo de bruxos que se opõem a Voldemort e seus seguidores.
+                    
+                    Tonks é uma bruxa habilidosa e se torna uma Auror, uma bruxa encarregada de combater as forças das trevas e proteger a comunidade bruxa. Ela é uma integrante valiosa da Ordem da Fênix, ajudando na luta contra os Comensais da Morte.
+                    
+                    Ao longo da série, Tonks desenvolve um relacionamento romântico com Remo Lupin, um lobisomem e também membro da Ordem da Fênix. Eles se casam e têm um filho chamado Teddy Lupin.
+                    
+                    Tonks desempenha um papel importante na batalha final contra Voldemort e seus seguidores na Batalha de Hogwarts. Sua coragem e determinação são demonstradas quando ela luta ao lado de seus aliados para proteger a escola e seus amigos.
+                    
+                    Infelizmente, Tonks e Remo Lupin são mortos durante a batalha, deixando Teddy órfão. Sua morte é um momento trágico na série, demonstrando o custo da guerra e as perdas enfrentadas pelos personagens.
+                    
+                    A personagem de Ninfadora Tonks é lembrada por sua personalidade animada, sua habilidade metamorfomaga e sua dedicação à luta contra as forças das trevas. Ela representa a coragem e o sacrifício dos membros da Ordem da Fênix em sua batalha contra o mal.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Cedrico_Diggory.jpg' %}" alt="Cedrico_Diggory">
+            </div>
+            <div class="info-details">
+                <h3>Cedrico Diggory</h3>
+                
+                <p>Cedrico Diggory é um personagem importante na série de livros "Harry Potter" escrita por J.K. Rowling. Ele é introduzido no terceiro livro, "Harry Potter e o Prisioneiro de Azkaban", e desempenha um papel significativo na trama. Aqui estão algumas informações sobre Cedrico Diggory:
+    
+                    Cedrico Diggory é um estudante da Casa de Lufa-Lufa em Hogwarts. Ele é descrito como um jovem alto, bonito e de cabelos loiros. Cedrico é admirado e respeitado por seus colegas e professores, sendo conhecido por sua integridade, lealdade e habilidades como bruxo.
+                    
+                    Cedrico se torna capitão do time de Quadribol da Lufa-Lufa e é um dos jogadores mais talentosos da escola. Ele é selecionado como o campeão da Lufa-Lufa no Torneio Tribruxo, um evento importante que ocorre no quarto livro, "Harry Potter e o Cálice de Fogo".
+                    
+                    Durante o Torneio Tribruxo, Cedrico demonstra coragem, habilidade e fair play em todas as tarefas. Ele desenvolve um relacionamento amigável com Harry Potter, o campeão da Grifinória, apesar da competição.
+                    
+                    No clímax do Torneio, Cedrico e Harry são transportados para um cemitério onde se encontram com Lord Voldemort. Cedrico é traiçoeiramente morto por Peter Pettigrew, um seguidor de Voldemort, por ordem do próprio Lord das Trevas. Sua morte é um momento impactante na série e tem um efeito duradouro em vários personagens, especialmente em Harry.
+                    
+                    A morte de Cedrico Diggory desencadeia eventos cruciais na trama, levando Harry Potter a enfrentar a crescente ameaça de Voldemort e a desencadear a Segunda Guerra Bruxa. A memória de Cedrico e sua morte trágica são lembradas e honradas pelos personagens ao longo dos livros subsequentes.
+                    
+                    Curiosidade interessante sobre Cedrico Diggory: O ator Robert Pattinson, que mais tarde se tornou famoso por interpretar Edward Cullen na saga "Crepúsculo", interpretou Cedrico Diggory na adaptação cinematográfica de "Harry Potter e o Cálice de Fogo". Sua interpretação ajudou a solidificar a imagem de Cedrico nos filmes e a aumentar a popularidade do personagem.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Newt_scamander.jpg' %}" alt="Newt_scamander">
+            </div>
+            <div class="info-details">
+                <h3>Newt Scamander</h3>
+                
+                <p>Newt Scamander é um personagem central na série de filmes "Animais Fantásticos" e faz parte do mundo mágico de "Harry Potter". Ele é apresentado como o protagonista no filme "Animais Fantásticos e Onde Habitam" e sua continuação. Aqui estão algumas informações sobre Newt Scamander:
+    
+                    Newt Scamander é um bruxo britânico e um magizoologista apaixonado por criaturas mágicas. Ele é conhecido por seu livro "Animais Fantásticos e Onde Habitam", que é um guia sobre criaturas mágicas. Newt embarca em uma jornada para coletar informações sobre essas criaturas e documentar suas descobertas.
+                    
+                    Ele é descrito como um homem de estatura média, com cabelos ruivos desgrenhados e um jeito um tanto desajeitado. Newt possui uma personalidade introvertida e tímida, preferindo a companhia das criaturas mágicas do que das pessoas.
+                    
+                    Newt Scamander é um personagem gentil e compassivo, mostrando grande cuidado e respeito pelas criaturas mágicas. Ele acredita na importância da conservação e proteção desses seres e em sua coexistência pacífica com os bruxos e trouxas.
+                    
+                    Ao longo dos filmes, Newt se envolve em diversas aventuras relacionadas às criaturas mágicas, enquanto enfrenta desafios pessoais e lida com o crescente perigo representado pela ascensão de Gellert Grindelwald, um poderoso bruxo das trevas.
+                    
+                    Newt Scamander é retratado como um personagem complexo, com suas próprias fraquezas e medos. Ele desenvolve relacionamentos com outros personagens, incluindo Tina Goldstein, Queenie Goldstein e Jacob Kowalski, que se tornam seus amigos leais e parceiros nas aventuras.
+                    
+                    Além dos filmes, o personagem de Newt Scamander também é mencionado na série de livros "Harry Potter". Ele é citado como autor do livro "Animais Fantásticos e Onde Habitam", que é usado como livro didático na escola de Hogwarts.
+                    
+                    Em resumo, Newt Scamander é um magizoologista e protagonista da série de filmes "Animais Fantásticos". Ele é conhecido por sua paixão pelas criaturas mágicas e seu livro sobre elas. Newt é um personagem gentil, compassivo e aventureiro, que se dedica à proteção das criaturas mágicas e enfrenta desafios em seu caminho.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Hannah_Abbott.jpg' %}" alt="Hannah_Abbott">
+            </div>
+            <div class="info-details">
+                <h3>Hannah Abbott</h3>
+                
+                <p>Hannah Abbott é um personagem secundário na série de livros "Harry Potter" escrita por J.K. Rowling. Ela é introduzida no primeiro livro, "Harry Potter e a Pedra Filosofal", e faz parte da Casa de Lufa-Lufa em Hogwarts. Aqui estão algumas informações sobre Hannah Abbott:
+    
+                    Hannah Abbott é descrita como uma garota tímida e reservada, com cabelos loiros e uma aparência doce. Ela é conhecida por sua natureza sensível e amigável, mostrando compaixão pelos outros.
+                    
+                    Ao longo dos livros, Hannah Abbott se torna uma amiga próxima de Neville Longbottom, outro estudante de Hogwarts. Eles compartilham uma conexão especial, já que ambos perderam seus pais durante a Primeira Guerra Bruxa.
+                    
+                    Hannah Abbott é membro da Armada de Dumbledore, um grupo secreto formado por estudantes de Hogwarts para lutar contra Dolores Umbridge e suas políticas repressivas. Ela demonstra coragem ao se juntar à resistência e lutar pelos direitos dos alunos.
+                    
+                    No sexto livro, "Harry Potter e o Enigma do Príncipe", Hannah Abbott é escolhida para ser a monitora da Casa de Lufa-Lufa. Isso mostra sua dedicação aos estudos e sua capacidade de liderança, apesar de sua natureza reservada.
+                    
+                    Embora não desempenhe um papel central na trama principal, Hannah Abbott representa a força silenciosa e a solidariedade entre os alunos de Hogwarts. Sua participação na Armada de Dumbledore e seu apoio a Neville Longbottom destacam sua coragem e lealdade.
+                    
+                    Após a conclusão da série, Hannah Abbott se torna proprietária do pub "Cabeça de Javali", um estabelecimento popular no mundo bruxo.
+                    
+                    Em resumo, Hannah Abbott é uma estudante de Hogwarts da Casa de Lufa-Lufa, conhecida por sua natureza tímida, compaixão e amizade com Neville Longbottom. Ela mostra coragem ao se juntar à Armada de Dumbledore e representa a força silenciosa entre os alunos de Hogwarts.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Ernie_Macmillan.jpg' %}" alt="Ernie_Macmillan">
+            </div>
+            <div class="info-details">
+                <h3>Ernie Macmillan</h3>
+                
+                <p>Ernie Macmillan é um personagem secundário na série de livros "Harry Potter" escrita por J.K. Rowling. Ele é introduzido no primeiro livro, "Harry Potter e a Pedra Filosofal", e faz parte da Casa de Lufa-Lufa em Hogwarts. Aqui estão algumas informações sobre Ernie Macmillan:
+    
+                    Ernie Macmillan é descrito como um aluno robusto, de aparência saudável, com cabelos loiros e olhos azuis. Ele é conhecido por sua personalidade extrovertida e sua postura confiante.
+                    
+                    Ernie é um estudante diligente e leva a sério seus estudos em Hogwarts. Ele demonstra um grande senso de orgulho em sua casa, a Casa de Lufa-Lufa, e é bastante leal aos seus colegas.
+                    
+                    Ernie Macmillan é membro da Armada de Dumbledore, um grupo secreto formado por estudantes de Hogwarts para lutar contra as políticas repressivas de Dolores Umbridge. Sua participação na resistência demonstra seu compromisso com a justiça e a luta contra o mal.
+                    
+                    Ele tem uma personalidade assertiva e muitas vezes expressa suas opiniões de forma enérgica. No entanto, ao longo da série, ele desenvolve um senso de humildade e aprende a ouvir e respeitar as opiniões dos outros.
+                    
+                    Ernie Macmillan é próximo de outros personagens da Lufa-Lufa, como Hannah Abbott e Justin Finch-Fletchley. Juntos, eles enfrentam desafios e trabalham em equipe durante as aventuras em Hogwarts.
+                    
+                    Embora Ernie não tenha um papel de destaque na trama principal, ele representa a força e a perseverança dos alunos da Lufa-Lufa. Sua participação na Armada de Dumbledore e seu senso de lealdade destacam sua coragem e dedicação.
+                    
+                    Em resumo, Ernie Macmillan é um estudante da Casa de Lufa-Lufa em Hogwarts, conhecido por sua personalidade extrovertida, lealdade e compromisso com os estudos. Ele participa da Armada de Dumbledore e representa a força e a determinação dos alunos da Lufa-Lufa.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Pomona_Sprout.jpg' %}" alt="Pomona_Sprout">
+            </div>
+            <div class="info-details">
+                <h3>Pomona Sprout</h3>
+                
+                <p>Pomona Sprout é uma personagem na série de livros "Harry Potter" escrita por J.K. Rowling. Ela é a Professora de Herbologia em Hogwarts e é descrita como uma mulher robusta, de aparência severa, com cabelos grisalhos e um sorriso bondoso. Aqui estão algumas informações sobre Pomona Sprout:
+    
+                    Pomona Sprout é uma bruxa habilidosa e especializada em Herbologia, o estudo das plantas mágicas e suas propriedades. Ela é conhecida por seu conhecimento profundo e sua paixão pela disciplina. Como professora, ela leciona Herbologia para os alunos de Hogwarts, transmitindo seus conhecimentos sobre o mundo vegetal mágico.
+                    
+                    Ela é responsável pelo Jardim de Herbologia de Hogwarts, onde os estudantes têm a oportunidade de aprender e trabalhar com plantas mágicas. Pomona Sprout é extremamente dedicada ao seu trabalho, garantindo que o jardim esteja bem cuidado e fornecendo uma educação prática e enriquecedora para seus alunos.
+                    
+                    Além de ser uma professora exemplar, Pomona Sprout também é membro da Ordem da Fênix, um grupo de bruxos que se opõe a Voldemort e seus seguidores. Ela contribui com seu conhecimento e habilidades na luta contra as forças das trevas.
+                    
+                    Pomona Sprout é conhecida por sua personalidade calma, paciente e acolhedora. Ela demonstra grande empatia pelos alunos e está sempre disposta a ajudá-los. Ela é particularmente próxima de Neville Longbottom, um aluno desajeitado, mas dedicado, que compartilha seu amor pela Herbologia.
+                    
+                    A personagem de Pomona Sprout tem um papel importante na série, não apenas como uma professora influente, mas também como um exemplo de dedicação, compaixão e conhecimento. Sua especialidade em Herbologia contribui para a compreensão e a exploração do mundo mágico das plantas e a importância delas na magia e na vida dos bruxos.
+                </p>
+            </div>
+        </div>
+    </section><br>
+
+    <section class="wands" id="wands">  
+               
+        <b><h2 class="titulo_wands"><strong>Núcleos De Varinhas:</strong></h2></b>
+      
+    
+        <ul class="lista_varinhas">
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/pena_De_fenix.jpg' %}" alt="pena_De_fenix">
+            </div>
+                <h3>Pena de Fenix</h3>
+                <p>A pena de fênix é um núcleo de varinha bastante especial e poderoso. As penas de fênix são conhecidas por serem extremamente leais aos seus donos e por produzirem varinhas com habilidades excepcionais. A varinha com núcleo de pena de fênix é notável por sua conexão com o mundo das fênix. Essas varinhas têm uma tendência a "escolher" seus donos, respondendo a bruxos e bruxas com características especiais, como coragem, nobreza de espírito e determinação. Essas varinhas são conhecidas por se unirem fortemente aos seus donos, reconhecendo-os como parceiros de confiança.</p>
+            </li>
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/pelo_unicornio.jpg' %}" alt="Unicórnio">
+            </div>
+                <h3>Pelo de Unicórnio</h3>
+                <p>A pena de unicórnio é um dos núcleos utilizados na confecção de varinhas mágicas. As penas de unicórnio são altamente valorizadas por sua pureza e por produzirem varinhas com habilidades especiais. As varinhas com núcleo de pena de unicórnio são conhecidas por serem bastante leais aos seus donos. Elas são frequentemente associadas a bruxos e bruxas que possuem características como compaixão, pureza de coração e uma forte conexão com a natureza.</p>
+            </li>
+        
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/coração_dragao.jpg' %}" alt="coracao_dragao">
+            </div>
+                <h3>Corda de Coração de Dragão</h3>
+                <p>a corda de coração de dragão é um dos materiais utilizados como núcleo para a fabricação de varinhas mágicas. Ela é obtida a partir do coração de um dragão, criatura mágica poderosa e lendária. As varinhas com núcleo de corda de coração de dragão são notáveis por sua capacidade de realizar feitiços complexos e poderosos. Elas têm um caráter mais agressivo e exigem um domínio preciso e forte determinação de seu dono para serem usadas efetivamente.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    <section class="wood" id="wood">  
+               
+        <b><h2 class="titulo_wood"><strong>Tipos de madeira:</strong></h2></b>
+      
+    
+        <ul class="lista_madeiras">
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/sabugueiro.jpg' %}" alt="sabugueiro">
+            </div>
+                <h3>Madeira de Sabugueiro</h3>
+                <p>A madeira de sabugueiro é conhecida por sua associação com a magia e a proteção. Varinhas feitas dessa madeira são frequentemente escolhidas por bruxos e bruxas que possuem habilidades curativas e têm uma conexão especial com a natureza. A madeira de sabugueiro é flexível e adaptável, tornando as varinhas feitas dela versáteis e capazes de executar uma ampla gama de feitiços.</p>
+            </li>
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/visgo.jpg' %}" alt="visgo">
+            </div>
+                <h3>Madeira de Visgo</h3>
+                <p>A madeira de visgo é considerada rara e misteriosa. Ela é conhecida por ser altamente valorizada por suas propriedades defensivas. Varinhas feitas dessa madeira são frequentemente associadas a bruxos e bruxas habilidosos na arte da duelo e da proteção. A madeira de visgo produz varinhas poderosas e capazes de executar feitiços de escudo e defesa com grande eficácia.</p>
+            </li>
+        
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/nogueira.jpg' %}" alt="nogueira">
+            </div>
+                <h3>Madeira de Nogueira</h3>
+                <p>A madeira de nogueira é associada à sabedoria e à magia ancestral. Varinhas feitas dessa madeira são escolhidas por bruxos e bruxas que valorizam o conhecimento e têm um profundo respeito pela história e tradição. A madeira de nogueira é conhecida por produzir varinhas que são altamente sintonizadas com o poder das palavras e feitiços verbais, tornando-as ideais para bruxos especializados em encantamentos e feitiços linguísticos.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    <section class="wands" id="wands">  
+               
+        <b><h2 class="titulo_wands"><strong>Flexibilidade Das Varinhas:</strong></h2></b>
+      
+    
+        <ul class="lista_varinhas">
+            <li class="varinhas">
+                <h3>Varinhas Rígidas</h3>
+                <p>As varinhas rígidas são conhecidas por sua falta de flexibilidade. Elas tendem a ser mais estáveis e exigem uma mão firme para controlar seu poder. Varinhas rígidas são frequentemente associadas a bruxos e bruxas que possuem uma natureza disciplinada, determinada e que preferem feitiços de precisão.</p>
+            </li>
+            <li class="varinhas">
+                <h3>Varinhas Flexíveis</h3>
+                <p>As varinhas flexíveis possuem uma curva mais suave e são mais maleáveis. Elas se adaptam facilmente às habilidades e estilos de magia de seus usuários. Varinhas flexíveis são escolhidas por bruxos e bruxas que são adaptáveis, criativos e se destacam em feitiços que requerem movimentos fluidos e graciosos.</p>
+            </li>
+        
+            <li class="varinhas">
+                <h3>Varinhas Semi-rígidas</h3>
+                <p>As varinhas semi-rígidas são uma combinação entre as características das varinhas rígidas e flexíveis. Elas possuem uma certa resistência, mas também têm alguma flexibilidade. Essas varinhas são escolhidas por bruxos e bruxas que possuem uma personalidade equilibrada e versátil, capazes de lidar com uma variedade de estilos de magia.</p>
+            </li>
+    
+            <li class="varinhas">
+                <div class="wands_img">
+                    <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+                </div>
+                <h3>Curiosidade:</h3>
+                <p>É importante ressaltar que a flexibilidade da varinha pode influenciar o estilo e a eficácia do bruxo em diferentes tipos de feitiços. Cada bruxo tem uma relação única com sua varinha, e a flexibilidade desempenha um papel crucial nessa conexão, afetando a maneira como a magia é canalizada e executada.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    <section class="wands" id="wands">
+        <b><h2 class="titulo_wands"><strong>Tamanho Das Varinhas:</strong></h2></b>
+    <ul class="lista_varinhas">
+        <li class="varinhas">
+            <h3>Varinhas Curtas</h3>
+            <p>Varinhas curtas são caracterizadas por terem um tamanho menor em relação às varinhas padrão. Elas geralmente possuem cerca de 20 a 25 centímetros de comprimento. Varinhas curtas são escolhidas por bruxos e bruxas que preferem uma abordagem mais ágil e precisa em sua magia. Essas varinhas são adequadas para movimentos rápidos e feitiços de curta distância.</p>
+        </li>
+        <li class="varinhas">
+            <h3>Varinhas Padrão</h3>
+            <p>As varinhas padrão são as mais comuns e populares. Elas geralmente têm entre 25 a 35 centímetros de comprimento. Essas varinhas são versáteis e adequadas para uma ampla gama de estilos de magia. Bruxos e bruxas que possuem varinhas de tamanho padrão têm a vantagem de se adaptar facilmente a diferentes tipos de feitiços e situações.</p>
+        </li>
+    
+        <li class="varinhas">
+            <h3>Varinhas Longas</h3>
+            <p> Varinhas longas são caracterizadas por terem um comprimento maior em relação às varinhas padrão. Elas podem variar de 35 a 40 centímetros ou mais. Varinhas longas são frequentemente escolhidas por bruxos e bruxas que preferem uma abordagem mais imponente e poderosa em sua magia. Essas varinhas tendem a ser mais adequadas para feitiços que requerem gestos amplos e poderosos.</p>
+        </li>
+    
+        <li class="varinhas">
+            <div class="wands_img">
+                <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+            </div>
+            <h3>Curiosidade:</h3>
+            <p>É importante notar que o tamanho da varinha pode afetar a maneira como ela é manejada e como a magia é canalizada. No entanto, a escolha do tamanho da varinha é uma questão de preferência pessoal e não determina a habilidade ou poder do bruxo. Cada bruxo possui uma varinha única, independentemente do tamanho, e é a conexão entre o bruxo e sua varinha que é essencial para realizar a magia com sucesso.</p>
+        </li>
+    </ul>
+    </section><br>
+
+    <section class="informacao" id="informacao_sala">
+        <h2>Sala Comunal da Lufa-Lufa</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/sala_comunal_lufa_lufa.jpg' %}" alt="sala_comunal_lufa_lufa">
+            </div>
+            <div class="info-details">
+                <h3>Sala Comunal da Lufa-Lufa</h3>
+                
+                <p>A sala comunal da Lufa-Lufa é um espaço especial e acolhedor localizado nas profundezas de Hogwarts, a escola de magia e bruxaria nos livros de "Harry Potter" escritos por J.K. Rowling. Aqui estão algumas informações sobre a sala comunal da Lufa-Lufa:
+    
+                    Localização: A sala comunal da Lufa-Lufa está localizada no porão de Hogwarts, acessível por uma entrada escondida próxima às cozinhas da escola. Para entrar na sala comunal, é necessário tocar uma determinada sequência de barris em uma pilha próxima à entrada.
+                    
+                    Aparência e ambiente: A sala comunal da Lufa-Lufa é descrita como um espaço acolhedor e confortável. Ela possui um teto abobadado com janelas redondas que permitem a entrada de luz natural. As paredes são revestidas de pedra e decoradas com tapeçarias amarelas e douradas, refletindo as cores da casa. Há poltronas e sofás confortáveis, mesas de estudo e uma lareira aconchegante.
+                    
+                    Decoração: A sala comunal da Lufa-Lufa é decorada com elementos que refletem a personalidade e os valores da casa. Há plantas e flores espalhadas pelo ambiente, exibindo a conexão da Lufa-Lufa com a natureza e a Herbologia. Os móveis são aconchegantes e convidativos, proporcionando um ambiente confortável para os alunos relaxarem e socializarem.
+                    
+                    Atmosfera: A sala comunal da Lufa-Lufa é conhecida por ter uma atmosfera calorosa e amigável. Os alunos da Lufa-Lufa são caracterizados por sua lealdade, paciência e disposição para ajudar os outros. A sala comunal reflete essa atmosfera acolhedora, oferecendo um refúgio tranquilo para os estudantes se reunirem, estudarem e compartilharem momentos juntos.
+                    
+                    Elementos de destaque: Na sala comunal da Lufa-Lufa, há um quadro de avisos onde são divulgadas informações relevantes para os alunos da casa. Além disso, há uma entrada para as tendas do time de Quadribol da Lufa-Lufa, permitindo que os jogadores acessem facilmente suas acomodações e equipamentos.
+                    
+                    Acesso: A entrada para a sala comunal da Lufa-Lufa é protegida por uma senha que apenas os alunos da Lufa-Lufa conhecem. Isso garante a privacidade e a segurança dos membros da casa.
+                    
+                    Em resumo, a sala comunal da Lufa-Lufa é um espaço acolhedor, decorado com as cores e valores da casa. Ela oferece um ambiente confortável e convidativo, refletindo a personalidade amigável e solidária dos alunos da Lufa-Lufa. É um lugar onde os estudantes podem se reunir, relaxar e fortalecer os laços de amizade.
+                </p>
+            </div>
+        </div>
+    </section><br>
+
+    <section class="wizard" id="wizard">
+        <h2>Os três bruxos poderosos mais conhecidos da Lufa-Lufa são:</h2>
+                <p class="wizard__text">
+                    Esses três exemplos destacam bruxos da Lufa-Lufa que demonstraram habilidades mágicas notáveis. É importante lembrar que a força de um bruxo não se limita apenas às habilidades em combate, mas também inclui traços como coragem, lealdade, compaixão e dedicação a causas nobres. Cada bruxo tem suas próprias habilidades únicas que contribuem para sua força e importância dentro do mundo mágico.</p> 
+            <div class="bruxos">
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/Cedrico_Diggory.jpg' %}" alt="Cedrico_Diggory">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Cedrico Diggory</h3>
+                        <p>Cedrico Diggory, embora tenha sido mencionado anteriormente, vale a pena destacar novamente. Ele era um bruxo talentoso e atlético, conhecido por sua destreza no Quadribol e sua coragem. Cedrico foi selecionado como campeão de Hogwarts no Torneio Tribruxo, o que demonstra seu alto nível de habilidade mágica. Sua trágica morte no final do livro "Harry Potter e o Cálice de Fogo" foi um momento comovente e mostrou sua bravura até o fim.</p>
+                    </div>
+                </div>
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/Ninfadora_Tonks.jpg' %}" alt="Ninfadora_Tonks">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Ninfadora Tonks</h3>
+                        <p>Tonks, embora pertencesse à família Black, foi selecionada para a Lufa-Lufa. Ela era uma bruxa metamorfomaga com habilidades impressionantes. Sua capacidade de alterar sua aparência física era uma demonstração de sua maestria sobre a magia. Além disso, Tonks também era uma bruxa talentosa em combate, especialmente quando se tratava de duelos. Sua participação na Ordem da Fênix e seu compromisso em lutar contra as forças das trevas destacam sua força e coragem.</p>                          
+                    </div>
+                </div>
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/Pomona_Sprout.jpg' %}" alt="Pomona_Sprout">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Pomona Sprout</h3>
+                        <p> Embora não seja uma bruxa conhecida por suas habilidades de duelo, Pomona Sprout, professora de Herbologia em Hogwarts e chefe da casa Lufa-Lufa, era uma bruxa extremamente talentosa em seu campo. Sua expertise em plantas mágicas e seu conhecimento profundo da Herbologia eram amplamente reconhecidos. Pomona demonstrava habilidades notáveis em cultivar e manipular plantas mágicas, mostrando sua força e maestria nessa área específica da magia.</p>
+                    </div>
+                </div>
+    
+                
+            </div>
+       
+        
+    </section><br>
+    
+    <section class="informacao" id="informacao">
+        <h2>Conquistas</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/quadribol_lufa_lufa.jpg' %}" alt="quadribol_lufa_lufa">
+            </div>
+            <div class="info-details">
+                <h3>Quadribol - Lufa-Lufa</h3>
+                
+                <p>A história de conquistas do Quadribol da Casa Lufa-Lufa em Hogwarts é menos destacada em comparação com outras casas, como Grifinória e Sonserina, nos livros de "Harry Potter". No entanto, ao longo da série, há algumas menções de momentos de destaque para a Casa Lufa-Lufa no esporte. Aqui estão algumas informações sobre a história do Quadribol da Casa Lufa-Lufa:
+    
+                    Embora não seja especificamente detalhado na série, é mencionado que a Casa Lufa-Lufa tem uma equipe de Quadribol em Hogwarts, assim como as outras casas. Como a Casa Lufa-Lufa é conhecida por seus valores de lealdade, honestidade e trabalho duro, é provável que seus jogadores também compartilhem essas características.
+                    
+                    Durante os anos de Hogwarts de Harry Potter, a Casa Lufa-Lufa é liderada pelo capitão da equipe de Quadribol. Embora não haja detalhes específicos sobre vitórias ou títulos da casa, é seguro presumir que a equipe Lufa-Lufa participe dos jogos de Quadribol da escola e possa ter alcançado algum sucesso ao longo dos anos.
+                    
+                    É importante destacar que o Quadribol é um esporte muito popular em Hogwarts e envolve uma competição acirrada entre as casas. Cada casa tem sua própria equipe de Quadribol, consistindo de um goleiro, batedores, artilheiros e um apanhador, e eles competem entre si em jogos emocionantes.
+                    
+                    Embora a Casa Lufa-Lufa não receba tanto destaque no Quadribol, a ênfase nos valores da casa, como lealdade e trabalho duro, sugere que os jogadores da Lufa-Lufa sejam comprometidos e dedicados. Eles podem não ter ganhado tantos títulos quanto outras casas, mas sua abordagem honesta e determinação são valiosas para a equipe.
+                    
+                    Em resumo, embora a história de conquistas do Quadribol da Casa Lufa-Lufa em Hogwarts não seja tão proeminente nos livros de "Harry Potter", é possível que a casa tenha tido momentos de destaque no esporte ao longo dos anos. Os jogadores da Lufa-Lufa provavelmente são leais, trabalhadores e empenhados em contribuir para o desempenho da equipe.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    {% elif casa.id == 4 %}
+        <style>
+            body {
+                background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../../static/images/corvinal_fundo_persona.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            header {
+                background-image: linear-gradient(to left, rgb(12, 1, 50), rgb(24, 1, 107));
+            }
+            .titulo_wands {
+                background-color: #031b62aa;
+            }
+            .titulo_wood {
+                background-color: #031b62aa;
+            }
+            .bruxo {
+                background-color: #031b62aa;
+            }
+            .card {
+                background-color: #031b62aa;
+            }
+        </style>
+
+        <section class="houses" id="houses">
+            <h2>CORVINAL</h2>
+            <div class="light-side">
+                <p class="houses__text">Você é da Corvinal</p>
+                <p class="houses__text">saiba mais sobre ela.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static './images/corvinal.jpg' %}" alt="corvinal">
+                        </div>
+                        <div class="card-details">
+                            <h3>Corvinal</h3>
+                            <p>A Casa Corvinal é uma das quatro casas da Escola de Magia e Bruxaria de Hogwarts. Foi fundada por Rowena Ravenclaw, uma bruxa renomada por sua inteligência e sabedoria. Rowena valorizava a mente aguçada e a busca pelo conhecimento, e assim selecionava seus alunos com base nessas qualidades.
+    
+                                A Casa Corvinal é conhecida por abrigar bruxos e bruxas criativos, curiosos e com grande sede de aprendizado. Seus membros são frequentemente elogiados por sua inteligência e perspicácia. As cores da Casa Corvinal são azul e prata, e seu símbolo é uma águia.
+                                
+                                A sala comunal da Corvinal está localizada em uma torre alta, com vista para os terrenos da escola e o Lago Negro. A entrada para a sala comunal é uma ampla escada em espiral, que leva a uma porta de bronze adornada com estrelas.
+                                
+                                Ao longo dos anos, a Casa Corvinal produziu muitos bruxos e bruxas notáveis. Alguns exemplos incluem Luna Lovegood, conhecida por sua excentricidade e perspectiva única do mundo, e Gilderoy Lockhart, um autor famoso (embora um tanto incompetente) de livros sobre suas supostas proezas mágicas.
+                                
+                                A Casa Corvinal também tem uma estreita relação com a Casa da Sonserina, muitas vezes competindo em termos acadêmicos e em eventos como a Taça das Casas. Embora seja conhecida por sua inteligência, a Casa Corvinal valoriza a criatividade e a originalidade, reconhecendo que o conhecimento não se limita apenas ao aprendizado teórico, mas também à visão de mundo única que cada membro pode trazer.
+                                
+                                Os membros da Casa Corvinal são incentivados a explorar seu potencial intelectual, a se esforçar para alcançar seus objetivos e a valorizar a sabedoria acima de tudo. A casa é um lugar de respeito pelo conhecimento e pelo pensamento crítico, onde os alunos são encorajados a se desafiarem e a buscar respostas para as questões mais complexas do mundo da magia e além.</p>
+                        </div>
+                    </div>
+       </section>
+    
+    
+    <br>
+    
+    <section class="informacao" id="informacao">
+        <h2>Personagens Principais da Corvinal</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/luna_lovegood.jpg' %}" alt="luna_lovegood">
+            </div>
+            <div class="info-details">
+                <h3>Luna Lovegood</h3>
+                
+                <p>Luna Lovegood é um dos personagens mais queridos da série de livros "Harry Potter", escrita pela autora britânica J.K. Rowling. Ela é apresentada pela primeira vez no quinto livro, "Harry Potter e a Ordem da Fênix", e desempenha um papel importante na luta contra o Lord das Trevas, Voldemort, e seus seguidores, os Comensais da Morte.
+    
+                    Luna é conhecida por sua personalidade única e excêntrica. Ela tem uma maneira peculiar de ver o mundo e muitas vezes é vista como estranha pelos outros estudantes de Hogwarts. No entanto, sua excentricidade é acompanhada por uma gentileza genuína e uma perspectiva otimista.
+                    
+                    Uma das características marcantes de Luna é sua crença em criaturas mágicas e eventos incomuns. Ela acredita em coisas que outros consideram absurdas, como os Nargles, criaturas que supostamente roubam objetos. Sua mente aberta e disposição para aceitar o extraordinário fazem dela uma personagem cativante.
+                    
+                    Além de sua personalidade excêntrica, Luna também é corajosa e leal. Ela se torna uma membro valiosa da Armada de Dumbledore, um grupo secreto liderado por Harry Potter para combater as forças do mal em Hogwarts. Luna está disposta a lutar pelos seus amigos e defender o que ela acredita ser certo, mesmo quando enfrenta o ridículo e a incompreensão dos outros.
+                    
+                    Quanto às habilidades de Luna, ela demonstra ser uma bruxa talentosa, embora não seja conhecida por ser excepcionalmente poderosa. No entanto, ela possui uma inteligência aguçada e uma intuição especial, o que lhe permite perceber coisas que pass
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Filius_Flitwick.jpg' %}" alt="Filius_Flitwick">
+            </div>
+            <div class="info-details">
+                <h3>Filius Flitwick</h3>
+                
+                <p>Filius Flitwick é um personagem importante na série de livros "Harry Potter" de J.K. Rowling. Ele é professor de Feitiços em Hogwarts, a escola de magia e bruxaria, e também é o diretor da Casa de Ravenclaw. Aqui estão algumas informações sobre Filius Flitwick:
+    
+                    Filius Flitwick é descrito como um homem pequeno, de cabelos prateados e uma aparência peculiar. Ele é um bruxo talentoso e respeitado, conhecido por sua habilidade excepcional em feitiços e encantamentos. Ele é especialista em encantamentos musicais e tem um papel importante na organização de eventos e competições em Hogwarts, como os duelos de feitiços.
+                    
+                    Como professor de Feitiços, Flitwick é extremamente dedicado e apaixonado por seu trabalho. Ele é conhecido por ser um professor paciente e encorajador, sempre buscando o melhor desempenho de seus alunos. Ele é visto como um mentor por muitos estudantes, incluindo Harry Potter e seus amigos.
+                    
+                    Além de suas habilidades como professor, Flitwick também é um duelistas habilidoso. Ele participou da Batalha de Hogwarts, lutando contra os Comensais da Morte e demonstrando coragem e determinação. Sua perícia em feitiços de combate é evidente durante a batalha, onde ele se mostra um adversário formidável.
+                    
+                    Curiosidade interessante sobre Filius Flitwick: Apesar de sua aparência peculiar, com altura reduzida, Flitwick é revelado como sendo de ascendência goblin. Isso é mencionado no livro "Harry Potter e as Relíquias da Morte", quando Harry, Rony e Hermione o encontram no Banco de Gringotes disfarçado como um duende. Essa revelação adiciona um elemento intrigante à sua personagem, mostrando a diversidade e a mistura de raças no mundo mágico.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Gilderoy_Lockhart.jpg' %}" alt="Gilderoy_Lockhart">
+            </div>
+            <div class="info-details">
+                <h3>Gilderoy Lockhart</h3>
+                
+                <p>Gilderoy Lockhart é um personagem notável na série de livros "Harry Potter" escrita por J.K. Rowling. Ele é apresentado no segundo livro, "Harry Potter e a Câmara Secreta". Aqui estão algumas informações sobre Gilderoy Lockhart:
+    
+                    Gilderoy Lockhart é um famoso bruxo e autor de livros sobre suas supostas aventuras heróicas. Ele é conhecido por suas mechas de cabelo loiro platinado, um sorriso brilhante e um ar charmoso. Lockhart é contratado como professor de Defesa Contra as Artes das Trevas em Hogwarts, após a aposentadoria de Quirinus Quirrell.
+                    
+                    Lockhart é retratado como um indivíduo extremamente vaidoso e egocêntrico. Ele adora se exibir e se vangloriar de suas supostas conquistas e realizações. No entanto, é revelado que ele é um impostor e que suas aventuras heroicas são, na verdade, roubadas de outras pessoas, pois ele usa memórias modificadas para se apropriar dos feitos de bruxos e bruxas de verdade.
+                    
+                    Embora Lockhart não possua habilidades reais de bruxaria excepcionais, ele é um mestre em encantamentos de memória. Ele usa sua habilidade de modificar memórias para apagar as lembranças daqueles que ele rouba, mantendo assim sua farsa. No entanto, suas tentativas de realizar um encantamento de memória em Harry Potter e Rony Weasley dão errado, resultando em danos a si mesmo e à memória de Rony.
+                    
+                    Apesar de suas falhas e desonestidade, Gilderoy Lockhart desempenha um papel cômico na história, fornecendo momentos de humor e alívio cômico. Sua personagem serve como uma crítica à vaidade excessiva e ao desejo de fama sem mérito genuíno.
+                    
+                    Curiosidade interessante sobre Gilderoy Lockhart: Após os eventos de "Harry Potter e a Câmara Secreta", onde sua farsa é revelada, Lockhart perde a memória devido a um acidente com um feitiço de Ron. Ele é internado no Hospital St. Mungus para Doenças e Acidentes Mágicos, onde continua acreditando que é um grande bruxo, embora tenha esquecido sua verdadeira identidade. Essa ironia é um destino adequado para um personagem que falsamente reivindicava ser o herói que ele nunca foi.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Cho_Chang.jpg' %}" alt="Cho_Chang">
+            </div>
+            <div class="info-details">
+                <h3>Cho Chang</h3>
+                
+                <p>Cho Chang é uma personagem da série de livros "Harry Potter" escrita por J.K. Rowling. Ela é introduzida no terceiro livro, "Harry Potter e o Prisioneiro de Azkaban", e desempenha um papel significativo na trama ao longo dos livros. Aqui estão algumas informações sobre Cho Chang:
+    
+                    Cho Chang é uma bruxa nascida na Escócia e é uma aluna da Casa de Corvinal em Hogwarts. Ela é descrita como uma garota bonita, com longos cabelos negros e olhos castanhos. Ela é popular entre os alunos de Hogwarts e é apanhadora no time de Quadribol da Corvinal.
+                    
+                    A personagem de Cho Chang ganha destaque quando se torna interesse amoroso de Harry Potter. Ela se torna a primeira paixão romântica de Harry na série. Seu relacionamento com Harry é explorado principalmente no quarto livro, "Harry Potter e o Cálice de Fogo", e no quinto livro, "Harry Potter e a Ordem da Fênix".
+                    
+                    Cho é uma personagem complexa, lidando com o luto e a tristeza pela perda de seu namorado, Cedrico Diggory, que é morto no final do terceiro livro. Essa experiência de perda afeta seu relacionamento com Harry, pois ambos estão lidando com emoções intensas e conflitantes.
+                    
+                    No quinto livro, Cho se torna membro da Armada de Dumbledore, um grupo secreto liderado por Harry Potter para treinar estudantes em defesa contra as artes das trevas. Embora seu relacionamento com Harry tenha altos e baixos e eventualmente termine, Cho continua a desempenhar um papel na luta contra Voldemort e os Comensais da Morte.
+                    
+                    Curiosidade interessante sobre Cho Chang: O nome Cho Chang combina nomes comuns chineses e coreanos, o que levou a especulações e discussões sobre sua origem étnica. Embora não seja explicitamente mencionado nos livros, a autora J.K. Rowling confirmou posteriormente que Cho Chang é de ascendência chinesa. Essa diversidade étnica na série de livros destaca a riqueza e a variedade cultural do mundo mágico de Harry Potter.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Myrtle_Warren.jpg' %}" alt="Myrtle_Warren">
+            </div>
+            <div class="info-details">
+                <h3>Myrtle Warren</h3>
+                
+                <p>Myrtle Warren, mais conhecida como Murta Que Geme, é uma personagem da série de livros "Harry Potter" escrita por J.K. Rowling. Ela desempenha um papel significativo na trama, especialmente no segundo livro, "Harry Potter e a Câmara Secreta". Aqui estão algumas informações sobre Myrtle Warren:
+    
+                    Myrtle Warren era uma estudante da Casa de Corvinal em Hogwarts. Ela é descrita como uma garota pálida, de óculos e com cabelos castanhos, e é conhecida por sua tristeza e tendência a chorar constantemente. Myrtle era bastante impopular entre seus colegas devido à sua personalidade melancólica e introvertida.
+                    
+                    A história de Myrtle ganha destaque quando ela é assassinada por Tom Riddle, mais tarde conhecido como Lord Voldemort, quando ele abriu a Câmara Secreta pela primeira vez. Após sua morte, Myrtle se torna um fantasma conhecido como Murta Que Geme. Ela passa a vagar pelos banheiros femininos do segundo andar, particularmente no banheiro feminino da Murta Que Geme.
+                    
+                    Murta Que Geme é famosa por sua natureza lamentosa e pelo hábito de chorar incessantemente. Ela muitas vezes assombra o banheiro feminino e assusta os estudantes que o frequentam. No entanto, apesar de sua personalidade triste, Myrtle também pode ser bastante mal-humorada e sarcástica, especialmente quando provocada.
+                    
+                    Embora Murta Que Geme não seja uma personagem central na trama, ela desempenha um papel importante na resolução do mistério da Câmara Secreta. Ela ajuda Harry Potter e seus amigos ao revelar informações cruciais sobre sua morte e sobre a natureza da Câmara Secreta.
+                    
+                    Curiosidade interessante sobre Myrtle Warren: Murta Que Geme desenvolve uma paixão não correspondida por Harry Potter, provavelmente devido à solidão que enfrenta como fantasma. Ela frequentemente tenta se envolver na vida amorosa de Harry, mesmo que suas tentativas sejam inconvenientes e perturbadoras para ele. Essa dinâmica adiciona um toque de humor e desconforto às interações entre os personagens.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Sybill_Trelawney.jpg' %}" alt="Sybill_Trelawney">
+            </div>
+            <div class="info-details">
+                <h3>Sybill Trelawney</h3>
+                
+                <p>Sybill Trelawney é uma personagem da série de livros "Harry Potter" escrita por J.K. Rowling. Ela é a professora de Adivinhação em Hogwarts, a escola de magia e bruxaria. Aqui estão algumas informações sobre Sybill Trelawney:
+    
+                    Sybill Trelawney é retratada como uma mulher excêntrica e misteriosa. Ela tem cabelos desgrenhados e olhos desfocados, dando-lhe uma aparência distinta e enigmática. Trelawney é conhecida por suas previsões e profecias, embora muitas vezes sejam vagas e imprecisas.
+                    
+                    Embora Trelawney seja frequentemente ridicularizada e considerada uma charlatã por outros personagens, ela possui um dom real de vidência. Ela é capaz de ter vislumbres do futuro, embora suas previsões nem sempre sejam corretas ou compreendidas adequadamente. No entanto, entre suas muitas previsões imprecisas, ela fez uma profecia crucial que desempenha um papel fundamental na história de Harry Potter.
+                    
+                    Trelawney é conhecida por sua personalidade dramática e exagerada. Ela gosta de criar um ambiente atmosférico em suas aulas, fazendo uso de objetos e rituais místicos. Ela também é propensa a fazer previsões sombrias e perturbadoras, alimentando o ar de mistério ao seu redor.
+                    
+                    Apesar de sua aparência excêntrica e suas previsões duvidosas, Trelawney demonstra ter um lado mais sensível e vulnerável. Ela é retratada como uma pessoa insegura e muitas vezes se sente desvalorizada pelos outros. No entanto, ela também mostra momentos de coragem e determinação, especialmente durante a Batalha de Hogwarts, onde ela se envolve na luta contra os Comensais da Morte.
+                    
+                    Curiosidade interessante sobre Sybill Trelawney: Embora Trelawney geralmente não seja muito precisa em suas previsões, ela faz uma previsão verdadeira sobre a morte de um estudante a cada ano. Ela faz essa previsão no primeiro dia de aula em "Harry Potter e o Prisioneiro de Azkaban" e, de maneira perturbadora, acaba acertando sobre a morte de Cedrico Diggory no final do livro. Essa previsão demonstra que, apesar de suas falhas, Trelawney tem um talento genuíno para a vidência, mesmo que seja inconsistente.
+                </p>
+            </div>
+        </div>
+    </section><br>    
+
+        <section class="wands" id="wands">  
+               
+            <b><h2 class="titulo_wands"><strong>Núcleos De Varinhas:</strong></h2></b>
+          
+        
+            <ul class="lista_varinhas">
+                <li class="varinhas">
+                    <div class="wands_img">
+                    <img src="{% static './images/pena_De_fenix.jpg' %}" alt="pena_De_fenix">
+                </div>
+                    <h3>Pena de Fenix</h3>
+                    <p>A pena de fênix é um núcleo de varinha bastante especial e poderoso. As penas de fênix são conhecidas por serem extremamente leais aos seus donos e por produzirem varinhas com habilidades excepcionais. A varinha com núcleo de pena de fênix é notável por sua conexão com o mundo das fênix. Essas varinhas têm uma tendência a "escolher" seus donos, respondendo a bruxos e bruxas com características especiais, como coragem, nobreza de espírito e determinação. Essas varinhas são conhecidas por se unirem fortemente aos seus donos, reconhecendo-os como parceiros de confiança.</p>
+                </li>
+                <li class="varinhas">
+                    <div class="wands_img">
+                    <img src="{% static './images/pelo_unicornio.jpg' %}" alt="Unicórnio">
+                </div>
+                    <h3>Pelo de Unicórnio</h3>
+                    <p>A pena de unicórnio é um dos núcleos utilizados na confecção de varinhas mágicas. As penas de unicórnio são altamente valorizadas por sua pureza e por produzirem varinhas com habilidades especiais. As varinhas com núcleo de pena de unicórnio são conhecidas por serem bastante leais aos seus donos. Elas são frequentemente associadas a bruxos e bruxas que possuem características como compaixão, pureza de coração e uma forte conexão com a natureza.</p>
+                </li>
+            
+                <li class="varinhas">
+                    <div class="wands_img">
+                    <img src="{% static './images/coração_dragao.jpg' %}" alt="coracao_dragao">
+                </div>
+                    <h3>Corda de Coração de Dragão</h3>
+                    <p>a corda de coração de dragão é um dos materiais utilizados como núcleo para a fabricação de varinhas mágicas. Ela é obtida a partir do coração de um dragão, criatura mágica poderosa e lendária. As varinhas com núcleo de corda de coração de dragão são notáveis por sua capacidade de realizar feitiços complexos e poderosos. Elas têm um caráter mais agressivo e exigem um domínio preciso e forte determinação de seu dono para serem usadas efetivamente.</p>
+                </li>
+            </ul>
+        </section><br>
+        
+        <section class="wood" id="wood">  
+                   
+            <b><h2 class="titulo_wood"><strong>Tipos de madeira:</strong></h2></b>
+          
+        
+            <ul class="lista_madeiras">
+                <li class="madeiras">
+                    <div class="wood_img">
+                    <img src="{% static './images/sabugueiro.jpg' %}" alt="sabugueiro">
+                </div>
+                    <h3>Madeira de Sabugueiro</h3>
+                    <p>A madeira de sabugueiro é conhecida por sua associação com a magia e a proteção. Varinhas feitas dessa madeira são frequentemente escolhidas por bruxos e bruxas que possuem habilidades curativas e têm uma conexão especial com a natureza. A madeira de sabugueiro é flexível e adaptável, tornando as varinhas feitas dela versáteis e capazes de executar uma ampla gama de feitiços.</p>
+                </li>
+                <li class="madeiras">
+                    <div class="wood_img">
+                    <img src="{% static './images/visgo.jpg' %}" alt="visgo">
+                </div>
+                    <h3>Madeira de Visgo</h3>
+                    <p>A madeira de visgo é considerada rara e misteriosa. Ela é conhecida por ser altamente valorizada por suas propriedades defensivas. Varinhas feitas dessa madeira são frequentemente associadas a bruxos e bruxas habilidosos na arte da duelo e da proteção. A madeira de visgo produz varinhas poderosas e capazes de executar feitiços de escudo e defesa com grande eficácia.</p>
+                </li>
+            
+                <li class="madeiras">
+                    <div class="wood_img">
+                    <img src="{% static './images/nogueira.jpg' %}" alt="nogueira">
+                </div>
+                    <h3>Madeira de Nogueira</h3>
+                    <p>A madeira de nogueira é associada à sabedoria e à magia ancestral. Varinhas feitas dessa madeira são escolhidas por bruxos e bruxas que valorizam o conhecimento e têm um profundo respeito pela história e tradição. A madeira de nogueira é conhecida por produzir varinhas que são altamente sintonizadas com o poder das palavras e feitiços verbais, tornando-as ideais para bruxos especializados em encantamentos e feitiços linguísticos.</p>
+                </li>
+            </ul>
+        </section><br>
+        
+        <section class="wands" id="wands">  
+                   
+            <b><h2 class="titulo_wands"><strong>Flexibilidade Das Varinhas:</strong></h2></b>
+          
+        
+            <ul class="lista_varinhas">
+                <li class="varinhas">
+                    <h3>Varinhas Rígidas</h3>
+                    <p>As varinhas rígidas são conhecidas por sua falta de flexibilidade. Elas tendem a ser mais estáveis e exigem uma mão firme para controlar seu poder. Varinhas rígidas são frequentemente associadas a bruxos e bruxas que possuem uma natureza disciplinada, determinada e que preferem feitiços de precisão.</p>
+                </li>
+                <li class="varinhas">
+                    <h3>Varinhas Flexíveis</h3>
+                    <p>As varinhas flexíveis possuem uma curva mais suave e são mais maleáveis. Elas se adaptam facilmente às habilidades e estilos de magia de seus usuários. Varinhas flexíveis são escolhidas por bruxos e bruxas que são adaptáveis, criativos e se destacam em feitiços que requerem movimentos fluidos e graciosos.</p>
+                </li>
+            
+                <li class="varinhas">
+                    <h3>Varinhas Semi-rígidas</h3>
+                    <p>As varinhas semi-rígidas são uma combinação entre as características das varinhas rígidas e flexíveis. Elas possuem uma certa resistência, mas também têm alguma flexibilidade. Essas varinhas são escolhidas por bruxos e bruxas que possuem uma personalidade equilibrada e versátil, capazes de lidar com uma variedade de estilos de magia.</p>
+                </li>
+        
+                <li class="varinhas">
+                    <div class="wands_img">
+                        <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+                    </div>
+                    <h3>Curiosidade:</h3>
+                    <p>É importante ressaltar que a flexibilidade da varinha pode influenciar o estilo e a eficácia do bruxo em diferentes tipos de feitiços. Cada bruxo tem uma relação única com sua varinha, e a flexibilidade desempenha um papel crucial nessa conexão, afetando a maneira como a magia é canalizada e executada.</p>
+                </li>
+            </ul>
+        </section><br>
+        
+        <section class="wands" id="wands">
+            <b><h2 class="titulo_wands"><strong>Tamanho Das Varinhas:</strong></h2></b>
+        <ul class="lista_varinhas">
+            <li class="varinhas">
+                <h3>Varinhas Curtas</h3>
+                <p>Varinhas curtas são caracterizadas por terem um tamanho menor em relação às varinhas padrão. Elas geralmente possuem cerca de 20 a 25 centímetros de comprimento. Varinhas curtas são escolhidas por bruxos e bruxas que preferem uma abordagem mais ágil e precisa em sua magia. Essas varinhas são adequadas para movimentos rápidos e feitiços de curta distância.</p>
+            </li>
+            <li class="varinhas">
+                <h3>Varinhas Padrão</h3>
+                <p>As varinhas padrão são as mais comuns e populares. Elas geralmente têm entre 25 a 35 centímetros de comprimento. Essas varinhas são versáteis e adequadas para uma ampla gama de estilos de magia. Bruxos e bruxas que possuem varinhas de tamanho padrão têm a vantagem de se adaptar facilmente a diferentes tipos de feitiços e situações.</p>
+            </li>
+        
+            <li class="varinhas">
+                <h3>Varinhas Longas</h3>
+                <p> Varinhas longas são caracterizadas por terem um comprimento maior em relação às varinhas padrão. Elas podem variar de 35 a 40 centímetros ou mais. Varinhas longas são frequentemente escolhidas por bruxos e bruxas que preferem uma abordagem mais imponente e poderosa em sua magia. Essas varinhas tendem a ser mais adequadas para feitiços que requerem gestos amplos e poderosos.</p>
+            </li>
+        
+            <li class="varinhas">
+                <div class="wands_img">
+                    <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+                </div>
+                <h3>Curiosidade:</h3>
+                <p>É importante notar que o tamanho da varinha pode afetar a maneira como ela é manejada e como a magia é canalizada. No entanto, a escolha do tamanho da varinha é uma questão de preferência pessoal e não determina a habilidade ou poder do bruxo. Cada bruxo possui uma varinha única, independentemente do tamanho, e é a conexão entre o bruxo e sua varinha que é essencial para realizar a magia com sucesso.</p>
+            </li>
+        </ul>
+        </section><br>
+
+        <section class="informacao" id="informacao_sala">
+            <h2>Sala Comunal da Corvinal</h2>
+            
+            <div class="info">
+                
+                <div class="info-img">
+                    <img src="{% static './images/sala_comunal_corvinal.jpg' %}" alt="sala_comunal_corvinal">
+                </div>
+                <div class="info-details">
+                    <h3>Sala Comunal da Corvinal</h3>
+                    
+                    <p>A sala comunal da casa Corvinal é um espaço único e encantador localizado na Torre de Corvinal, em Hogwarts. Assim como as outras casas, a sala comunal é um lugar exclusivo para os estudantes da Corvinal relaxarem, estudarem e interagirem entre si.
+        
+                        A entrada para a sala comunal da Corvinal fica escondida atrás de uma estante de livros em uma parede do corredor do quinto andar. Para acessá-la, é necessário responder a uma charada elaborada. Esse sistema de entrada garante que apenas os membros da Corvinal, conhecidos por sua inteligência e astúcia, possam entrar.
+                        
+                        Uma vez que a charada é resolvida corretamente, a estante de livros se abre, revelando um caminho que leva a uma sala espaçosa e acolhedora. A sala comunal da Corvinal é conhecida por sua atmosfera tranquila e serena, com tons de azul e prata decorando o espaço. As paredes são adornadas com tapeçarias e prateleiras cheias de livros antigos, destacando o amor pela sabedoria e conhecimento da casa.
+                        
+                        O ambiente é iluminado por janelas altas e estreitas, permitindo a entrada suave da luz natural durante o dia. À noite, velas flutuantes espalham uma luz suave e acolhedora pela sala. Sofás confortáveis, poltronas e mesas proporcionam espaços de estudo e convivência para os estudantes da Corvinal.
+                        
+                        A sala comunal da Corvinal também possui uma área reservada para os alunos guardarem seus pertences pessoais, como malas e livros. Essa área é protegida por feitiços de segurança para garantir a privacidade e a integridade dos objetos dos alunos.
+                        
+                        Além disso, a sala comunal da Corvinal oferece uma vista deslumbrante do terreno de Hogwarts, permitindo que os estudantes apreciem a paisagem pitoresca do castelo e do Lago Negro.
+                        
+                        A atmosfera geral da sala comunal da Corvinal é tranquila, propícia para o estudo e a reflexão. Ela proporciona um ambiente acolhedor para os membros da casa Corvinal se reunirem, compartilharem conhecimentos e explorarem sua curiosidade intelectual.
+                        
+                        A sala comunal da Corvinal reflete os valores e características da casa, com sua ênfase na sabedoria, inteligência e criatividade. É um local onde os corvinos se sentem em casa, cercados por livros, aprendizado e uma comunidade de pessoas com ideais semelhantes.
+                    </p>
+                </div>
+            </div>
+        </section><br>
+        
+        
+        <section class="wizard" id="wizard">
+            <h2>Os três bruxos poderosos mais conhecidos da Corvinal são:</h2>
+                    <p class="wizard__text">
+                        Esses três exemplos destacam bruxos da Corvinal que demonstraram habilidades mágicas notáveis. É importante lembrar que a força mágica de um bruxo não se limita apenas às habilidades em combate, mas também inclui inteligência, sabedoria, criatividade e a capacidade de se conectar com o mundo mágico de maneiras especiais e únicas.</p> 
+                <div class="bruxos">
+                    <div class="bruxo">
+                        <div class="bruxo-img">
+                            <img src="{% static './images/Rowena_Ravenclaw.jpg' %}" alt="Rowena_Ravenclaw">
+                        </div>
+                        <div class="bruxo-details">
+                            <h3>Rowena Ravenclaw</h3>
+                            <p>Rowena Ravenclaw foi uma das quatro fundadoras de Hogwarts e a bruxa responsável por estabelecer a casa Corvinal. Ela era conhecida por sua inteligência e sabedoria excepcionais. Rowena era uma bruxa poderosa e astuta, e seu legado é perpetuado na casa Corvinal, que valoriza essas mesmas qualidades. Ela era famosa por sua contribuição para a magia e seu diadema, que se acreditava possuir uma grande quantidade de conhecimento encantado.</p>
+                        </div>
+                    </div>
+                    <div class="bruxo">
+                        <div class="bruxo-img">
+                            <img src="{% static './images/Helena_Ravenclaw.jpg' %}" alt="Helena_Ravenclaw">
+                        </div>
+                        <div class="bruxo-details">
+                            <h3>Helena Ravenclaw</h3>
+                            <p>Filha de Rowena Ravenclaw, Helena Ravenclaw foi uma bruxa talentosa e poderosa. Ela se tornou conhecida como a Dama Cinzenta devido à sua aparição como fantasma na série Harry Potter. Helena Ravenclaw roubou o diadema de sua mãe, buscando sua sabedoria e poder, e desapareceu com ele. Sua capacidade de se esconder e manipular eventos demonstra sua habilidade mágica. Ela se tornou um elemento importante na história do diadema de Rowena Ravenclaw.</p>                          
+                        </div>
+                    </div>
+                    <div class="bruxo">
+                        <div class="bruxo-img">
+                            <img src="{% static './images/Marcus_Belby.jpeg' %}" alt="Marcus_Belby">
+                        </div>
+                        <div class="bruxo-details">
+                            <h3>Marcus Belby</h3>
+                            <p>Embora menos conhecido do que os dois primeiros mencionados, Marcus Belby foi um bruxo da casa Corvinal e um estudante exemplar em Hogwarts. Ele foi destaque no sexto livro, "Harry Potter e o Enigma do Príncipe", onde ele revelou ter inventado uma poção chamada "Antídoto para Venenos Comuns". Essa invenção demonstra sua habilidade em alquimia e seu talento em poções. Embora a série não tenha explorado muito o personagem, sua invenção e reconhecimento na escola mostram seu potencial e habilidades mágicas.</p>
+                        </div>
+                    </div>
+        
+                    
+                </div>
+           
+            
+        </section><br>
+        
+        <section class="informacao" id="informacao">
+            <h2>Conquistas</h2>
+            
+            <div class="info">
+                
+                <div class="info-img">
+                    <img src="{% static './images/conquista_corvinal.jpg' %}" alt="conquista_corvinal">
+                </div>
+                <div class="info-details">
+                    <h3>Quadribol - Corvinal</h3>
+                    
+                    <p>A casa Corvinal tem uma história interessante e respeitável quando se trata de Quadribol, o esporte mais popular no mundo mágico. Embora não haja detalhes específicos sobre conquistas da Corvinal na série Harry Potter, é sabido que a casa tem um histórico sólido no esporte.
+        
+                        Ao longo dos anos, os estudantes da casa Corvinal têm demonstrado habilidades notáveis no Quadribol. Eles são conhecidos por sua estratégia inteligente, agilidade e capacidade de pensamento rápido. Os corvinos são estudiosos, criativos e têm uma mente afiada, o que lhes confere uma vantagem no campo de Quadribol.
+                        
+                        A casa Corvinal tem produzido excelentes jogadores em todas as posições do time de Quadribol. Os corvinos são frequentemente selecionados para serem apanhadores, graças à sua capacidade de observação e reflexos rápidos. Além disso, eles têm demonstrado talento como artilheiros, goleiros e batedores, mostrando versatilidade e habilidades em várias posições.
+                        
+                        Embora não haja detalhes específicos sobre conquistas da Corvinal no Quadribol, é justo supor que a casa tenha tido sucessos notáveis ao longo dos anos. Eles provavelmente ganharam campeonatos escolares e competiram em alto nível contra as outras casas de Hogwarts.
+                        
+                        A habilidade da casa Corvinal no Quadribol reflete seu valor em sabedoria e inteligência estratégica. Eles têm uma abordagem metódica e analítica para o jogo, usando seu conhecimento e astúcia para superar seus oponentes. Isso contribui para a reputação da Corvinal como uma casa respeitada e temida nos campos de Quadribol.
+                        
+                        Embora a série Harry Potter não forneça detalhes específicos sobre as conquistas da Corvinal no Quadribol, é certo que a casa desempenha um papel significativo na história do esporte em Hogwarts, contribuindo com talento, habilidade e inteligência estratégica para o jogo.
+                    </p>
+                </div>
+            </div>
+        </section>        
+    
+    {% elif casa.id == 5 %}
+        <style>
+            body {
+                background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../../static/images/comensais_da_morte_persona.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            header {
+                background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(1, 24, 3));
+            }
+            .titulo_wands {
+                background-color: #011002aa;
+            }
+            .titulo_wood {
+                background-color: #011002aa;
+            }
+            .bruxo {
+                background-color: #011002aa;
+            }
+            .card {
+                background-color: #011002aa;
+            }
+        </style>
+
+        <section class="houses" id="houses">
+            <h2>COMENSAIS DA MORTE</h2>
+            <div class="light-side">
+                <p class="houses__text">Você é um Comensal da morte</p>
+                <p class="houses__text">saiba mais sobre isso.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{% static './images/comensais_morte_icone.jpg' %}" alt="Comensais_da_morte">
+                        </div>
+                        <div class="card-details">
+                            <h3>Comensais da morte</h3>
+                            <p>Os Comensais da Morte são um grupo de bruxos das trevas leais a Lord Voldemort, o principal antagonista da série "Harry Potter" escrita por J.K. Rowling. Eles desempenham um papel significativo na história, espalhando o terror e apoiando Voldemort em sua busca pelo poder e dominação.
+    
+                                A origem dos Comensais da Morte remonta ao primeiro surgimento de Voldemort, quando ele começou a ganhar seguidores durante a década de 1970. Voldemort atraiu bruxos e bruxas que compartilhavam de suas crenças sobre a supremacia dos bruxos puro-sangue e desprezavam a comunidade bruxa que aceitava sangues misturados e nascidos trouxas.
+                                
+                                Os Comensais da Morte adotaram esse nome, que significa "comedores da morte", como uma expressão simbólica de sua devoção à causa de Voldemort. Eles realizaram atos de violência e terror, incluindo assassinatos e torturas, a serviço de seu líder e para espalhar o medo entre os bruxos e bruxas que se opunham a Voldemort.
+                                
+                                Os Comensais da Morte eram reconhecidos por usar uma marca tenebrosa, conhecida como a Marca Negra, como símbolo de sua lealdade. A Marca Negra era uma caveira com uma serpente saindo de sua boca, e era lançada no céu sempre que um Comensal da Morte cometia um ato significativo de violência ou assassinato.
+                                
+                                Muitos Comensais da Morte foram recrutados entre os estudantes da Sonserina durante seus anos em Hogwarts, uma vez que essa casa era associada à astúcia, ambição e tendência a valores sombrios. No entanto, nem todos os membros da Sonserina se tornaram Comensais da Morte, e nem todos os Comensais da Morte eram da Sonserina.
+                                
+                                Ao longo da série, os Comensais da Morte desempenham um papel central nas tentativas de Voldemort de assumir o controle do mundo bruxo, envolvendo-se em batalhas contra os protagonistas e participando de atos de crueldade e violência. No entanto, muitos Comensais da Morte acabaram sendo derrotados e presos, enquanto outros eventualmente se arrependeram e abandonaram a causa de Voldemort.
+                                
+                                Apesar de sua maldade, os Comensais da Morte também são um exemplo dos perigos do extremismo e da intolerância, destacando a importância do amor, da amizade e da luta contra a injustiça e a opressão.</p>
+                        </div>
+                    </div>
+       </section>
+    
+    
+    <br>
+    
+    <section class="informacao" id="informacao">
+        <h2>Personagens Principais dos Comensais da morte</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/lord_voldemort_comensal.jpg' %}" alt="lord_voldemort_comensal">
+            </div>
+            <div class="info-details">
+                <h3>Lord Voldemort</h3>
+                
+                <p>Lord Voldemort, também conhecido como Tom Riddle, é o líder supremo dos Comensais da Morte e o principal antagonista da série Harry Potter. Ele exerce um poderoso controle sobre seus seguidores e é temido e reverenciado por eles. Sua presença é dominante entre os Comensais da Morte, e sua influência é profundamente sentida em todas as ações do grupo.
+    
+                    Voldemort é um bruxo extremamente poderoso e habilidoso, com um domínio excepcional das artes das trevas. Ele estudou magia obscura desde jovem e adquiriu conhecimento e habilidades consideráveis ao longo de sua vida. Sua busca pela imortalidade o levou a dividir sua alma em fragmentos, criando Horcruxes, que o tornaram quase invulnerável.
+                    
+                    Além de suas habilidades mágicas excepcionais, Voldemort é um estrategista brilhante. Ele planeja meticulosamente seus movimentos e manipula aqueles ao seu redor para alcançar seus objetivos. Sua determinação em conquistar o mundo bruxo e subjugar aqueles que se opõem a ele é implacável.
+                    
+                    Voldemort inspira lealdade e medo em seus seguidores. Ele exige absoluta devoção e obediência, punindo severamente qualquer sinal de fraqueza ou traição. Aqueles que são escolhidos para se tornarem Comensais da Morte têm a honra de servir a Voldemort, mas também carregam o fardo de suas expectativas implacáveis.
+                    
+                    O domínio de Voldemort sobre as Artes das Trevas é evidente em seus duelos. Ele é um adversário extremamente perigoso, capaz de lançar feitiços poderosos e realizar magias complexas. Sua habilidade em legilimência e occlumência lhe dá uma vantagem sobre seus oponentes, permitindo que ele leia mentes e proteja seus próprios pensamentos.
+                    
+                    No entanto, apesar de seu poder e presença intimidadora, Voldemort também possui fraquezas. Sua obsessão pela imortalidade e seu desejo de evitar a morte o tornam vulnerável. Além disso, sua conexão com Harry Potter, por meio da profecia que prediz seu confronto final, desempenha um papel crucial em sua derrota.
+                    
+                    Em resumo, Lord Voldemort é o bruxo supremo dos Comensais da Morte. Seu poder, habilidades mágicas excepcionais e sua influência sobre seus seguidores o tornam uma figura temida e respeitada. Sua busca pela imortalidade e seu domínio das artes das trevas o colocam no centro das forças do mal na série Harry Potter.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Bellatrix_lestrange.jpg' %}" alt="Bellatrix_lestrange_comensais">
+            </div>
+            <div class="info-details">
+                <h3>Bellatrix Lestrange</h3>
+                
+                <p>Bellatrix Lestrange é uma das Comensais da Morte mais devotadas e cruéis a Lord Voldemort. Ela é um dos personagens mais notáveis ​​e temidos entre os seguidores do Lorde das Trevas.
+    
+                    Bellatrix é uma bruxa extremamente poderosa e habilidosa, especialmente em duelos. Ela é conhecida por sua destreza em combate, sua ferocidade implacável e sua capacidade de lançar feitiços poderosos e obscuros. Seu estilo de luta é agressivo e imprevisível, tornando-a uma oponente formidável.
+                    
+                    Além de suas habilidades mágicas, Bellatrix é caracterizada por sua lealdade fanática a Voldemort. Ela o reverencia e segue seus ideais sem questionar. Bellatrix é completamente dedicada à causa dos Comensais da Morte e está disposta a fazer qualquer coisa para ajudar a alcançar os objetivos de seu líder.
+                    
+                    Bellatrix também é conhecida por sua crueldade sádica. Ela se deleita em causar dor e sofrimento, especialmente quando se trata de torturar seus inimigos ou aqueles que ela acredita terem traído Voldemort. Ela demonstra um prazer perverso em infligir tormento aos outros e tem um gosto particular por duelos e confrontos violentos.
+                    
+                    Sua personalidade intensa e volátil é uma característica marcante de Bellatrix. Ela é conhecida por ser imprudente, impulsiva e impetuosa em suas ações, muitas vezes agindo por impulso sem considerar as consequências. Sua devoção a Voldemort é cega e inabalável, o que a torna uma seguidora implacável e perigosa.
+                    
+                    Bellatrix também é uma figura importante no círculo íntimo de Voldemort. Sua relação com a família Black, sua posição de parentesco com Sirius e seu casamento com Rodolphus Lestrange lhe conferem uma conexão estreita com outros bruxos influentes e poderosos.
+                    
+                    Em resumo, Bellatrix Lestrange é uma Comensal da Morte excepcionalmente talentosa, leal e cruel. Sua habilidade mágica formidável, sua devoção cega a Voldemort e sua sede de violência a tornam uma das seguidoras mais perigosas e icônicas do Lorde das Trevas. Sua presença no universo de Harry Potter acrescenta uma dimensão sombria e ameaçadora à história.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Lucius_malfoy_persona.jpg' %}" alt="Lucius">
+            </div>
+            <div class="info-details">
+                <h3>Lucius Malfoy</h3>
+                
+                <p>Lucius Malfoy é um personagem importante entre os Comensais da Morte e desempenha um papel significativo na série Harry Potter como um seguidor leal de Lord Voldemort.
+    
+                    Lucius Malfoy é conhecido por sua riqueza, influência e posição social elevada na sociedade bruxa. Ele utiliza esses recursos para promover a agenda dos Comensais da Morte e apoiar as atividades de Voldemort. Sua riqueza e conexões políticas lhe conferem um poder considerável, permitindo-lhe exercer influência sobre outros bruxos e usar sua posição para alcançar os objetivos do Lorde das Trevas.
+                    
+                    Embora nem sempre seja conhecido por suas habilidades mágicas excepcionais, Lucius Malfoy é um bruxo astuto e manipulador. Ele usa sua inteligência e persuasão para influenciar e controlar os outros, principalmente quando se trata de obter o que deseja ou alcançar objetivos pessoais. Suas habilidades manipulativas são valiosas para os Comensais da Morte, permitindo-lhe infiltrar-se em várias instituições mágicas e influenciar ações estratégicas.
+                    
+                    Lucius também é conhecido por sua lealdade a Voldemort. Ele segue o Lorde das Trevas fielmente e está disposto a executar suas ordens sem questionar. Sua dedicação ao cumprimento dos objetivos de Voldemort é demonstrada em sua participação ativa em várias ações e missões dos Comensais da Morte.
+                    
+                    No entanto, ao longo da série, Lucius Malfoy demonstra algumas fraquezas. Sua arrogância e excesso de confiança às vezes o colocam em situações desfavoráveis, e ele pode ser facilmente manipulado por outros bruxos mais astutos. Além disso, seu amor pela família, especialmente por seu filho Draco, pode levar a conflitos internos quando confrontado com escolhas difíceis que envolvem sua lealdade a Voldemort.
+                    
+                    Em resumo, Lucius Malfoy é um membro influente dos Comensais da Morte, usando sua riqueza, influência política e habilidades manipulativas para promover a causa de Voldemort. Sua posição na sociedade bruxa e sua dedicação ao Lorde das Trevas o tornam uma figura de destaque entre os seguidores mais proeminentes do mal na série Harry Potter.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Narcisa_Malfoy.jpg' %}" alt="Narcisa_Malfoy">
+            </div>
+            <div class="info-details">
+                <h3>Narcisa Malfoy</h3>
+                
+                <p>Narcisa Malfoy é um personagem importante nos Comensais da Morte e desempenha um papel significativo na série Harry Potter como uma seguidora leal de Lord Voldemort.
+    
+                    Narcisa é a esposa de Lucius Malfoy e faz parte de uma família bruxa influente e rica. Assim como seu marido, ela utiliza sua posição social e recursos para promover os interesses dos Comensais da Morte e apoiar as atividades de Voldemort. Sua conexão com a família Black e seu casamento com Lucius lhe conferem uma influência considerável dentro dos círculos mágicos.
+                    
+                    Embora Narcisa não seja conhecida por suas habilidades mágicas excepcionais, ela é uma bruxa astuta e inteligente. Sua natureza manipuladora e perspicaz a torna uma aliada valiosa para os Comensais da Morte, especialmente quando se trata de infiltrar-se em instituições e influenciar outras pessoas. Ela é capaz de usar sua astúcia para se proteger e proteger sua família.
+                    
+                    A lealdade de Narcisa a Voldemort é inquestionável. Ela está disposta a fazer qualquer coisa para proteger seus entes queridos, principalmente seu filho Draco. Sua dedicação a Voldemort é demonstrada em sua participação ativa em várias missões e ações dos Comensais da Morte, bem como em sua disposição de enfrentar riscos e desafios.
+                    
+                    Narcisa também é conhecida por sua perspicácia emocional e capacidade de ler as situações com precisão. Ela é capaz de avaliar os riscos e tomar decisões estratégicas com base em suas observações. Essa habilidade a torna uma conselheira valiosa para seu marido e outros membros dos Comensais da Morte.
+                    
+                    No entanto, assim como outros personagens, Narcisa Malfoy tem seus conflitos internos. Sua devoção à família pode entrar em conflito com suas lealdades a Voldemort, e ela enfrenta escolhas difíceis ao longo da série.
+                    
+                    Em resumo, Narcisa Malfoy é uma seguidora leal dos Comensais da Morte, usando sua astúcia, influência e lealdade à família para apoiar as atividades de Voldemort. Sua perspicácia emocional e habilidades estratégicas a tornam uma figura notável entre os seguidores do Lorde das Trevas na série Harry Potter.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Fenrir_Greyback.jpg' %}" alt="Fenrir_Greyback">
+            </div>
+            <div class="info-details">
+                <h3>Fenrir Greyback</h3>
+                
+                <p>Fenrir Greyback é um bruxo lobisomem que se aliou aos Comensais da Morte e é conhecido por sua crueldade e selvageria. Ele é um dos personagens mais temidos e perigosos no universo de Harry Potter.
+    
+                    Greyback é notório por sua transformação em lobisomem e sua feroz natureza predatória. Ele se deleita em causar terror e caos, especialmente em suas formas lupinas. Sua presença é sinistra e sua reputação o precede, sendo considerado um dos lobisomens mais perigosos e poderosos de sua época.
+                    
+                    Ele se juntou aos Comensais da Morte devido à sua afinidade com a violência e sua crença na supremacia do mundo bruxo puro-sangue. Greyback não apenas aterroriza as vítimas que encontra, mas também se orgulha de converter outras pessoas em lobisomens, desejando espalhar sua maldição e semear o caos.
+                    
+                    Greyback é conhecido por sua lealdade a Voldemort e sua disposição em cumprir suas ordens mais cruéis. Ele não tem escrúpulos e está disposto a realizar tarefas violentas e brutais para atingir os objetivos do Lorde das Trevas. Sua selvageria e falta de controle o tornam uma arma formidável nas mãos dos Comensais da Morte.
+                    
+                    Além de sua força física e ferocidade, Greyback possui uma certa habilidade estratégica. Ele usa táticas brutais e imprevisíveis em suas investidas, aproveitando-se de sua condição de lobisomem para surpreender e subjugar seus inimigos. Sua combinação de força bruta e astúcia o torna um adversário formidável em batalhas e confrontos.
+                    
+                    Greyback também exerce uma influência sinistra sobre outros lobisomens e pode reunir uma matilha para servir aos interesses dos Comensais da Morte. Sua liderança entre os lobisomens é baseada no medo e na ameaça de violência, e ele usa isso para manter seu controle sobre seus seguidores.
+                    
+                    Em resumo, Fenrir Greyback é um lobisomem extremamente perigoso e um dos membros mais temidos dos Comensais da Morte. Sua natureza feroz, lealdade a Voldemort e habilidades estratégicas o tornam uma presença intimidadora no mundo mágico. Sua crueldade e desejo de espalhar a dor e o caos o estabelecem como um dos antagonistas mais sinistros da série Harry Potter.</p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="informacao" id="informacao"> 
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/Barty_Crouch_Jr.jpg' %}" alt="Barty_Crouch_Jr">
+            </div>
+            <div class="info-details">
+                <h3>Barty Crouch Jr</h3>
+                
+                <p>Barty Crouch Jr. é um personagem intrigante como Comensal da Morte na série Harry Potter. Sua história é marcada por lealdade fanática a Lord Voldemort e sua participação ativa na ressurreição do Lorde das Trevas.
+    
+                    Barty Crouch Jr. nasceu em uma família de sangue-puro renomada, com um pai influente que ocupava uma alta posição no Ministério da Magia. No entanto, sua vida tomou um rumo sombrio quando ele se juntou aos Comensais da Morte durante a Primeira Guerra Bruxa.
+                    
+                    Crouch Jr. se destacou pela intensidade de sua devoção a Voldemort. Ele estava disposto a fazer qualquer coisa para provar sua lealdade, inclusive torturar e matar em nome do Lorde das Trevas. Sua crueldade e sadismo são evidentes em seus atos, destacando-o como um Comensal da Morte extremamente perigoso e implacável.
+                    
+                    No entanto, Crouch Jr. acabou sendo capturado pelo Auror Alastor Moody e enviado para a prisão de Azkaban por seus crimes. Foi lá que ele teve a chance de escapar graças à intervenção de seu pai, Barty Crouch Sr., que estava determinado a proteger o nome da família e encobrir os erros de seu filho.
+                    
+                    Após sua fuga, Barty Crouch Jr. foi mantido escondido por seu pai em sua casa e colocado sob o feitiço Imperius, que o mantinha sob controle. No entanto, quando Voldemort retornou, Crouch Jr. foi liberado do controle de seu pai e se tornou um membro-chave na trama para ressuscitar o Lorde das Trevas.
+                    
+                    Disfarçado como Alastor Moody, Barty Crouch Jr. participou do Torneio Tribruxo, manipulando eventos para garantir que Harry Potter fosse selecionado como o quarto competidor e guiar seu caminho até a Taça Tribruxo, que era uma armadilha que levaria à ressurreição de Voldemort.
+                    
+                    A participação de Barty Crouch Jr. nos eventos do Torneio Tribruxo é uma demonstração de sua inteligência, astúcia e habilidade em se disfarçar. Ele conseguiu enganar seus colegas bruxos, incluindo Dumbledore, e manter sua verdadeira identidade escondida até o momento oportuno.
+                    
+                    Como Comensal da Morte, Crouch Jr. seguiu as ordens de Voldemort sem questionar. Sua lealdade era tão intensa que ele estava disposto a sacrificar sua própria liberdade e felicidade em nome do Lorde das Trevas. Ele demonstrou grande habilidade em magia das trevas e maldições poderosas, usando sua destreza para atingir seus objetivos e espalhar o caos.
+                    
+                    No entanto, a jornada de Barty Crouch Jr. como Comensal da Morte chega ao fim quando ele é confrontado por Harry Potter e seus aliados no final do quarto livro. Ele é desmascarado e capturado, enfrentando as consequências de suas ações.
+                    
+                    Em resumo, Barty Crouch Jr. é retratado como um Comensal da Morte fervoroso e leal a Voldemort. Sua crueldade, astúcia e habilidades mágicas o tornam um
+                </p>
+            </div>
+        </div>
+    </section><br>
+
+    <section class="wands" id="wands">  
+               
+        <b><h2 class="titulo_wands"><strong>Núcleos De Varinhas:</strong></h2></b>
+      
+    
+        <ul class="lista_varinhas">
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/pena_De_fenix.jpg' %}" alt="pena_De_fenix">
+            </div>
+                <h3>Pena de Fenix</h3>
+                <p>A pena de fênix é um núcleo de varinha bastante especial e poderoso. As penas de fênix são conhecidas por serem extremamente leais aos seus donos e por produzirem varinhas com habilidades excepcionais. A varinha com núcleo de pena de fênix é notável por sua conexão com o mundo das fênix. Essas varinhas têm uma tendência a "escolher" seus donos, respondendo a bruxos e bruxas com características especiais, como coragem, nobreza de espírito e determinação. Essas varinhas são conhecidas por se unirem fortemente aos seus donos, reconhecendo-os como parceiros de confiança.</p>
+            </li>
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/pelo_unicornio.jpg' %}" alt="Unicórnio">
+            </div>
+                <h3>Pelo de Unicórnio</h3>
+                <p>A pena de unicórnio é um dos núcleos utilizados na confecção de varinhas mágicas. As penas de unicórnio são altamente valorizadas por sua pureza e por produzirem varinhas com habilidades especiais. As varinhas com núcleo de pena de unicórnio são conhecidas por serem bastante leais aos seus donos. Elas são frequentemente associadas a bruxos e bruxas que possuem características como compaixão, pureza de coração e uma forte conexão com a natureza.</p>
+            </li>
+        
+            <li class="varinhas">
+                <div class="wands_img">
+                <img src="{% static './images/coração_dragao.jpg' %}" alt="coracao_dragao">
+            </div>
+                <h3>Corda de Coração de Dragão</h3>
+                <p>a corda de coração de dragão é um dos materiais utilizados como núcleo para a fabricação de varinhas mágicas. Ela é obtida a partir do coração de um dragão, criatura mágica poderosa e lendária. As varinhas com núcleo de corda de coração de dragão são notáveis por sua capacidade de realizar feitiços complexos e poderosos. Elas têm um caráter mais agressivo e exigem um domínio preciso e forte determinação de seu dono para serem usadas efetivamente.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    <section class="wood" id="wood">  
+               
+        <b><h2 class="titulo_wood"><strong>Tipos de madeira:</strong></h2></b>
+      
+    
+        <ul class="lista_madeiras">
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/sabugueiro.jpg' %}" alt="sabugueiro">
+            </div>
+                <h3>Madeira de Sabugueiro</h3>
+                <p>A madeira de sabugueiro é conhecida por sua associação com a magia e a proteção. Varinhas feitas dessa madeira são frequentemente escolhidas por bruxos e bruxas que possuem habilidades curativas e têm uma conexão especial com a natureza. A madeira de sabugueiro é flexível e adaptável, tornando as varinhas feitas dela versáteis e capazes de executar uma ampla gama de feitiços.</p>
+            </li>
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/visgo.jpg' %}" alt="visgo">
+            </div>
+                <h3>Madeira de Visgo</h3>
+                <p>A madeira de visgo é considerada rara e misteriosa. Ela é conhecida por ser altamente valorizada por suas propriedades defensivas. Varinhas feitas dessa madeira são frequentemente associadas a bruxos e bruxas habilidosos na arte da duelo e da proteção. A madeira de visgo produz varinhas poderosas e capazes de executar feitiços de escudo e defesa com grande eficácia.</p>
+            </li>
+        
+            <li class="madeiras">
+                <div class="wood_img">
+                <img src="{% static './images/nogueira.jpg' %}" alt="nogueira">
+            </div>
+                <h3>Madeira de Nogueira</h3>
+                <p>A madeira de nogueira é associada à sabedoria e à magia ancestral. Varinhas feitas dessa madeira são escolhidas por bruxos e bruxas que valorizam o conhecimento e têm um profundo respeito pela história e tradição. A madeira de nogueira é conhecida por produzir varinhas que são altamente sintonizadas com o poder das palavras e feitiços verbais, tornando-as ideais para bruxos especializados em encantamentos e feitiços linguísticos.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    <section class="wands" id="wands">  
+               
+        <b><h2 class="titulo_wands"><strong>Flexibilidade Das Varinhas:</strong></h2></b>
+      
+    
+        <ul class="lista_varinhas">
+            <li class="varinhas">
+                <h3>Varinhas Rígidas</h3>
+                <p>As varinhas rígidas são conhecidas por sua falta de flexibilidade. Elas tendem a ser mais estáveis e exigem uma mão firme para controlar seu poder. Varinhas rígidas são frequentemente associadas a bruxos e bruxas que possuem uma natureza disciplinada, determinada e que preferem feitiços de precisão.</p>
+            </li>
+            <li class="varinhas">
+                <h3>Varinhas Flexíveis</h3>
+                <p>As varinhas flexíveis possuem uma curva mais suave e são mais maleáveis. Elas se adaptam facilmente às habilidades e estilos de magia de seus usuários. Varinhas flexíveis são escolhidas por bruxos e bruxas que são adaptáveis, criativos e se destacam em feitiços que requerem movimentos fluidos e graciosos.</p>
+            </li>
+        
+            <li class="varinhas">
+                <h3>Varinhas Semi-rígidas</h3>
+                <p>As varinhas semi-rígidas são uma combinação entre as características das varinhas rígidas e flexíveis. Elas possuem uma certa resistência, mas também têm alguma flexibilidade. Essas varinhas são escolhidas por bruxos e bruxas que possuem uma personalidade equilibrada e versátil, capazes de lidar com uma variedade de estilos de magia.</p>
+            </li>
+    
+            <li class="varinhas">
+                <div class="wands_img">
+                    <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+                </div>
+                <h3>Curiosidade:</h3>
+                <p>É importante ressaltar que a flexibilidade da varinha pode influenciar o estilo e a eficácia do bruxo em diferentes tipos de feitiços. Cada bruxo tem uma relação única com sua varinha, e a flexibilidade desempenha um papel crucial nessa conexão, afetando a maneira como a magia é canalizada e executada.</p>
+            </li>
+        </ul>
+    </section><br>
+    
+    <section class="wands" id="wands">
+        <b><h2 class="titulo_wands"><strong>Tamanho Das Varinhas:</strong></h2></b>
+    <ul class="lista_varinhas">
+        <li class="varinhas">
+            <h3>Varinhas Curtas</h3>
+            <p>Varinhas curtas são caracterizadas por terem um tamanho menor em relação às varinhas padrão. Elas geralmente possuem cerca de 20 a 25 centímetros de comprimento. Varinhas curtas são escolhidas por bruxos e bruxas que preferem uma abordagem mais ágil e precisa em sua magia. Essas varinhas são adequadas para movimentos rápidos e feitiços de curta distância.</p>
+        </li>
+        <li class="varinhas">
+            <h3>Varinhas Padrão</h3>
+            <p>As varinhas padrão são as mais comuns e populares. Elas geralmente têm entre 25 a 35 centímetros de comprimento. Essas varinhas são versáteis e adequadas para uma ampla gama de estilos de magia. Bruxos e bruxas que possuem varinhas de tamanho padrão têm a vantagem de se adaptar facilmente a diferentes tipos de feitiços e situações.</p>
+        </li>
+    
+        <li class="varinhas">
+            <h3>Varinhas Longas</h3>
+            <p> Varinhas longas são caracterizadas por terem um comprimento maior em relação às varinhas padrão. Elas podem variar de 35 a 40 centímetros ou mais. Varinhas longas são frequentemente escolhidas por bruxos e bruxas que preferem uma abordagem mais imponente e poderosa em sua magia. Essas varinhas tendem a ser mais adequadas para feitiços que requerem gestos amplos e poderosos.</p>
+        </li>
+    
+        <li class="varinhas">
+            <div class="wands_img">
+                <img src="{% static './images/ponto_excamacao.png' %}" alt="ponto_excamacao">
+            </div>
+            <h3>Curiosidade:</h3>
+            <p>É importante notar que o tamanho da varinha pode afetar a maneira como ela é manejada e como a magia é canalizada. No entanto, a escolha do tamanho da varinha é uma questão de preferência pessoal e não determina a habilidade ou poder do bruxo. Cada bruxo possui uma varinha única, independentemente do tamanho, e é a conexão entre o bruxo e sua varinha que é essencial para realizar a magia com sucesso.</p>
+        </li>
+    </ul>
+    </section><br>
+
+    <section class="informacao" id="informacao_sala">
+        <h2>Esconderijos comensais da morte</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/mansao_malfoy.jpg' %}" alt="mansao_malfoy">
+            </div>
+            <div class="info-details">
+                <h3>Lugares secretos dos Comensais da morte:</h3>
+                
+                <p>Os Comensais da Morte não possuem uma sala comunal específica, como as casas de Hogwarts. Eles se reúnem em locais secretos e sombrios, geralmente escolhidos por Voldemort ou pelos líderes do grupo.
+    
+                    Durante a Segunda Guerra Bruxa, os Comensais da Morte se reuniram em vários lugares diferentes, dependendo das circunstâncias e das necessidades de Voldemort. Eles podiam se encontrar em lugares como a Mansão Malfoy, que servia como uma espécie de base de operações, ou em outros esconderijos e propriedades que estavam sob o controle do Lorde das Trevas.
+                    
+                    Esses locais eram frequentemente protegidos com feitiços e encantamentos poderosos para manter a segurança e o sigilo dos Comensais da Morte. Eles eram espaços onde os seguidores de Voldemort podiam se reunir para planejar suas atividades, realizar rituais sombrios e discutir seus objetivos e estratégias.
+                    
+                    No entanto, é importante notar que os Comensais da Morte operavam principalmente na clandestinidade, escondidos da sociedade bruxa e das autoridades do Ministério da Magia. Portanto, a "sala comunal" dos Comensais da Morte não é um espaço fixo e conhecido como as salas comuns das casas de Hogwarts, mas sim um local secreto e em constante mudança, determinado pelas necessidades e planos de Voldemort.
+                </p>
+            </div>
+        </div>
+    </section><br>
+    
+    
+    <section class="wizard" id="wizard">
+        <h2>Os três bruxos poderosos mais conhecidos dos Comensais da morte são:</h2>
+                <p class="wizard__text">
+                    Esses três exemplos destacam bruxos da Lufa-Lufa que demonstraram habilidades mágicas notáveis. É importante lembrar que a força de um bruxo não se limita apenas às habilidades em combate, mas também inclui traços como coragem, lealdade, compaixão e dedicação a causas nobres. Cada bruxo tem suas próprias habilidades únicas que contribuem para sua força e importância dentro do mundo mágico.</p> 
+            <div class="bruxos">
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/bellatrix_lestrange_bruxa.jpg' %}" alt="bellatrix_lestrange_bruxa">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Bellatrix Lestrange</h3>
+                        <p>Bellatrix é uma bruxa extremamente poderosa e sádica. Ela é conhecida por sua lealdade fervorosa a Voldemort e por sua habilidade em duelos. Bellatrix é uma duelistas excepcional, capaz de lançar maldições perigosas com facilidade e habilidade. Ela é uma praticante habilidosa da Maldição Cruciatus e demonstra grande destreza em combate. Bellatrix é uma personagem imprevisível e feroz, cuja lealdade inabalável e habilidades mágicas a tornam uma adversária temível.</p>
+                    </div>
+                </div>
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/lord_voldemort_bruxo.png' %}" alt="lord_voldemort_bruxo">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Lord Voldemort</h3>
+                        <p>Como líder dos Comensais da Morte, Lord Voldemort é indiscutivelmente o bruxo mais poderoso do grupo. Ele é habilidoso em uma ampla gama de magias das trevas e é um mestre em artes das trevas, incluindo as Maldições Imperdoáveis. Sua habilidade de voar sem a necessidade de uma vassoura e sua habilidade em manipular e controlar Nagini, sua serpente de estimação, também demonstram seu poder. Voldemort possui grande inteligência estratégica e astúcia, o que o torna um formidável adversário em batalhas.</p>                          
+                    </div>
+                </div>
+                <div class="bruxo">
+                    <div class="bruxo-img">
+                        <img src="{% static './images/lucius_malfoy_bruxo.jpg' %}" alt="lucius_malfoy_bruxo">
+                    </div>
+                    <div class="bruxo-details">
+                        <h3>Lucius Malfoy</h3>
+                        <p>Lucius Malfoy é um bruxo poderoso e influente. Ele é conhecido por seu status social elevado e sua riqueza, bem como por seu fanatismo pelo sangue puro. Lucius é um duelistas habilidoso e demonstrou habilidades notáveis em feitiços e magia das trevas. Ele possui um talento para manipulação e estratégia, usando sua influência e recursos para avançar a causa de Voldemort. Embora talvez não esteja no mesmo nível de poder de Lord Voldemort ou Bellatrix Lestrange, ele é um membro proeminente dos Comensais da Morte e representa uma ameaça significativa em batalhas.</p>
+                    </div>
+                </div>
+    
+                
+            </div>
+       
+        
+    </section><br>
+    
+    <section class="informacao" id="informacao">
+        <h2>Conquistas</h2>
+        
+        <div class="info">
+            
+            <div class="info-img">
+                <img src="{% static './images/conquista_comensais.jpg' %}" alt="conquista_comensais">
+            </div>
+            <div class="info-details">
+                <h3>As conquistas dos Comensais da morte</h3>
+                
+                <p>Os Comensais da Morte são conhecidos por suas ações violentas e cruéis durante os períodos em que serviram a Lord Voldemort. Eles estiveram envolvidos em várias conquistas e eventos notáveis ao longo da série Harry Potter. Aqui estão algumas das principais conquistas dos Comensais da Morte:<br>
+    
+                    1. A Primeira Ascensão de Lord Voldemort: Durante a Primeira Guerra Bruxa, os Comensais da Morte foram os seguidores leais e poderosos de Voldemort. Juntos, eles causaram caos e terror na comunidade bruxa, espalhando medo e realizando ataques violentos contra aqueles que se opunham a Voldemort. Eles foram fundamentais para a ascensão de Voldemort ao poder e seu domínio sobre o mundo bruxo.<br>
+                    
+                    2. A Segunda Guerra Bruxa: Após o retorno de Lord Voldemort, os Comensais da Morte se reuniram novamente para apoiar seu líder na Segunda Guerra Bruxa. Eles participaram de inúmeras batalhas e conflitos contra a Ordem da Fênix e os defensores de Hogwarts. Durante esse período, eles espalharam o medo e causaram destruição, enquanto procuravam eliminar qualquer um que se opusesse a Voldemort e seu regime.<br>
+                    
+                    3. A Infiltração no Ministério da Magia: Sob as ordens de Voldemort, os Comensais da Morte executaram uma operação de grande escala para infiltrar o Ministério da Magia. Eles assumiram posições-chave no governo bruxo, controlando e manipulando as políticas e as decisões do Ministério. Essa conquista permitiu que Voldemort consolidasse ainda mais seu poder e influência sobre a comunidade bruxa.<br>
+                    
+                    4. A Tortura e a Morte de Pessoas Inocentes: Os Comensais da Morte eram conhecidos por sua crueldade e disposição para infligir sofrimento sobre os outros. Eles torturaram e mataram inúmeras pessoas inocentes, espalhando o terror e deixando um rastro de destruição por onde passavam. Suas ações deixaram cicatrizes profundas na comunidade bruxa e foram um lembrete constante do poder e da maldade de Voldemort.<br>
+                    
+                    5. O Cerco a Hogwarts: Durante a Batalha de Hogwarts, os Comensais da Morte liderados por Voldemort atacaram a escola de magia e bruxaria. Eles travaram uma batalha feroz contra os estudantes, professores e membros da Ordem da Fênix que se reuniram para defender a escola. Embora tenham encontrado resistência determinada, os Comensais da Morte desempenharam um papel significativo na tentativa de tomar o controle de Hogwarts em nome de Voldemort.
+                    
+                    Essas são apenas algumas das conquistas notáveis dos Comensais da Morte. Suas ações visaram estabelecer o poder absoluto de Voldemort, sem considerar o sofrimento ou as consequências para os outros. Sua brutalidade e devoção fanática a Voldemort deixaram um legado de caos e destruição na comunidade bruxa.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    {% endif %}
+    {% endblock %}

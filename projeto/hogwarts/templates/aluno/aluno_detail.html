@@ -1,0 +1,12 @@
+{% extends 'base_form.html' %}
+{% load static %}
+{% block conteudo %}
+    <br>
+    <div class="info">
+        <h1>{{ aluno_detail.nome }}</h1>
+        <p>Casa: {{aluno_detail.casa.nome}}</p>
+        <p>Varinha: {{aluno_detail.varinha.descricao}}</p>
+        <p>Animal: {{aluno_detail.animal.nome}}</p>
+    </div>
+    <br>
+{% endblock %}

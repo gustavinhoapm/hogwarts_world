@@ -1,0 +1,26 @@
+{% extends 'base_form.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Hogwarts World - Criar Personagem{% endblock %}
+
+{% block conteudo %}
+    <section class="intro personagem">
+        <h1>HOGWARTS WORLD</h1>
+        <b>
+            <p>Personalize seu site!</p>
+            <p>Modifique o site e descubra curiosidades sobre a sua casaem hogwarts</p>
+        </b>
+    </section>
+
+    <section class="formulario" id="formulario">
+        <h2>Siga o formulário abaixo:</h2>
+        <p>Preencha o formulário conforme seus desejos</p><br>
+        <div class="perguntas">
+            <form action="" method="POST" class="form-wrapper">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" class="botao-cadastrar" value="Salvar">
+            </form>
+        </div>
+    </section>
+    <br><br>
+{% endblock %}

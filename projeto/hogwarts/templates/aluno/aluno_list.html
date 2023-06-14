@@ -1,0 +1,17 @@
+{% extends 'base_form.html' %}
+
+{% block conteudo %}
+    <div class="container bg-light rounded p-2 my-4">
+        <h1>Lista de Alunos</h1>
+        <p>A seguir a lista de alunos.</p>
+        <ul class="bg-secondary rounded p-4 m-4">
+            {% for aluno in aluno_list %}
+                <li>
+                    <a class="item" href="{% url 'aluno_detail' aluno.id %}">{{aluno.nome}} : {{aluno.casa.nome}}</a>
+                </li>
+            {% endfor %}
+            <br>
+        </ul>
+        {% include "components/paginator.html" %}
+    </div>
+{% endblock %}

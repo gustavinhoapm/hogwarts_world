@@ -1,0 +1,23 @@
+{% extends 'base_form.html' %}
+{% block title %}Hogwarts World - Cadastro{% endblock %}
+{% block conteudo %}
+    <section class="formulario" id="formulario">
+        <h2>Siga o formulário abaixo:</h2>
+        <p>Preencha o formulário conforme seus desejos</p><br>
+        <div class="perguntas">
+            <form action="" method="POST" class="form-wrapper">
+                {% csrf_token %}
+
+                {% load crispy_forms_tags %}
+                <div class="formulario__corpo">
+                    {{ form|crispy }}
+
+                    <div class="botao">
+                        <button type="submit" class="botao-cadastrar">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>   
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base_form.html' %}
+{% block title %}Hogwarts World - Login{% endblock %}
+{% block conteudo %}
+    <section class="intro personagem">
+        <h1>HOGWARTS WORLD</h1>
+        <b>
+            <p>Personalize seu site!</p>
+            <p>Modifique o site e descubra curiosidades sobre a sua casa em hogwarts</p>
+        </b>
+    </section>
+
+    <section class="formulario" id="formulario">
+        <h2>Siga o formulário abaixo:</h2>
+        <div class="perguntas">
+            <form action="{% url 'login' %}" method="POST" class="form-wrapper">
+                {% csrf_token %}
+
+                {% load crispy_forms_tags %}
+                {{ form|crispy }}
+
+                <div class="botao">
+                    <input type="submit" value="Login" class="botao-cadastrar">
+                </div>
+            </form>
+            <div class="cadastro">
+                <p>Não tem uma conta? <a href="{% url 'signup' %}" class="text-decoration-none text-white">Cadastre-se</a></p>
+            </div>
+        </div>
+    </section>
+    <br>
+    {% load static %}
+    <script src="{% static 'js/scripts.js' %}"></script>
+{% endblock %}
