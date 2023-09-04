@@ -1,8 +1,0 @@
-{% extends 'base_form.html'%}
-{% block conteudo %}  
-    <nav class="nav_lateral">
-        <a class="nav_lateral-item" aria-current="page" href="{% url 'aluno_list' %}">Lista de alunos</a>
-        <a class="nav_lateral-item" href="{% url 'aluno_update' user.aluno.id %}">Alterar Bruxo</a>
-    </nav>
-    <br>
-{% endblock %}
