@@ -1,0 +1,116 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+.botao-musica {
+    background-color: #e4e4e400;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .botao-musica:hover{
+    transform: scale(1.1);
+    color: var(--branco);
+    transition: 0.3s;
+  }
+
+  .dark .botao-musica{
+    color: var(--branco);
+  }
+  
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+    padding: 0 20px;
+    position: relative;
+    background-image: linear-gradient(to left, #3a3a3aaa, #e4e4e4);
+}
+
+.logo_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;    
+}
+
+.logo_page:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.navbar {
+    font-family: poppins, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    
+    
+    
+}
+
+.theme__light {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.theme__dark {
+    color: transparent;
+    display: none;
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    background-color: var(--preto);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loginBtn:hover {
+    color: var(--preto);
+    background-color: var(--branco);
+}
+
+/* DARK THEME */
+
+.dark header {
+    background-image: linear-gradient(to left, #303030aa, #121312);
+    background-color: var(--preto);
+}
+
+.dark .theme__dark {
+    color: var(--branco);
+    cursor: pointer;
+    display: block;
+}
+
+.dark .theme__light{
+    display: none;
+}
+    
+.dark .loginBtn {
+    color: var(--preto);
+    background-color: var(--branco);
+}
+
+.dark .loginBtn:hover {
+    color: var(--branco-transparente);
+    background-color: var(--preto);
+} 

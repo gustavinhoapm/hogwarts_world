@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Oswald&family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+:root {
+    --fundo-cinza: #ffffff55;
+    --branco-transparente: #ffffffaa;
+    --branco: #fff;
+    --preto: #000;
+    --cinza: #444444;
+    --primary-color-grifinoria: #5b0000;
+    --secundary-color-grifinoria: #660505aa;
+    --primary-color-sonserina: #00572aaa;
+    --secundary-color-sonserina: #084103;
+    --primary-color-lufalufa: #c2dc00aa;
+    --secundary-color-lufalufa: #b9cf0e;
+    --primary-color-corvinal: #0420aaaa;
+    --secundary-color-corvinal: #030962;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+a:hover {
+    transform: scale(1.1);
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+
+.dark a {
+    color: #fff;
+}
+
+.dark a:hover {
+   
+    transition: 0.3s;
+}

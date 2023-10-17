@@ -1,0 +1,487 @@
+@import url('../css/style.css');
+@import url('../css/header.css');
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #4f3f3faa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--preto);
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+header {
+    background-image: linear-gradient(to left, rgb(56, 7, 7), rgb(138, 19, 19));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: var(--branco);
+}
+
+p{
+    color: var(--branco);
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+a:hover {
+    transform: scale(1.1);
+    color: var(--preto);
+    transition: 0.3s;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(41, 41, 41, 0.5), rgba(31, 30, 30, 0.5)), url("../images/grifinoria_fundo_persona.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    height: auto;
+    transition: .3s;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10vh 20vh auto;
+    padding: 10px 20px;
+}
+.intro h1 {
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.intro a {
+    color: var(--branco);
+    background-color: var(--cinza);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: poppins, sans-serif;
+}
+
+.intro a:hover {
+    color: var(--preto);
+    background-color: var(--branco);
+    transition: all .3s ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.botao-musica {
+    background-color: #e1d9d900;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    
+  }
+
+  .botao-musica:hover{
+    transform: scale(1.1);
+    color: var(--preto);
+    transition: 0.3s;
+  }
+
+  .dark .botao-musica{
+    color: var(--branco);
+  }
+
+
+
+  /* CSS PARA A INTRODUÇÃO DA CASA E A LOGO*/
+
+
+  .houses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:#4f3f3faa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--preto);
+}
+
+.houses h2 {
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--branco);
+}
+
+.card-details h3{
+    color: var(--branco);
+}
+
+.houses__text {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    
+    height: 100%; 
+    padding: 10px;
+    background-color: #5b0000aa;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    
+    transition: all .3s ease-in-out;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.card-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    height: 100%;
+    padding: 10px;
+}
+
+
+
+  /* CSS PARA OS PERSONAGENS E INFORMAÇÕES*/
+  .info_grifinoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #4f3f3faa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--preto);
+}
+
+.info_grifinoria h2 {
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--branco);
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+}
+
+.info-img {
+    width: 50%;
+    padding: 10px;
+}
+
+.info-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.info-details {
+    width: 50%;
+    padding: 10px;
+}
+
+.info-details h3 {
+    color: var(--branco);
+    margin-top: 0;
+}
+
+.custom-text {
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+
+
+/* CSS PARA VARINHAS E CURIOSIDADES*/
+
+.varinhas h3{
+    color: var(--branco);
+}
+
+.titulo_wands {
+    font-family: 'Harry Potter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #5b0000aa;
+    color: var(--branco);
+    border-radius: 10px;
+}
+
+.wands {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #4f3f3faa;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--preto);
+}
+
+
+.wands_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.wands_img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.lista_varinhas li{
+    list-style-type:none;
+}
+
+.wands_img img:hover{
+    transform: scale(1.1); 
+    transition: 0.3s;
+}
+
+
+
+/* CSS PARA MADEIRA E CURIOSIDADES*/
+
+.madeiras h3{
+    color: var(--branco);
+}
+
+.titulo_wood {
+    font-family: 'Harry Potter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #5b0000aa;
+    color: var(--branco);
+    border-radius: 10px;
+}
+
+.wood {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #4f3f3faa;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--preto);
+}
+
+
+.wood_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.wood_img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.lista_madeiras li{
+    list-style-type:none;
+}
+
+.wood_img img:hover{
+    transform: scale(1.1); 
+    transition: 0.3s;
+}
+
+
+
+
+/* CSS PARA OS BRUXOS MAIS PODEROSOS*/
+
+
+.wizard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:#4f3f3faa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--preto);
+}
+
+.wizard h2 {
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--branco);
+}
+
+.bruxo-details h3{
+    color: var(--branco);
+}
+
+.wizard__text {
+    text-align: center;
+}
+
+.bruxos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bruxo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #5b0000aa;
+    border-radius: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.bruxo:hover {
+    transform: scale(1.05);
+    
+    transition: all .3s ease-in-out;
+}
+
+.bruxo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bruxo-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+    object-fit: contain;
+
+    
+}
+
+.bruxo-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
